@@ -24,7 +24,6 @@ const retakeSearch = ref('')
 const importedCourseCount = ref(0)
 const dialog = ref<'feedback'|'thanks'|null>(null)
 const feedbackText = ref('')
-const feedbackCopied = ref(false)
 const feedbackUrl = import.meta.env.VITE_FEEDBACK_URL || 'https://github.com/aa-pumpkin/univis-planner/issues/new'
 const githubUrl = import.meta.env.VITE_GITHUB_URL || 'https://github.com/aa-pumpkin/univis-planner'
 const donateUrl = import.meta.env.VITE_DONATE_URL || 'https://www.donationalerts.com/r/pumpkin_aa'
@@ -60,7 +59,7 @@ function toggleDraft(id:string) { draftIds.value = draftIds.value.includes(id) ?
 function moduleScheduleStatus(module:Module) { if(module.fixedEvents.length&&(!module.requiresSelectableGroup||module.selectableGroups.length))return 'Termine vollständig geladen';if(module.fixedEvents.length)return 'Vorlesung geladen · Übungsgruppen noch nicht veröffentlicht';if(module.selectableGroups.length)return 'Nur Übung geladen · Vorlesung fehlt';return 'Termine noch nicht veröffentlicht' }
 function finish() { store.selectedIds = [...draftIds.value]; store.locks = {}; screen.value = 'planner' }
 function saveIcs() { if(store.current){download(`stundenplan-semester-${studySemester.value}.ics`,exportIcs(store.current.selectedEvents),'text/calendar');dialog.value='thanks'} }
-async function copyFeedback(){const details=`\n\nSemester: ${studySemester.value}\nModule: ${store.selectedModules.map(module=>module.shortTitle).join(', ')||'noch keine'}\nKonflikte: ${currentConflicts.value.length}`;await navigator.clipboard.writeText(`${feedbackText.value.trim()}${details}`);feedbackCopied.value=true}
+function sendFeedback(){const body=`${feedbackText.value.trim()}\n\n---\nSemester: ${studySemester.value}\nModule: ${store.selectedModules.map(module=>module.shortTitle).join(', ')||'noch keine'}\nKonflikte: ${currentConflicts.value.length}`;const separator=feedbackUrl.includes('?')?'&':'?';window.open(`${feedbackUrl}${separator}title=${encodeURIComponent('Feedback zum UnivIS Planner')}&body=${encodeURIComponent(body)}`,'_blank','noopener,noreferrer')}
 function reloadPlannerData(){localStorage.removeItem(PLANNER_STORAGE_KEY);location.reload()}
 </script>
 
@@ -139,9 +138,9 @@ function reloadPlannerData(){localStorage.removeItem(PLANNER_STORAGE_KEY);locati
         <button class="dialog-close" aria-label="Schließen" @click="dialog=null">×</button>
         <template v-if="dialog==='feedback'">
           <span class="eyebrow">FEEDBACK</span><h2>Was funktioniert noch nicht?</h2>
-          <p>Ein kurzer Hinweis reicht. Beim Kopieren werden Semester, Module und Anzahl der Konflikte ergänzt – keine persönlichen Daten.</p>
-          <textarea v-model="feedbackText" placeholder="Zum Beispiel: Eine Übungsgruppe fehlt…" @input="feedbackCopied=false"></textarea>
-          <div class="dialog-actions"><button class="primary-action" :disabled="!feedbackText.trim()" @click="copyFeedback">{{feedbackCopied?'Kopiert ✓':'Text kopieren'}}</button><a v-if="feedbackUrl" class="dialog-link" :href="feedbackUrl" target="_blank" rel="noreferrer">Nachricht senden ↗</a></div>
+          <p>Ein kurzer Hinweis reicht. GitHub öffnet danach einen vorbereiteten Fehlerbericht mit Semester, Modulen und Konfliktanzahl. Veröffentlicht wird er erst, wenn du ihn dort bestätigst.</p>
+          <textarea v-model="feedbackText" placeholder="Zum Beispiel: Eine Übungsgruppe fehlt…"></textarea>
+          <div class="dialog-actions"><button class="primary-action" :disabled="!feedbackText.trim()" @click="sendFeedback">Auf GitHub senden ↗</button></div>
         </template>
         <template v-else>
           <span class="eyebrow">FERTIG</span><h2>Kalender heruntergeladen</h2>
