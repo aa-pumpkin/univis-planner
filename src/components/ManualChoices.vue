@@ -1,0 +1,4 @@
+<script setup lang="ts">import { usePlannerStore } from '../stores/planner'; const store=usePlannerStore()</script>
+<template><section class="panel choices"><div class="section-head"><div><span class="eyebrow">FEINTUNING</span><h2>Gruppen festlegen</h2></div><button class="text-button" @click="Object.keys(store.locks).forEach(store.unlockChoice)">Alle lösen</button></div>
+  <div v-for="m in store.selectedModules" :key="m.id"><div v-for="g in m.selectableGroups" :key="g.id" class="choice-row"><div><b>{{m.shortTitle}}</b><small>{{g.title}}</small></div><select :value="store.locks[g.id]||store.current?.choices[g.id]" @change="store.lockChoice(g.id,($event.target as HTMLSelectElement).value)"><option v-for="o in g.options" :value="o.id">{{['','Mo','Di','Mi','Do','Fr'][o.weekday]}} {{o.startTime}} · {{o.room}}</option></select><span v-if="store.locks[g.id]" class="lock">● fixiert</span></div></div>
+</section></template>

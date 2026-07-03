@@ -1,0 +1,790 @@
+{
+  "fetchedAt": "2026-07-03T13:34:54.938Z",
+  "sourceUrl": "https://moduldb.informatik.uni-kiel.de/show.cgi?Category/studyprogram/StudyProgram18",
+  "modules": [
+    {
+      "code": "Inf-AlgSeq",
+      "title": "Algorithms on Sequences",
+      "ects": 6,
+      "category": "elective",
+      "selectionKind": "elective",
+      "sourceUrl": "https://moduldb.informatik.uni-kiel.de/show.cgi?Category/show/Category131"
+    },
+    {
+      "code": "Inf-BioInf-SysBio",
+      "title": "Bioinformatics/Systems Biology",
+      "ects": 6,
+      "category": "elective",
+      "selectionKind": "elective",
+      "sourceUrl": "https://moduldb.informatik.uni-kiel.de/show.cgi?Category/show/Category131"
+    },
+    {
+      "code": "Inf-CB",
+      "title": "Übersetzerbau",
+      "ects": 8,
+      "category": "elective",
+      "selectionKind": "elective",
+      "sourceUrl": "https://moduldb.informatik.uni-kiel.de/show.cgi?Category/show/Category131"
+    },
+    {
+      "code": "Inf-CG",
+      "title": "Computer Graphics",
+      "ects": 8,
+      "category": "elective",
+      "selectionKind": "elective",
+      "sourceUrl": "https://moduldb.informatik.uni-kiel.de/show.cgi?Category/show/Category131"
+    },
+    {
+      "code": "Inf-CombWords",
+      "title": "Combinatorics on Words",
+      "ects": 6,
+      "category": "elective",
+      "selectionKind": "elective",
+      "sourceUrl": "https://moduldb.informatik.uni-kiel.de/show.cgi?Category/show/Category131"
+    },
+    {
+      "code": "Inf-DPS",
+      "title": "Deklarative Programmiersprachen",
+      "ects": 8,
+      "category": "elective",
+      "selectionKind": "elective",
+      "sourceUrl": "https://moduldb.informatik.uni-kiel.de/show.cgi?Category/show/Category131"
+    },
+    {
+      "code": "Inf-DatSchutz",
+      "title": "Datenschutz",
+      "ects": 2,
+      "category": "elective",
+      "selectionKind": "elective",
+      "sourceUrl": "https://moduldb.informatik.uni-kiel.de/show.cgi?Category/show/Category131"
+    },
+    {
+      "code": "Inf-DigSig",
+      "title": "Multimediale Signal- und Bildverarbeitung",
+      "ects": 8,
+      "category": "elective",
+      "selectionKind": "elective",
+      "sourceUrl": "https://moduldb.informatik.uni-kiel.de/show.cgi?Category/show/Category131"
+    },
+    {
+      "code": "Inf-EinfBV",
+      "title": "Einführung in die Bildverarbeitung",
+      "ects": 8,
+      "category": "elective",
+      "selectionKind": "elective",
+      "sourceUrl": "https://moduldb.informatik.uni-kiel.de/show.cgi?Category/show/Category131"
+    },
+    {
+      "code": "Inf-EntEinSys",
+      "title": "Embedded Real-Time Systems",
+      "ects": 8,
+      "category": "elective",
+      "selectionKind": "elective",
+      "sourceUrl": "https://moduldb.informatik.uni-kiel.de/show.cgi?Category/show/Category131"
+    },
+    {
+      "code": "Inf-GSoZu",
+      "title": "Introduction to Formal Software Analysis",
+      "ects": 8,
+      "category": "elective",
+      "selectionKind": "elective",
+      "sourceUrl": "https://moduldb.informatik.uni-kiel.de/show.cgi?Category/show/Category131"
+    },
+    {
+      "code": "Inf-GraphDraw8",
+      "title": "Automatic Graph Drawing",
+      "ects": 8,
+      "category": "elective",
+      "selectionKind": "elective",
+      "sourceUrl": "https://moduldb.informatik.uni-kiel.de/show.cgi?Category/show/Category131"
+    },
+    {
+      "code": "Inf-HPC",
+      "title": "Hochleistungsrechnen",
+      "ects": 6,
+      "category": "elective",
+      "selectionKind": "elective",
+      "sourceUrl": "https://moduldb.informatik.uni-kiel.de/show.cgi?Category/show/Category131"
+    },
+    {
+      "code": "Inf-ITSec5",
+      "title": "IT-Sicherheit",
+      "ects": 5,
+      "category": "elective",
+      "selectionKind": "elective",
+      "sourceUrl": "https://moduldb.informatik.uni-kiel.de/show.cgi?Category/show/Category131"
+    },
+    {
+      "code": "Inf-InfRecht",
+      "title": "Informatikrecht",
+      "ects": 2,
+      "category": "elective",
+      "selectionKind": "elective",
+      "sourceUrl": "https://moduldb.informatik.uni-kiel.de/show.cgi?Category/show/Category131"
+    },
+    {
+      "code": "Inf-MKli",
+      "title": "Computer Science in Ocean and Climate Research",
+      "ects": 6,
+      "category": "elective",
+      "selectionKind": "elective",
+      "sourceUrl": "https://moduldb.informatik.uni-kiel.de/show.cgi?Category/show/Category131"
+    },
+    {
+      "code": "Inf-NNDL",
+      "title": "Neural networks and deep learning",
+      "ects": 6,
+      "category": "elective",
+      "selectionKind": "elective",
+      "sourceUrl": "https://moduldb.informatik.uni-kiel.de/show.cgi?Category/show/Category131"
+    },
+    {
+      "code": "Inf-NVP",
+      "title": "Nebenläufige und verteilte Programmierung",
+      "ects": 6,
+      "category": "elective",
+      "selectionKind": "elective",
+      "sourceUrl": "https://moduldb.informatik.uni-kiel.de/show.cgi?Category/show/Category131"
+    },
+    {
+      "code": "Inf-NumProg",
+      "title": "Numerische Programmierung",
+      "ects": 6,
+      "category": "elective",
+      "selectionKind": "elective",
+      "sourceUrl": "https://moduldb.informatik.uni-kiel.de/show.cgi?Category/show/Category131"
+    },
+    {
+      "code": "Inf-PP",
+      "title": "Programmierpraktikum",
+      "ects": 4,
+      "category": "elective",
+      "selectionKind": "elective",
+      "sourceUrl": "https://moduldb.informatik.uni-kiel.de/show.cgi?Category/show/Category131"
+    },
+    {
+      "code": "Inf-PPS",
+      "title": "Prinzipien von Programmiersprachen",
+      "ects": 8,
+      "category": "elective",
+      "selectionKind": "elective",
+      "sourceUrl": "https://moduldb.informatik.uni-kiel.de/show.cgi?Category/show/Category131"
+    },
+    {
+      "code": "Inf-PatRec",
+      "title": "Pattern Recognition",
+      "ects": 6,
+      "category": "elective",
+      "selectionKind": "elective",
+      "sourceUrl": "https://moduldb.informatik.uni-kiel.de/show.cgi?Category/show/Category131"
+    },
+    {
+      "code": "Inf-SyncSpr",
+      "title": "Synchronous Languages",
+      "ects": 8,
+      "category": "elective",
+      "selectionKind": "elective",
+      "sourceUrl": "https://moduldb.informatik.uni-kiel.de/show.cgi?Category/show/Category131"
+    },
+    {
+      "code": "MS0101",
+      "title": "Kryptographie",
+      "ects": 8,
+      "category": "elective",
+      "selectionKind": "elective",
+      "sourceUrl": "https://moduldb.informatik.uni-kiel.de/show.cgi?Category/show/Category131"
+    },
+    {
+      "code": "MS0201",
+      "title": "Approximative Algorithmen",
+      "ects": 8,
+      "category": "elective",
+      "selectionKind": "elective",
+      "sourceUrl": "https://moduldb.informatik.uni-kiel.de/show.cgi?Category/show/Category131"
+    },
+    {
+      "code": "MS0202",
+      "title": "Effiziente Algorithmen",
+      "ects": 8,
+      "category": "elective",
+      "selectionKind": "elective",
+      "sourceUrl": "https://moduldb.informatik.uni-kiel.de/show.cgi?Category/show/Category131"
+    },
+    {
+      "code": "MS0304",
+      "title": "Functional Programming",
+      "ects": 8,
+      "category": "elective",
+      "selectionKind": "elective",
+      "sourceUrl": "https://moduldb.informatik.uni-kiel.de/show.cgi?Category/show/Category131"
+    },
+    {
+      "code": "infALG-01a",
+      "title": "Automata, Logic, and Games",
+      "ects": 6,
+      "category": "elective",
+      "selectionKind": "elective",
+      "sourceUrl": "https://moduldb.informatik.uni-kiel.de/show.cgi?Category/show/Category131"
+    },
+    {
+      "code": "infAfS-01a",
+      "title": "Algorithmen für Scheduling",
+      "ects": 6,
+      "category": "elective",
+      "selectionKind": "elective",
+      "sourceUrl": "https://moduldb.informatik.uni-kiel.de/show.cgi?Category/show/Category131"
+    },
+    {
+      "code": "infAlgMetP-01a",
+      "title": "Algorithmische Methoden in der Praxis",
+      "ects": 6,
+      "category": "elective",
+      "selectionKind": "elective",
+      "sourceUrl": "https://moduldb.informatik.uni-kiel.de/show.cgi?Category/show/Category131"
+    },
+    {
+      "code": "infAuLearn-01a",
+      "title": "Autonomous Learning",
+      "ects": 8,
+      "category": "elective",
+      "selectionKind": "elective",
+      "sourceUrl": "https://moduldb.informatik.uni-kiel.de/show.cgi?Category/show/Category131"
+    },
+    {
+      "code": "infAutLog-01a",
+      "title": "Automata and Logics",
+      "ects": 8,
+      "category": "elective",
+      "selectionKind": "elective",
+      "sourceUrl": "https://moduldb.informatik.uni-kiel.de/show.cgi?Category/show/Category131"
+    },
+    {
+      "code": "infBDMaA-01a",
+      "title": "Big Data Management and Analytics",
+      "ects": 8,
+      "category": "elective",
+      "selectionKind": "elective",
+      "sourceUrl": "https://moduldb.informatik.uni-kiel.de/show.cgi?Category/show/Category131"
+    },
+    {
+      "code": "infBRPA-01a",
+      "title": "Blockchain and Robotic Process Automation",
+      "ects": 6,
+      "category": "elective",
+      "selectionKind": "elective",
+      "sourceUrl": "https://moduldb.informatik.uni-kiel.de/show.cgi?Category/show/Category131"
+    },
+    {
+      "code": "infCC-01a",
+      "title": "Compiler Construction",
+      "ects": 8,
+      "category": "elective",
+      "selectionKind": "elective",
+      "sourceUrl": "https://moduldb.informatik.uni-kiel.de/show.cgi?Category/show/Category131"
+    },
+    {
+      "code": "infCDP-01a",
+      "title": "Concurrent and Distributed Programming",
+      "ects": 8,
+      "category": "elective",
+      "selectionKind": "elective",
+      "sourceUrl": "https://moduldb.informatik.uni-kiel.de/show.cgi?Category/show/Category131"
+    },
+    {
+      "code": "infCG-01a",
+      "title": "Computer Graphik",
+      "ects": 8,
+      "category": "elective",
+      "selectionKind": "elective",
+      "sourceUrl": "https://moduldb.informatik.uni-kiel.de/show.cgi?Category/show/Category131"
+    },
+    {
+      "code": "infCG-02a",
+      "title": "Computer Graphics",
+      "ects": 8,
+      "category": "elective",
+      "selectionKind": "elective",
+      "sourceUrl": "https://moduldb.informatik.uni-kiel.de/show.cgi?Category/show/Category131"
+    },
+    {
+      "code": "infCI-01a",
+      "title": "Computational Intelligence",
+      "ects": 8,
+      "category": "elective",
+      "selectionKind": "elective",
+      "sourceUrl": "https://moduldb.informatik.uni-kiel.de/show.cgi?Category/show/Category131"
+    },
+    {
+      "code": "infCompl-01a",
+      "title": "Computational Complexity",
+      "ects": 6,
+      "category": "elective",
+      "selectionKind": "elective",
+      "sourceUrl": "https://moduldb.informatik.uni-kiel.de/show.cgi?Category/show/Category131"
+    },
+    {
+      "code": "infCryp-01a",
+      "title": "Cryptography",
+      "ects": 8,
+      "category": "elective",
+      "selectionKind": "elective",
+      "sourceUrl": "https://moduldb.informatik.uni-kiel.de/show.cgi?Category/show/Category131"
+    },
+    {
+      "code": "infDO-01a",
+      "title": "Discrete Optimization",
+      "ects": 6,
+      "category": "elective",
+      "selectionKind": "elective",
+      "sourceUrl": "https://moduldb.informatik.uni-kiel.de/show.cgi?Category/show/Category131"
+    },
+    {
+      "code": "infDS-01a",
+      "title": "Distributed Systems",
+      "ects": 8,
+      "category": "elective",
+      "selectionKind": "elective",
+      "sourceUrl": "https://moduldb.informatik.uni-kiel.de/show.cgi?Category/show/Category131"
+    },
+    {
+      "code": "infDSS-01a",
+      "title": "Drahtlose Sensorsysteme",
+      "ects": 8,
+      "category": "elective",
+      "selectionKind": "elective",
+      "sourceUrl": "https://moduldb.informatik.uni-kiel.de/show.cgi?Category/show/Category131"
+    },
+    {
+      "code": "infDataVis-01a",
+      "title": "Data Visualization",
+      "ects": 6,
+      "category": "elective",
+      "selectionKind": "elective",
+      "sourceUrl": "https://moduldb.informatik.uni-kiel.de/show.cgi?Category/show/Category131"
+    },
+    {
+      "code": "infEAeS-01a",
+      "title": "Methoden der Effizienten Ähnlichkeitssuche in großen Datenbeständen",
+      "ects": 8,
+      "category": "elective",
+      "selectionKind": "elective",
+      "sourceUrl": "https://moduldb.informatik.uni-kiel.de/show.cgi?Category/show/Category131"
+    },
+    {
+      "code": "infEDAI-01a",
+      "title": "Tiny Machine Learning (Edge AI)",
+      "ects": 8,
+      "category": "elective",
+      "selectionKind": "elective",
+      "sourceUrl": "https://moduldb.informatik.uni-kiel.de/show.cgi?Category/show/Category131"
+    },
+    {
+      "code": "infEOR-01a",
+      "title": "Einführung in Operations Research",
+      "ects": 6,
+      "category": "elective",
+      "selectionKind": "elective",
+      "sourceUrl": "https://moduldb.informatik.uni-kiel.de/show.cgi?Category/show/Category131"
+    },
+    {
+      "code": "infESSS-02a",
+      "title": "Engineering Secure Software Systems",
+      "ects": 6,
+      "category": "elective",
+      "selectionKind": "elective",
+      "sourceUrl": "https://moduldb.informatik.uni-kiel.de/show.cgi?Category/show/Category131"
+    },
+    {
+      "code": "infEdP-02a",
+      "title": "Entwicklung digitaler Plattformen",
+      "ects": 6,
+      "category": "elective",
+      "selectionKind": "elective",
+      "sourceUrl": "https://moduldb.informatik.uni-kiel.de/show.cgi?Category/show/Category131"
+    },
+    {
+      "code": "infEnlOpt-01a",
+      "title": "Einführung in nichtlineare Optimierung",
+      "ects": 6,
+      "category": "elective",
+      "selectionKind": "elective",
+      "sourceUrl": "https://moduldb.informatik.uni-kiel.de/show.cgi?Category/show/Category131"
+    },
+    {
+      "code": "infFDL-01a",
+      "title": "Foundations of Deep Learning",
+      "ects": 6,
+      "category": "elective",
+      "selectionKind": "elective",
+      "sourceUrl": "https://moduldb.informatik.uni-kiel.de/show.cgi?Category/show/Category131"
+    },
+    {
+      "code": "infFGA-01a",
+      "title": "Fine Grained Algorithms",
+      "ects": 8,
+      "category": "elective",
+      "selectionKind": "elective",
+      "sourceUrl": "https://moduldb.informatik.uni-kiel.de/show.cgi?Category/show/Category131"
+    },
+    {
+      "code": "infFP-01a",
+      "title": "Funktionale Programmierung",
+      "ects": 8,
+      "category": "elective",
+      "selectionKind": "elective",
+      "sourceUrl": "https://moduldb.informatik.uni-kiel.de/show.cgi?Category/show/Category131"
+    },
+    {
+      "code": "infGIS-01a",
+      "title": "Geo-Informationssysteme",
+      "ects": 8,
+      "category": "elective",
+      "selectionKind": "elective",
+      "sourceUrl": "https://moduldb.informatik.uni-kiel.de/show.cgi?Category/show/Category131"
+    },
+    {
+      "code": "infIO-01a",
+      "title": "Integer Optimization",
+      "ects": 8,
+      "category": "elective",
+      "selectionKind": "elective",
+      "sourceUrl": "https://moduldb.informatik.uni-kiel.de/show.cgi?Category/show/Category131"
+    },
+    {
+      "code": "infIR-01a",
+      "title": "Information Retrieval",
+      "ects": 8,
+      "category": "elective",
+      "selectionKind": "elective",
+      "sourceUrl": "https://moduldb.informatik.uni-kiel.de/show.cgi?Category/show/Category131"
+    },
+    {
+      "code": "infInS-01a",
+      "title": "Intelligent Systems",
+      "ects": 8,
+      "category": "elective",
+      "selectionKind": "elective",
+      "sourceUrl": "https://moduldb.informatik.uni-kiel.de/show.cgi?Category/show/Category131"
+    },
+    {
+      "code": "infIntCry-01a",
+      "title": "Introduction to Cryptography",
+      "ects": 6,
+      "category": "elective",
+      "selectionKind": "elective",
+      "sourceUrl": "https://moduldb.informatik.uni-kiel.de/show.cgi?Category/show/Category131"
+    },
+    {
+      "code": "infIntNlOpt-01a",
+      "title": "Introduction to nonlinear Optimization",
+      "ects": 6,
+      "category": "elective",
+      "selectionKind": "elective",
+      "sourceUrl": "https://moduldb.informatik.uni-kiel.de/show.cgi?Category/show/Category131"
+    },
+    {
+      "code": "infIoT-01a",
+      "title": "Internet of Things and Wireless Networks",
+      "ects": 8,
+      "category": "elective",
+      "selectionKind": "elective",
+      "sourceUrl": "https://moduldb.informatik.uni-kiel.de/show.cgi?Category/show/Category131"
+    },
+    {
+      "code": "infKDDM-01a",
+      "title": "Knowledge Discovery and Data Mining",
+      "ects": 8,
+      "category": "elective",
+      "selectionKind": "elective",
+      "sourceUrl": "https://moduldb.informatik.uni-kiel.de/show.cgi?Category/show/Category131"
+    },
+    {
+      "code": "infKuK-01a",
+      "title": "KI und Kunst",
+      "ects": 5,
+      "category": "elective",
+      "selectionKind": "elective",
+      "sourceUrl": "https://moduldb.informatik.uni-kiel.de/show.cgi?Category/show/Category131"
+    },
+    {
+      "code": "infLICS2-01a",
+      "title": "Logic in Computer Science - Advanced",
+      "ects": 8,
+      "category": "elective",
+      "selectionKind": "elective",
+      "sourceUrl": "https://moduldb.informatik.uni-kiel.de/show.cgi?Category/show/Category131"
+    },
+    {
+      "code": "infMAES-01a",
+      "title": "Modellierung und Analyse von Echtzeitsystemen",
+      "ects": 6,
+      "category": "elective",
+      "selectionKind": "elective",
+      "sourceUrl": "https://moduldb.informatik.uni-kiel.de/show.cgi?Category/show/Category131"
+    },
+    {
+      "code": "infMMI-01a",
+      "title": "Mensch-Maschine-Interaktion",
+      "ects": 6,
+      "category": "elective",
+      "selectionKind": "elective",
+      "sourceUrl": "https://moduldb.informatik.uni-kiel.de/show.cgi?Category/show/Category131"
+    },
+    {
+      "code": "infMobRob-01a",
+      "title": "Mobile Robotics",
+      "ects": 8,
+      "category": "elective",
+      "selectionKind": "elective",
+      "sourceUrl": "https://moduldb.informatik.uni-kiel.de/show.cgi?Category/show/Category131"
+    },
+    {
+      "code": "infNumSim-01a",
+      "title": "Numerical Simulation",
+      "ects": 8,
+      "category": "elective",
+      "selectionKind": "elective",
+      "sourceUrl": "https://moduldb.informatik.uni-kiel.de/show.cgi?Category/show/Category131"
+    },
+    {
+      "code": "infODS-01a",
+      "title": "Optimization and Data Science",
+      "ects": 8,
+      "category": "elective",
+      "selectionKind": "elective",
+      "sourceUrl": "https://moduldb.informatik.uni-kiel.de/show.cgi?Category/show/Category131"
+    },
+    {
+      "code": "infOdS-01a",
+      "title": "Optimierung dynamischer Systeme",
+      "ects": 6,
+      "category": "elective",
+      "selectionKind": "elective",
+      "sourceUrl": "https://moduldb.informatik.uni-kiel.de/show.cgi?Category/show/Category131"
+    },
+    {
+      "code": "infPM-01a",
+      "title": "Process Mining",
+      "ects": 6,
+      "category": "elective",
+      "selectionKind": "elective",
+      "sourceUrl": "https://moduldb.informatik.uni-kiel.de/show.cgi?Category/show/Category131"
+    },
+    {
+      "code": "infPaS-01a",
+      "title": "Planning and Scheduling",
+      "ects": 6,
+      "category": "elective",
+      "selectionKind": "elective",
+      "sourceUrl": "https://moduldb.informatik.uni-kiel.de/show.cgi?Category/show/Category131"
+    },
+    {
+      "code": "infProRo-01a",
+      "title": "Probabilistic Robotics",
+      "ects": 5,
+      "category": "elective",
+      "selectionKind": "elective",
+      "sourceUrl": "https://moduldb.informatik.uni-kiel.de/show.cgi?Category/show/Category131"
+    },
+    {
+      "code": "infQComp-01a",
+      "title": "Quantum Computing",
+      "ects": 6,
+      "category": "elective",
+      "selectionKind": "elective",
+      "sourceUrl": "https://moduldb.informatik.uni-kiel.de/show.cgi?Category/show/Category131"
+    },
+    {
+      "code": "infSA-01a",
+      "title": "Softwarearchitektur",
+      "ects": 7,
+      "category": "elective",
+      "selectionKind": "elective",
+      "sourceUrl": "https://moduldb.informatik.uni-kiel.de/show.cgi?Category/show/Category131"
+    },
+    {
+      "code": "infSEPVS-01a",
+      "title": "Software Engineering für parallele und verteilte Systeme",
+      "ects": 8,
+      "category": "elective",
+      "selectionKind": "elective",
+      "sourceUrl": "https://moduldb.informatik.uni-kiel.de/show.cgi?Category/show/Category131"
+    },
+    {
+      "code": "infSPAC-01a",
+      "title": "Scheduling Problems: Algorithms and Complexity",
+      "ects": 6,
+      "category": "elective",
+      "selectionKind": "elective",
+      "sourceUrl": "https://moduldb.informatik.uni-kiel.de/show.cgi?Category/show/Category131"
+    },
+    {
+      "code": "infTM-01a",
+      "title": "Text Mining",
+      "ects": 6,
+      "category": "elective",
+      "selectionKind": "elective",
+      "sourceUrl": "https://moduldb.informatik.uni-kiel.de/show.cgi?Category/show/Category131"
+    },
+    {
+      "code": "infTML-01a",
+      "title": "Theory of Machine Learning",
+      "ects": 6,
+      "category": "elective",
+      "selectionKind": "elective",
+      "sourceUrl": "https://moduldb.informatik.uni-kiel.de/show.cgi?Category/show/Category131"
+    },
+    {
+      "code": "infWmWt-01a",
+      "title": "Wissensmanagement und Wissenstechnologien",
+      "ects": 6,
+      "category": "elective",
+      "selectionKind": "elective",
+      "sourceUrl": "https://moduldb.informatik.uni-kiel.de/show.cgi?Category/show/Category131"
+    },
+    {
+      "code": "infWortkomb-01a",
+      "title": "Wortkombinatorik",
+      "ects": 6,
+      "category": "elective",
+      "selectionKind": "elective",
+      "sourceUrl": "https://moduldb.informatik.uni-kiel.de/show.cgi?Category/show/Category131"
+    },
+    {
+      "code": "Inf-Sem-AlgKom",
+      "title": "Bachelorseminar - Algorithmen und Komplexität",
+      "ects": 5,
+      "category": "elective",
+      "selectionKind": "seminar",
+      "sourceUrl": "https://moduldb.informatik.uni-kiel.de/show.cgi?Category/show/Category147"
+    },
+    {
+      "code": "Inf-Sem-Echtz",
+      "title": "Bachelor Seminar - Real-Time / Embedded Systems",
+      "ects": 5,
+      "category": "elective",
+      "selectionKind": "seminar",
+      "sourceUrl": "https://moduldb.informatik.uni-kiel.de/show.cgi?Category/show/Category147"
+    },
+    {
+      "code": "Inf-Sem-FSV",
+      "title": "Bachelorseminar - Formale Softwareverifikation",
+      "ects": 5,
+      "category": "elective",
+      "selectionKind": "seminar",
+      "sourceUrl": "https://moduldb.informatik.uni-kiel.de/show.cgi?Category/show/Category147"
+    },
+    {
+      "code": "inf-wissASem",
+      "title": "Wissenschaftliches Arbeiten",
+      "ects": 2,
+      "category": "elective",
+      "selectionKind": "seminar",
+      "sourceUrl": "https://moduldb.informatik.uni-kiel.de/show.cgi?Category/show/Category147"
+    },
+    {
+      "code": "infBSemAutoUFo-01a",
+      "title": "Bachelorseminar - Automaten und formale Sprachen",
+      "ects": 5,
+      "category": "elective",
+      "selectionKind": "seminar",
+      "sourceUrl": "https://moduldb.informatik.uni-kiel.de/show.cgi?Category/show/Category147"
+    },
+    {
+      "code": "infBSemDHI-01a",
+      "title": "Bachelorseminar - Digital Humanities und Informatik",
+      "ects": 5,
+      "category": "elective",
+      "selectionKind": "seminar",
+      "sourceUrl": "https://moduldb.informatik.uni-kiel.de/show.cgi?Category/show/Category147"
+    },
+    {
+      "code": "infBSemDS-01a",
+      "title": "Bachelor Seminar - Data Science",
+      "ects": 5,
+      "category": "elective",
+      "selectionKind": "seminar",
+      "sourceUrl": "https://moduldb.informatik.uni-kiel.de/show.cgi?Category/show/Category147"
+    },
+    {
+      "code": "infBSemEIK-01a",
+      "title": "Bachelorseminar - Ethik in informatischen Kontexten",
+      "ects": 5,
+      "category": "elective",
+      "selectionKind": "seminar",
+      "sourceUrl": "https://moduldb.informatik.uni-kiel.de/show.cgi?Category/show/Category147"
+    },
+    {
+      "code": "infBSemHO-01a",
+      "title": "Bachelorseminar - Hochleistungsrechnen und Optimierung",
+      "ects": 5,
+      "category": "elective",
+      "selectionKind": "seminar",
+      "sourceUrl": "https://moduldb.informatik.uni-kiel.de/show.cgi?Category/show/Category147"
+    },
+    {
+      "code": "infBSemIMG-02a",
+      "title": "Bachelorseminar - Informatik - Mensch - Gesellschaft",
+      "ects": 5,
+      "category": "elective",
+      "selectionKind": "seminar",
+      "sourceUrl": "https://moduldb.informatik.uni-kiel.de/show.cgi?Category/show/Category147"
+    },
+    {
+      "code": "infBSemIS-01a",
+      "title": "Bachelorseminar - Selbst-organisierte Systeme",
+      "ects": 5,
+      "category": "elective",
+      "selectionKind": "seminar",
+      "sourceUrl": "https://moduldb.informatik.uni-kiel.de/show.cgi?Category/show/Category147"
+    },
+    {
+      "code": "infBSemNS-01a",
+      "title": "Bachelorseminar - Networked and Distributed Systems",
+      "ects": 5,
+      "category": "elective",
+      "selectionKind": "seminar",
+      "sourceUrl": "https://moduldb.informatik.uni-kiel.de/show.cgi?Category/show/Category147"
+    },
+    {
+      "code": "infBSemPS-01a",
+      "title": "Bachelorseminar - Programmierung und Programmiersprachen",
+      "ects": 5,
+      "category": "elective",
+      "selectionKind": "seminar",
+      "sourceUrl": "https://moduldb.informatik.uni-kiel.de/show.cgi?Category/show/Category147"
+    },
+    {
+      "code": "infBSemSE-01a",
+      "title": "Bachelorseminar - Software Engineering",
+      "ects": 5,
+      "category": "elective",
+      "selectionKind": "seminar",
+      "sourceUrl": "https://moduldb.informatik.uni-kiel.de/show.cgi?Category/show/Category147"
+    },
+    {
+      "code": "infBSemSafeML-02a",
+      "title": "Bachelorseminar - Sicherheit und Maschinelles Lernen",
+      "ects": 5,
+      "category": "elective",
+      "selectionKind": "seminar",
+      "sourceUrl": "https://moduldb.informatik.uni-kiel.de/show.cgi?Category/show/Category147"
+    },
+    {
+      "code": "infBSemVerAlg-01a",
+      "title": "Bachelorseminar - Verteilte Algorithmen",
+      "ects": 5,
+      "category": "elective",
+      "selectionKind": "seminar",
+      "sourceUrl": "https://moduldb.informatik.uni-kiel.de/show.cgi?Category/show/Category147"
+    },
+    {
+      "code": "infBSemZsnN-01a",
+      "title": "Bachelorseminar - Zeitreihenvorhersagen mit sequentiellen neuronalen Netzwerken",
+      "ects": 5,
+      "category": "elective",
+      "selectionKind": "seminar",
+      "sourceUrl": "https://moduldb.informatik.uni-kiel.de/show.cgi?Category/show/Category147"
+    }
+  ]
+}

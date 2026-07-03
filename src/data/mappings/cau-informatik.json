@@ -1,0 +1,22 @@
+{
+  "infEInf-02a": { "title": "Einführung in die Informatik", "semester": 1, "category": "mandatory", "ects": 10 },
+  "Inf-CompSys": { "title": "Computersysteme", "semester": 1, "category": "mandatory", "ects": 8 },
+  "Inf-Math-A": { "title": "Mathematik für die Informatik A", "semester": 1, "category": "mandatory", "ects": 8 },
+  "infST-01a": { "title": "Softwaretechnik", "semester": 4, "category": "mandatory", "ects": 7 },
+  "infDB-01a": { "title": "Database Systems", "semester": 4, "category": "mandatory", "ects": 5 },
+  "infEAlg-01a": { "title": "Einführung in die Algorithmik", "semester": 2, "category": "mandatory", "ects": 7 },
+  "Inf-Math-B": { "title": "Mathematik für die Informatik B", "semester": 2, "category": "mandatory", "ects": 8 },
+  "infDP-01a": { "title": "Deklarative Programmierung", "semester": 3, "category": "mandatory", "ects": 7 },
+  "infOS-01a": { "title": "Operating Systems", "semester": 3, "category": "mandatory", "ects": 7 },
+  "Inf-Math-C": { "title": "Mathematik für die Informatik C", "semester": 3, "category": "mandatory", "ects": 8 },
+  "infBL-01a": { "title": "Berechnungen und Logik", "semester": 3, "category": "mandatory", "ects": 8 },
+  "infProgOO-01a": { "title": "Objektorientierte Programmierung", "semester": 2, "category": "mandatory", "ects": 6 },
+  "infCN-01a": { "title": "Computer Networks", "semester": 2, "category": "mandatory", "ects": 7 },
+  "infEthik-01a": { "title": "Ethik in der Informatik", "semester": 4, "category": "mandatory", "ects": 2 },
+  "Inf-SP": { "title": "Softwareprojekt", "semester": 4, "category": "mandatory", "ects": 6 },
+  "inf-wissArb": { "title": "Wissenschaftliches Arbeiten", "semester": 4, "category": "mandatory", "ects": 2 },
+  "infAAK-01a": { "title": "Analyse von Algorithmen und Komplexität", "semester": 4, "category": "mandatory", "ects": 8 },
+  "infDaSci-01a": { "title": "Data Science", "semester": 5, "category": "mandatory", "ects": 5 },
+  "infDSProj-01a": { "title": "Data Science Projekt", "semester": 5, "category": "elective", "ects": 6 },
+  "infIoT-01a": { "title": "Internet of Things and Wireless Networks", "semester": 4, "category": "elective", "ects": 8 }
+}

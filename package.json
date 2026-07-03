@@ -1,0 +1,27 @@
+{
+  "name": "univis-planner",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit -p tsconfig.app.json && vite build",
+    "test": "vitest run",
+    "data:update": "node scripts/update-active-terms.mjs && node scripts/fetch-moduldb-electives.mjs"
+  },
+  "dependencies": {
+    "@vitejs/plugin-vue": "latest",
+    "pinia": "latest",
+    "vite": "latest",
+    "vue": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "@vue/test-utils": "^2.4.11",
+    "fast-xml-parser": "^5.9.3",
+    "jsdom": "^29.1.1",
+    "typescript": "latest",
+    "vitest": "latest",
+    "vue-tsc": "latest"
+  }
+}
