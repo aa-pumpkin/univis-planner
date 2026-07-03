@@ -39,3 +39,9 @@ Die Daten stammen aus den öffentlich zugänglichen Seiten von UnivIS und der CA
 ## Unterstützen
 
 Wenn dir das Projekt Zeit spart, kannst du dem Repository einen Stern geben. Eine freiwillige Unterstützung ist über [DonationAlerts](https://www.donationalerts.com/r/pumpkin_aa) möglich.
+
+## Lizenz
+
+Der Programmcode steht unter der [GNU AGPL v3 oder neuer](LICENSE). Wer eine veränderte Version öffentlich oder als Webdienst bereitstellt, muss den zugehörigen Quellcode ebenfalls unter dieser Lizenz verfügbar machen.
+
+Die importierten Veranstaltungsdaten in `public/data/` stammen aus öffentlichen CAU-Quellen. Rechte an diesen Daten, Namen und Marken werden durch die Projektlizenz nicht beansprucht.
