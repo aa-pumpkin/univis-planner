@@ -8,7 +8,7 @@
     "dev": "vite",
     "build": "vue-tsc --noEmit -p tsconfig.app.json && vite build",
     "test": "vitest run",
-    "data:update": "node scripts/update-active-terms.mjs && node scripts/fetch-moduldb-electives.mjs"
+    "data:update": "node scripts/update-univis-data.mjs"
   },
   "dependencies": {
     "@vitejs/plugin-vue": "latest",

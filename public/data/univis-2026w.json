@@ -1,17 +1,86 @@
 {
   "schemaVersion": 1,
   "semester": "2026w",
-  "fetchedAt": "2026-07-05T06:51:50.701Z",
-  "sourceUrl": "https://univis.uni-kiel.de/prg?search=lectures&department=080110000&show=xml&sem=2026w",
+  "fetchedAt": "2026-07-05T12:15:12.964Z",
+  "sourceUrl": "https://univis.uni-kiel.de",
   "department": {
-    "id": "080110000",
-    "name": "Institut für Informatik"
+    "id": "multi",
+    "name": "Informatik + Nebenfach search imports"
   },
   "stats": {
-    "courses": 460,
-    "people": 94,
-    "rooms": 36
+    "courses": 627,
+    "people": 189,
+    "rooms": 72
   },
+  "sources": [
+    "Institut für Informatik",
+    "Mathematik für die Informatik A",
+    "Mathematik für die Informatik B",
+    "Mathematik für die Informatik C",
+    "BWL: BWL-EinfBWL",
+    "BWL: Einführung in die Betriebswirtschaftslehre",
+    "BWL: BWL-ERW",
+    "BWL: Externes Rechnungswesen",
+    "BWL: BWL-ER",
+    "BWL: Entscheidungsrechnungen",
+    "BWL: Decision Analysis I",
+    "BWL: Decision Analysis II",
+    "BWL: Produktion und Logistik",
+    "BWL: Marketing",
+    "BWL: Business Analytics",
+    "BWL: Controlling",
+    "BWL: Internationale Rechnungslegung",
+    "BWL: Grundlagen der Kapitalmarkttheorie",
+    "BWL: Unternehmensbesteuerung",
+    "BWL: Service Process Modeling",
+    "BWL: Operations Research",
+    "BWL: Organisationsgestaltung",
+    "BWL: Projektmanagement",
+    "BWL: Leadership in Organizations",
+    "BWL: Human Resource Management",
+    "BWL: Grundlagen des Entrepreneurship",
+    "BWL: Innovationsmanagement",
+    "ET: etit1001-01a",
+    "ET: Grundgebiete der Elektrotechnik I",
+    "ET: etit1003-01a",
+    "ET: Grundgebiete der Elektrotechnik II",
+    "ET: etit0008-01a",
+    "ET: Theoretische Grundlagen der Informationstechnik",
+    "ET: etit0002-01a",
+    "ET: Signale und Systeme I",
+    "ET: etit1004-01a",
+    "ET: Grundlagen der Schaltungstechnik",
+    "ET: etit0004-01a",
+    "ET: Elektrische Energietechnik",
+    "Mathe: math-linalg1.1",
+    "Mathe: Lineare Algebra I",
+    "Mathe: math-linalg2.1",
+    "Mathe: Lineare Algebra II",
+    "Mathe: math-an1.1",
+    "Mathe: Analysis I",
+    "Mathe: math-an2.1",
+    "Mathe: Analysis II",
+    "Mathe: Einführung in die numerische Mathematik",
+    "Recht: BWL-JuOeff",
+    "Recht: Einführung in das öffentliche Recht",
+    "Recht: BWL-JuPriv",
+    "Recht: Privatrecht",
+    "Recht: Inf-InfRecht",
+    "Recht: Informatikrecht",
+    "Recht: Inf-DatSchutz",
+    "Recht: Datenschutz",
+    "Recht: Urheberrecht",
+    "VWL: VWL-EVWL",
+    "VWL: Einführung in die Volkswirtschaftslehre",
+    "VWL: VWLvwlMikro1-01a",
+    "VWL: Grundzüge der mikroökonomischen Theorie I",
+    "VWL: VWLvwlMikro2-01a",
+    "VWL: Grundzüge der mikroökonomischen Theorie II",
+    "VWL: VWLvwlMakro1-01a",
+    "VWL: Grundzüge der makroökonomischen Theorie I",
+    "VWL: VWLvwlMakro2-01a",
+    "VWL: Grundzüge der makroökonomischen Theorie II"
+  ],
   "courses": [
     {
       "sourceId": "42642484",
@@ -10088,31 +10157,6 @@
       ]
     },
     {
-      "sourceId": "42277156",
-      "sourceKey": "Lecture.wirtsc.instit_5.lehrst.bungzu_36",
-      "title": "Übung: \"Statistische Methoden (VWL-STATWX) BA (Studienkolleg BWL)\"",
-      "shortTitle": "",
-      "number": "030316",
-      "type": "exercise",
-      "rawType": "UE",
-      "lecturers": [],
-      "parentKey": "",
-      "organisation": "Statistik",
-      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.wirtsc.instit_5.lehrst.bungzu_36",
-      "dates": [
-        {
-          "weekday": 3,
-          "startTime": "10:15",
-          "endTime": "11:45",
-          "startDate": "2026-10-28",
-          "endDate": "2027-02-03",
-          "repeat": "w1 3",
-          "excludedDates": [],
-          "room": "Raum offen"
-        }
-      ]
-    },
-    {
       "sourceId": "42406959",
       "sourceKey": "Lecture.wirtsc.instit_5.lehrst.bungzu_1",
       "title": "Übung: \"Statistische Methoden (VWL-STATWX) BA (Studienkolleg BWL)\"",
@@ -10138,6 +10182,31 @@
       ]
     },
     {
+      "sourceId": "42277156",
+      "sourceKey": "Lecture.wirtsc.instit_5.lehrst.bungzu_36",
+      "title": "Übung: \"Statistische Methoden (VWL-STATWX) BA (Studienkolleg BWL)\"",
+      "shortTitle": "",
+      "number": "030316",
+      "type": "exercise",
+      "rawType": "UE",
+      "lecturers": [],
+      "parentKey": "",
+      "organisation": "Statistik",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.wirtsc.instit_5.lehrst.bungzu_36",
+      "dates": [
+        {
+          "weekday": 3,
+          "startTime": "10:15",
+          "endTime": "11:45",
+          "startDate": "2026-10-28",
+          "endDate": "2027-02-03",
+          "repeat": "w1 3",
+          "excludedDates": [],
+          "room": "Raum offen"
+        }
+      ]
+    },
+    {
       "sourceId": "42679380",
       "sourceKey": "Lecture.techn.infor.zentr._bungz",
       "title": "Übung zu Externes Rechnungswesen (BWL-ERW-UE)",
@@ -10152,33 +10221,6 @@
       "organisation": "Institut für Informatik",
       "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.techn.infor.zentr._bungz",
       "dates": []
-    },
-    {
-      "sourceId": "42156499",
-      "sourceKey": "Lecture.wirtsc.instit_3.studie.bungzu_6",
-      "title": "Übung zu Externes Rechnungswesen (BWL-ERW-UE)",
-      "shortTitle": "ERW UE",
-      "number": "030021",
-      "type": "exercise",
-      "rawType": "UE",
-      "lecturers": [
-        "Henning Drews"
-      ],
-      "parentKey": "",
-      "organisation": "Studienkolleg Betriebswirtschaftslehre",
-      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.wirtsc.instit_3.studie.bungzu_6",
-      "dates": [
-        {
-          "weekday": 5,
-          "startTime": "12:15",
-          "endTime": "13:45",
-          "startDate": "2026-10-23",
-          "endDate": "2027-02-05",
-          "repeat": "w1 5",
-          "excludedDates": [],
-          "room": "Raum offen"
-        }
-      ]
     },
     {
       "sourceId": "42155996",
@@ -10199,6 +10241,33 @@
           "weekday": 5,
           "startTime": "10:15",
           "endTime": "11:45",
+          "startDate": "2026-10-23",
+          "endDate": "2027-02-05",
+          "repeat": "w1 5",
+          "excludedDates": [],
+          "room": "Raum offen"
+        }
+      ]
+    },
+    {
+      "sourceId": "42156499",
+      "sourceKey": "Lecture.wirtsc.instit_3.studie.bungzu_6",
+      "title": "Übung zu Externes Rechnungswesen (BWL-ERW-UE)",
+      "shortTitle": "ERW UE",
+      "number": "030021",
+      "type": "exercise",
+      "rawType": "UE",
+      "lecturers": [
+        "Henning Drews"
+      ],
+      "parentKey": "",
+      "organisation": "Studienkolleg Betriebswirtschaftslehre",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.wirtsc.instit_3.studie.bungzu_6",
+      "dates": [
+        {
+          "weekday": 5,
+          "startTime": "12:15",
+          "endTime": "13:45",
           "startDate": "2026-10-23",
           "endDate": "2027-02-05",
           "repeat": "w1 5",
@@ -10321,31 +10390,6 @@
       ]
     },
     {
-      "sourceId": "42547665",
-      "sourceKey": "Lecture.wirtsc.instit.mikrok.bungzu_4",
-      "title": "Übung zur Einführung in die Volkswirtschaftslehre (VWL-EVWL / VWL-EVWL-MIKRO / VWL-EVWL-MAKRO) BA",
-      "shortTitle": "",
-      "number": "030071",
-      "type": "exercise",
-      "rawType": "UE",
-      "lecturers": [],
-      "parentKey": "",
-      "organisation": "Arbeits- und Migrationsökonomik",
-      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.wirtsc.instit.mikrok.bungzu_4",
-      "dates": [
-        {
-          "weekday": 2,
-          "startTime": "12:15",
-          "endTime": "13:45",
-          "startDate": "2026-10-27",
-          "endDate": "2027-02-02",
-          "repeat": "w1 2",
-          "excludedDates": [],
-          "room": "Raum offen"
-        }
-      ]
-    },
-    {
       "sourceId": "42434197",
       "sourceKey": "Lecture.wirtsc.instit.mikrok.bungzu_74",
       "title": "Übung zur Einführung in die Volkswirtschaftslehre (VWL-EVWL / VWL-EVWL-MIKRO / VWL-EVWL-MAKRO) BA",
@@ -10357,6 +10401,31 @@
       "parentKey": "",
       "organisation": "Arbeits- und Migrationsökonomik",
       "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.wirtsc.instit.mikrok.bungzu_74",
+      "dates": [
+        {
+          "weekday": 4,
+          "startTime": "12:15",
+          "endTime": "13:45",
+          "startDate": "2026-10-29",
+          "endDate": "2027-02-04",
+          "repeat": "w1 4",
+          "excludedDates": [],
+          "room": "WSP1 - R.401"
+        }
+      ]
+    },
+    {
+      "sourceId": "42547665",
+      "sourceKey": "Lecture.wirtsc.instit.mikrok.bungzu_4",
+      "title": "Übung zur Einführung in die Volkswirtschaftslehre (VWL-EVWL / VWL-EVWL-MIKRO / VWL-EVWL-MAKRO) BA",
+      "shortTitle": "",
+      "number": "030071",
+      "type": "exercise",
+      "rawType": "UE",
+      "lecturers": [],
+      "parentKey": "",
+      "organisation": "Arbeits- und Migrationsökonomik",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.wirtsc.instit.mikrok.bungzu_4",
       "dates": [
         {
           "weekday": 4,
@@ -10858,6 +10927,33 @@
       "dates": []
     },
     {
+      "sourceId": "42538994",
+      "sourceKey": "Lecture.mathe.mathem.arbeit_4.tutori_1",
+      "title": "Übung zu Mathematik für die Informatik C",
+      "shortTitle": "ÜMathInfC",
+      "number": "060046",
+      "type": "exercise",
+      "rawType": "UE",
+      "lecturers": [
+        "Dr. Lasse Kliemann"
+      ],
+      "parentKey": "",
+      "organisation": "Numerik und Optimierung",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.mathe.mathem.arbeit_4.tutori_1",
+      "dates": [
+        {
+          "weekday": 2,
+          "startTime": "10:15",
+          "endTime": "11:45",
+          "startDate": "2026-10-27",
+          "endDate": "2027-02-02",
+          "repeat": "w1 2",
+          "excludedDates": [],
+          "room": "HHP6 - R.EG.002"
+        }
+      ]
+    },
+    {
       "sourceId": "42567861",
       "sourceKey": "Lecture.mathe.mathem.arbeit_4.tutori_4",
       "title": "Übung zu Mathematik für die Informatik C",
@@ -10908,33 +11004,6 @@
           "repeat": "w1 1",
           "excludedDates": [],
           "room": "HHP6 - R.EG.003"
-        }
-      ]
-    },
-    {
-      "sourceId": "42538994",
-      "sourceKey": "Lecture.mathe.mathem.arbeit_4.tutori_1",
-      "title": "Übung zu Mathematik für die Informatik C",
-      "shortTitle": "ÜMathInfC",
-      "number": "060046",
-      "type": "exercise",
-      "rawType": "UE",
-      "lecturers": [
-        "Dr. Lasse Kliemann"
-      ],
-      "parentKey": "",
-      "organisation": "Numerik und Optimierung",
-      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.mathe.mathem.arbeit_4.tutori_1",
-      "dates": [
-        {
-          "weekday": 2,
-          "startTime": "10:15",
-          "endTime": "11:45",
-          "startDate": "2026-10-27",
-          "endDate": "2027-02-02",
-          "repeat": "w1 2",
-          "excludedDates": [],
-          "room": "HHP6 - R.EG.002"
         }
       ]
     },
@@ -12776,183 +12845,3314 @@
       ]
     },
     {
-      "sourceId": "42178749",
-      "sourceKey": "Lecture.mathe.mathem.arbeit_4.bungzu",
-      "title": "Übung zu Mathematik für die Informatik A (2F)",
-      "shortTitle": "Ü:infMathA2F-01",
-      "number": "060574",
-      "type": "exercise",
-      "rawType": "UE",
-      "lecturers": [
-        "Dr. Barbara Langfeld"
-      ],
-      "parentKey": "Lecture.mathe.mathem.arbeit_4.infmat",
-      "organisation": "Numerik und Optimierung",
-      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.mathe.mathem.arbeit_4.bungzu",
-      "dates": []
-    },
-    {
-      "sourceId": "42190342",
-      "sourceKey": "Lecture.mathe.mathem.arbeit_4.infmat",
-      "title": "infMathA2F-01a: Mathematik für die Informatik A (2F)",
-      "shortTitle": "infMathA2F-01",
-      "number": "060577",
+      "sourceId": "42146706",
+      "sourceKey": "Lecture.techn.mater.zentr._einfh",
+      "title": "Einführung in die Betriebswirtschaftslehre (W-X) (BWL-EinfBWL)",
+      "shortTitle": "EBWL",
+      "number": "030225",
       "type": "lecture",
       "rawType": "V",
       "lecturers": [
-        "Dr. Barbara Langfeld"
+        "Prof. Dr. Achim Walter",
+        "Carolin Lielienthal",
+        "Alexander Dobers-Tarasevich"
       ],
       "parentKey": "",
-      "organisation": "Numerik und Optimierung",
-      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.mathe.mathem.arbeit_4.infmat",
-      "dates": []
-    },
-    {
-      "sourceId": "42112939",
-      "sourceKey": "Lecture.mathe.mathem.arbeit_4.perlet",
-      "title": "Tutorien für Übungsaufgaben (LuL) zur Mathematik für die Informatik A",
-      "shortTitle": "TutÜMathInfA",
-      "number": "060083",
-      "type": "tutorial",
-      "rawType": "TU",
-      "lecturers": [
-        "Dr. Alexander Ullmann"
-      ],
-      "parentKey": "Lecture.mathe.mathem.arbeit_4.vmathi",
-      "organisation": "Numerik und Optimierung",
-      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.mathe.mathem.arbeit_4.perlet",
+      "organisation": "Institut für Materialwissenschaft",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.techn.mater.zentr._einfh",
       "dates": [
         {
           "weekday": 2,
-          "startTime": "12:00",
-          "endTime": "18:00",
+          "startTime": "12:15",
+          "endTime": "13:45",
           "startDate": "2026-10-20",
-          "endDate": "2027-02-02",
+          "endDate": "2027-02-07",
           "repeat": "w1 2",
           "excludedDates": [],
-          "room": "LMS4 - R.325"
-        },
-        {
-          "weekday": 1,
-          "startTime": "16:00",
-          "endTime": "18:00",
-          "startDate": "2026-10-19",
-          "endDate": "2027-02-02",
-          "repeat": "w1 1",
-          "excludedDates": [],
-          "room": "LMS4 - R.424"
+          "room": "Raum offen"
         }
       ]
     },
     {
-      "sourceId": "42652268",
-      "sourceKey": "Lecture.zentra_1.servic.studiu.intern.refera_4._bungz_9",
-      "title": "Übung zu Mathematik für die Informatik A (2F)",
-      "shortTitle": "Ü:infMathA2F-01",
-      "number": "060574",
-      "type": "exercise",
-      "rawType": "UE",
-      "lecturers": [
-        "Dr. Barbara Langfeld"
-      ],
-      "parentKey": "",
-      "organisation": "Referat Studium und Praktikum im Ausland, Koordination ERASMUS",
-      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.zentra_1.servic.studiu.intern.refera_4._bungz_9",
-      "dates": []
-    },
-    {
-      "sourceId": "42633717",
-      "sourceKey": "Lecture.zentra_1.servic.studiu.intern.refera_4._infma",
-      "title": "infMathA2F-01a: Mathematik für die Informatik A (2F)",
-      "shortTitle": "infMathA2F-01",
-      "number": "060577",
+      "sourceId": "42642466",
+      "sourceKey": "Lecture.techn.elekt.zentr._einfh_9",
+      "title": "Einführung in die Betriebswirtschaftslehre (W-X) (BWL-EinfBWL)",
+      "shortTitle": "EBWL",
+      "number": "030225",
       "type": "lecture",
       "rawType": "V",
       "lecturers": [
-        "Dr. Barbara Langfeld"
+        "Prof. Dr. Achim Walter",
+        "Carolin Lielienthal",
+        "Alexander Dobers-Tarasevich"
       ],
       "parentKey": "",
-      "organisation": "Referat Studium und Praktikum im Ausland, Koordination ERASMUS",
-      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.zentra_1.servic.studiu.intern.refera_4._infma",
-      "dates": []
+      "organisation": "Institut für Elektrotechnik und Informationstechnik",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.techn.elekt.zentr._einfh_9",
+      "dates": [
+        {
+          "weekday": 2,
+          "startTime": "12:15",
+          "endTime": "13:45",
+          "startDate": "2026-10-20",
+          "endDate": "2027-02-07",
+          "repeat": "w1 2",
+          "excludedDates": [],
+          "room": "Raum offen"
+        }
+      ]
     },
     {
-      "sourceId": "42629970",
-      "sourceKey": "Lecture.zentra_1.servic.studiu.intern.refera_4._mathi",
-      "title": "Übung zu Mathematik für die Informatik A",
-      "shortTitle": "Ü:MathInfA",
+      "sourceId": "42688075",
+      "sourceKey": "Lecture.techn.elekt.zentr._bungz_6",
+      "title": "Übung zu Externes Rechnungswesen (BWL-ERW-UE)",
+      "shortTitle": "ERW UE",
       "number": "",
       "type": "exercise",
       "rawType": "UE",
       "lecturers": [
-        "Dr. Barbara Langfeld"
+        "Henning Drews"
       ],
       "parentKey": "",
-      "organisation": "Referat Studium und Praktikum im Ausland, Koordination ERASMUS",
-      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.zentra_1.servic.studiu.intern.refera_4._mathi",
+      "organisation": "Institut für Elektrotechnik und Informationstechnik",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.techn.elekt.zentr._bungz_6",
       "dates": []
     },
     {
-      "sourceId": "42684539",
-      "sourceKey": "Lecture.zentra_1.servic.studiu.intern.refera_4._perle_0",
-      "title": "Tutorien für Übungsaufgaben (LuL) zur Mathematik für die Informatik A",
-      "shortTitle": "TutÜMathInfA",
-      "number": "060083",
-      "type": "tutorial",
-      "rawType": "TU",
+      "sourceId": "42652909",
+      "sourceKey": "Lecture.techn.mater.zentr._bungz_44",
+      "title": "Übung zu Externes Rechnungswesen (BWL-ERW-UE)",
+      "shortTitle": "ERW UE",
+      "number": "",
+      "type": "exercise",
+      "rawType": "UE",
       "lecturers": [
-        "Dr. Alexander Ullmann"
+        "Henning Drews"
       ],
       "parentKey": "",
-      "organisation": "Referat Studium und Praktikum im Ausland, Koordination ERASMUS",
-      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.zentra_1.servic.studiu.intern.refera_4._perle_0",
+      "organisation": "Institut für Materialwissenschaft",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.techn.mater.zentr._bungz_44",
+      "dates": []
+    },
+    {
+      "sourceId": "42602122",
+      "sourceKey": "Lecture.techn.mater.zentr._exter",
+      "title": "Externes Rechnungswesen (W-X) (BWL-ERW)",
+      "shortTitle": "ERW",
+      "number": "030012",
+      "type": "lecture",
+      "rawType": "V",
+      "lecturers": [
+        "Henning Drews"
+      ],
+      "parentKey": "",
+      "organisation": "Institut für Materialwissenschaft",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.techn.mater.zentr._exter",
+      "dates": [
+        {
+          "weekday": 4,
+          "startTime": "12:15",
+          "endTime": "13:45",
+          "startDate": "2026-10-22",
+          "endDate": "2027-02-04",
+          "repeat": "w1 4",
+          "excludedDates": [],
+          "room": "Raum offen"
+        }
+      ]
+    },
+    {
+      "sourceId": "42641305",
+      "sourceKey": "Lecture.techn.elekt.zentr._exter",
+      "title": "Externes Rechnungswesen (W-X) (BWL-ERW)",
+      "shortTitle": "ERW",
+      "number": "030012",
+      "type": "lecture",
+      "rawType": "V",
+      "lecturers": [
+        "Henning Drews"
+      ],
+      "parentKey": "",
+      "organisation": "Institut für Elektrotechnik und Informationstechnik",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.techn.elekt.zentr._exter",
+      "dates": [
+        {
+          "weekday": 4,
+          "startTime": "12:15",
+          "endTime": "13:45",
+          "startDate": "2026-10-22",
+          "endDate": "2027-02-04",
+          "repeat": "w1 4",
+          "excludedDates": [],
+          "room": "Raum offen"
+        }
+      ]
+    },
+    {
+      "sourceId": "41129554",
+      "sourceKey": "Lecture.wirtsc.instit_6.zentr.ent",
+      "title": "Übung zu \"Decision Analysis I (BWL-Ent)\"",
+      "shortTitle": "",
+      "number": "",
+      "type": "exercise",
+      "rawType": "UE",
+      "lecturers": [
+        "Prof. Dr. Alexander Klos"
+      ],
+      "parentKey": "Lecture.wirtsc.instit_6.zentr.ratent",
+      "organisation": "Institut für Quantitative Betriebs- und Volkswirtschaftliche Forschung (QBER)",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.wirtsc.instit_6.zentr.ent",
+      "dates": []
+    },
+    {
+      "sourceId": "42583736",
+      "sourceKey": "Lecture.wirtsc.instit_6.zentr.ent_7",
+      "title": "Übung zu \"Decision Analysis I (BWL-Ent)\"",
+      "shortTitle": "",
+      "number": "030028",
+      "type": "exercise",
+      "rawType": "UE",
+      "lecturers": [
+        "Niklas Reinhardt"
+      ],
+      "parentKey": "",
+      "organisation": "Institut für Quantitative Betriebs- und Volkswirtschaftliche Forschung (QBER)",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.wirtsc.instit_6.zentr.ent_7",
       "dates": [
         {
           "weekday": 2,
-          "startTime": "12:00",
-          "endTime": "18:00",
+          "startTime": "14:15",
+          "endTime": "15:45",
+          "startDate": "2026-12-08",
+          "endDate": "2027-02-02",
+          "repeat": "w1 2",
+          "excludedDates": [],
+          "room": "Raum offen"
+        }
+      ]
+    },
+    {
+      "sourceId": "42537038",
+      "sourceKey": "Lecture.wirtsc.instit_6.zentr.ent_6",
+      "title": "Übung zu \"Decision Analysis I (BWL-Ent)\"",
+      "shortTitle": "",
+      "number": "030025",
+      "type": "exercise",
+      "rawType": "UE",
+      "lecturers": [
+        "Niklas Reinhardt"
+      ],
+      "parentKey": "",
+      "organisation": "Institut für Quantitative Betriebs- und Volkswirtschaftliche Forschung (QBER)",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.wirtsc.instit_6.zentr.ent_6",
+      "dates": [
+        {
+          "weekday": 2,
+          "startTime": "12:15",
+          "endTime": "13:45",
+          "startDate": "2026-12-08",
+          "endDate": "2027-02-02",
+          "repeat": "w1 2",
+          "excludedDates": [],
+          "room": "Raum offen"
+        }
+      ]
+    },
+    {
+      "sourceId": "42535354",
+      "sourceKey": "Lecture.wirtsc.instit_6.zentr.ent_68",
+      "title": "Übung zu \"Decision Analysis I (BWL-Ent)\"",
+      "shortTitle": "",
+      "number": "030026",
+      "type": "exercise",
+      "rawType": "UE",
+      "lecturers": [
+        "Niklas Reinhardt"
+      ],
+      "parentKey": "",
+      "organisation": "Institut für Quantitative Betriebs- und Volkswirtschaftliche Forschung (QBER)",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.wirtsc.instit_6.zentr.ent_68",
+      "dates": [
+        {
+          "weekday": 3,
+          "startTime": "12:15",
+          "endTime": "13:45",
+          "startDate": "2026-12-09",
+          "endDate": "2027-02-03",
+          "repeat": "w1 3",
+          "excludedDates": [],
+          "room": "Raum offen"
+        }
+      ]
+    },
+    {
+      "sourceId": "21164537",
+      "sourceKey": "Lecture.wirtsc.instit_6.zentr.ratent",
+      "title": "Decision Analysis I (BWL-Ent)",
+      "shortTitle": "",
+      "number": "030131",
+      "type": "lecture",
+      "rawType": "V-UE",
+      "lecturers": [
+        "Prof. Dr. Alexander Klos"
+      ],
+      "parentKey": "",
+      "organisation": "Institut für Quantitative Betriebs- und Volkswirtschaftliche Forschung (QBER)",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.wirtsc.instit_6.zentr.ratent",
+      "dates": [
+        {
+          "weekday": 5,
+          "startTime": "12:15",
+          "endTime": "13:45",
+          "startDate": "2026-10-23",
+          "endDate": "2027-02-05",
+          "repeat": "w1 5",
+          "excludedDates": [],
+          "room": "Raum offen"
+        }
+      ]
+    },
+    {
+      "sourceId": "42653063",
+      "sourceKey": "Lecture.wirtsc.instit.zentr._bungz_1",
+      "title": "Übung zu \"Decision Analysis I (BWL-Ent)\"",
+      "shortTitle": "",
+      "number": "",
+      "type": "exercise",
+      "rawType": "UE",
+      "lecturers": [
+        "Prof. Dr. Alexander Klos"
+      ],
+      "parentKey": "",
+      "organisation": "Institut für Volkswirtschaftslehre",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.wirtsc.instit.zentr._bungz_1",
+      "dates": []
+    },
+    {
+      "sourceId": "42254870",
+      "sourceKey": "Lecture.techn.mater.zentr._bungz",
+      "title": "Übung zu \"Decision Analysis I (BWL-Ent)\"",
+      "shortTitle": "",
+      "number": "",
+      "type": "exercise",
+      "rawType": "UE",
+      "lecturers": [
+        "Prof. Dr. Alexander Klos"
+      ],
+      "parentKey": "",
+      "organisation": "Institut für Materialwissenschaft",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.techn.mater.zentr._bungz",
+      "dates": []
+    },
+    {
+      "sourceId": "42249523",
+      "sourceKey": "Lecture.techn.mater.zentr._decis",
+      "title": "Decision Analysis I (BWL-Ent)",
+      "shortTitle": "",
+      "number": "030131",
+      "type": "lecture",
+      "rawType": "V-UE",
+      "lecturers": [
+        "Prof. Dr. Alexander Klos"
+      ],
+      "parentKey": "",
+      "organisation": "Institut für Materialwissenschaft",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.techn.mater.zentr._decis",
+      "dates": [
+        {
+          "weekday": 5,
+          "startTime": "12:15",
+          "endTime": "13:45",
+          "startDate": "2026-10-23",
+          "endDate": "2027-02-05",
+          "repeat": "w1 5",
+          "excludedDates": [],
+          "room": "Raum offen"
+        }
+      ]
+    },
+    {
+      "sourceId": "42675398",
+      "sourceKey": "Lecture.wirtsc.instit.zentr._decis",
+      "title": "Decision Analysis I (BWL-Ent)",
+      "shortTitle": "",
+      "number": "030131",
+      "type": "lecture",
+      "rawType": "V-UE",
+      "lecturers": [
+        "Prof. Dr. Alexander Klos"
+      ],
+      "parentKey": "",
+      "organisation": "Institut für Volkswirtschaftslehre",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.wirtsc.instit.zentr._decis",
+      "dates": [
+        {
+          "weekday": 5,
+          "startTime": "12:15",
+          "endTime": "13:45",
+          "startDate": "2026-10-23",
+          "endDate": "2027-02-05",
+          "repeat": "w1 5",
+          "excludedDates": [],
+          "room": "Raum offen"
+        }
+      ]
+    },
+    {
+      "sourceId": "21012899",
+      "sourceKey": "Lecture.wirtsc.instit_3.lehrst_2.opma",
+      "title": "Produktion und Logistik (BWL-ProdLog)",
+      "shortTitle": "",
+      "number": "030128",
+      "type": "lecture",
+      "rawType": "V",
+      "lecturers": [
+        "Prof. Dr. Frank Meisel"
+      ],
+      "parentKey": "",
+      "organisation": "Supply Chain Management",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.wirtsc.instit_3.lehrst_2.opma",
+      "dates": []
+    },
+    {
+      "sourceId": "21538452",
+      "sourceKey": "Lecture.wirtsc.instit_3.lehrst_2.prodlo",
+      "title": "Übung zu \"Produktion und Logistik\"",
+      "shortTitle": "",
+      "number": "",
+      "type": "exercise",
+      "rawType": "UE",
+      "lecturers": [
+        "Prof. Dr. Frank Meisel",
+        "durch",
+        "M.Sc. Barbara Himstedt",
+        "M.Sc. Jan Simon Bischoff"
+      ],
+      "parentKey": "Lecture.wirtsc.instit_3.lehrst_2.opma",
+      "organisation": "Supply Chain Management",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.wirtsc.instit_3.lehrst_2.prodlo",
+      "dates": []
+    },
+    {
+      "sourceId": "42574241",
+      "sourceKey": "Lecture.wirtsc.instit_3.lehrst_2.prodlo_5",
+      "title": "Übung zu \"Produktion und Logistik\"",
+      "shortTitle": "",
+      "number": "030141",
+      "type": "exercise",
+      "rawType": "UE",
+      "lecturers": [
+        "Prof. Dr. Frank Meisel",
+        "durch",
+        "M.Sc. Barbara Himstedt",
+        "M.Sc. Jan Simon Bischoff"
+      ],
+      "parentKey": "",
+      "organisation": "Supply Chain Management",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.wirtsc.instit_3.lehrst_2.prodlo_5",
+      "dates": []
+    },
+    {
+      "sourceId": "42613932",
+      "sourceKey": "Lecture.wirtsc.instit_3.lehrst_2.prodlo_0",
+      "title": "Übung zu \"Produktion und Logistik\"",
+      "shortTitle": "",
+      "number": "030092",
+      "type": "exercise",
+      "rawType": "UE",
+      "lecturers": [
+        "Prof. Dr. Frank Meisel",
+        "durch",
+        "M.Sc. Barbara Himstedt",
+        "M.Sc. Jan Simon Bischoff"
+      ],
+      "parentKey": "",
+      "organisation": "Supply Chain Management",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.wirtsc.instit_3.lehrst_2.prodlo_0",
+      "dates": []
+    },
+    {
+      "sourceId": "42240099",
+      "sourceKey": "Lecture.techn.mater.zentr._produ",
+      "title": "Produktion und Logistik (BWL-ProdLog)",
+      "shortTitle": "",
+      "number": "030128",
+      "type": "lecture",
+      "rawType": "V",
+      "lecturers": [
+        "Prof. Dr. Frank Meisel"
+      ],
+      "parentKey": "",
+      "organisation": "Institut für Materialwissenschaft",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.techn.mater.zentr._produ",
+      "dates": []
+    },
+    {
+      "sourceId": "42698939",
+      "sourceKey": "Lecture.wirtsc.instit.zentr._produ",
+      "title": "Produktion und Logistik (BWL-ProdLog)",
+      "shortTitle": "",
+      "number": "030128",
+      "type": "lecture",
+      "rawType": "V",
+      "lecturers": [
+        "Prof. Dr. Frank Meisel"
+      ],
+      "parentKey": "",
+      "organisation": "Institut für Volkswirtschaftslehre",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.wirtsc.instit.zentr._produ",
+      "dates": []
+    },
+    {
+      "sourceId": "42675892",
+      "sourceKey": "Lecture.wirtsc.instit.zentr._bungz_2",
+      "title": "Übung zu \"Produktion und Logistik\"",
+      "shortTitle": "",
+      "number": "",
+      "type": "exercise",
+      "rawType": "UE",
+      "lecturers": [
+        "Prof. Dr. Frank Meisel",
+        "durch",
+        "M.Sc. Barbara Himstedt",
+        "M.Sc. Jan Simon Bischoff"
+      ],
+      "parentKey": "",
+      "organisation": "Institut für Volkswirtschaftslehre",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.wirtsc.instit.zentr._bungz_2",
+      "dates": []
+    },
+    {
+      "sourceId": "42293167",
+      "sourceKey": "Lecture.techn.mater.zentr._bungz_4",
+      "title": "Übung zu \"Produktion und Logistik\"",
+      "shortTitle": "",
+      "number": "",
+      "type": "exercise",
+      "rawType": "UE",
+      "lecturers": [
+        "Prof. Dr. Frank Meisel",
+        "durch",
+        "M.Sc. Barbara Himstedt",
+        "M.Sc. Jan Simon Bischoff"
+      ],
+      "parentKey": "",
+      "organisation": "Institut für Materialwissenschaft",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.techn.mater.zentr._bungz_4",
+      "dates": []
+    },
+    {
+      "sourceId": "42493669",
+      "sourceKey": "Lecture.agrar.agrar.agrar3.agrara",
+      "title": "(agrarAEF903-01a) Übung: Digital Marketing Project",
+      "shortTitle": "",
+      "number": "070112",
+      "type": "exercise",
+      "rawType": "UE",
+      "lecturers": [
+        "Prof. Dr. Ulrich Orth"
+      ],
+      "parentKey": "",
+      "organisation": "Agribusiness",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.agrar.agrar.agrar3.agrara",
+      "dates": [
+        {
+          "weekday": 2,
+          "startTime": "12:15",
+          "endTime": "13:45",
           "startDate": "2026-10-20",
           "endDate": "2027-02-02",
           "repeat": "w1 2",
           "excludedDates": [],
-          "room": "LMS4 - R.325"
+          "room": "Raum offen"
+        }
+      ]
+    },
+    {
+      "sourceId": "42478071",
+      "sourceKey": "Lecture.agrar.agrar.agrar3.agrara_0",
+      "title": "(agrarAEF903-01a) Vorlesung: Concepts, theories, and methods in Digital Marketing",
+      "shortTitle": "",
+      "number": "070110",
+      "type": "lecture",
+      "rawType": "V",
+      "lecturers": [
+        "Prof. Dr. Ulrich Orth"
+      ],
+      "parentKey": "",
+      "organisation": "Agribusiness",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.agrar.agrar.agrar3.agrara_0",
+      "dates": [
+        {
+          "weekday": 1,
+          "startTime": "14:15",
+          "endTime": "15:45",
+          "startDate": "2026-10-19",
+          "endDate": "2027-02-01",
+          "repeat": "w1 1",
+          "excludedDates": [],
+          "room": "Raum offen"
+        }
+      ]
+    },
+    {
+      "sourceId": "40744710",
+      "sourceKey": "Lecture.agrar.agrar.agrar3.crossc",
+      "title": "(AEF-agr537) Seminar: Cross-Cultural Marketing-Project",
+      "shortTitle": "",
+      "number": "070035",
+      "type": "seminar",
+      "rawType": "S",
+      "lecturers": [
+        "Prof. Dr. Ulrich Orth",
+        "Dr. Caroline Meyer"
+      ],
+      "parentKey": "",
+      "organisation": "Agribusiness",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.agrar.agrar.agrar3.crossc",
+      "dates": [
+        {
+          "weekday": 4,
+          "startTime": "12:15",
+          "endTime": "13:45",
+          "startDate": "2026-10-22",
+          "endDate": "2027-02-04",
+          "repeat": "w1 4",
+          "excludedDates": [],
+          "room": "Raum offen"
+        }
+      ]
+    },
+    {
+      "sourceId": "40718871",
+      "sourceKey": "Lecture.agrar.agrar.agrar3.crossc_6",
+      "title": "(AEF-agr537) Vorlesung: Cross-Cultural Marketing",
+      "shortTitle": "",
+      "number": "070061",
+      "type": "lecture",
+      "rawType": "V",
+      "lecturers": [
+        "Prof. Dr. Ulrich Orth"
+      ],
+      "parentKey": "",
+      "organisation": "Agribusiness",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.agrar.agrar.agrar3.crossc_6",
+      "dates": [
+        {
+          "weekday": 1,
+          "startTime": "12:15",
+          "endTime": "13:45",
+          "startDate": "2026-10-19",
+          "endDate": "2027-02-01",
+          "repeat": "w1 1",
+          "excludedDates": [],
+          "room": "Raum offen"
+        }
+      ]
+    },
+    {
+      "sourceId": "40172113",
+      "sourceKey": "Lecture.agrar.agrar.agrar3.einfhr",
+      "title": "(oekAEF021-01a) Vorlesung: Einführung in das Agrar- und Ernährungsmarketing",
+      "shortTitle": "",
+      "number": "070115",
+      "type": "lecture",
+      "rawType": "V",
+      "lecturers": [
+        "Jule Timm"
+      ],
+      "parentKey": "",
+      "organisation": "Agribusiness",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.agrar.agrar.agrar3.einfhr",
+      "dates": [
+        {
+          "weekday": 2,
+          "startTime": "10:15",
+          "endTime": "11:45",
+          "startDate": "2026-10-20",
+          "endDate": "2027-02-02",
+          "repeat": "w1 2",
+          "excludedDates": [],
+          "room": "Raum offen"
+        }
+      ]
+    },
+    {
+      "sourceId": "21036210",
+      "sourceKey": "Lecture.agrar.agrar.agrar3.market",
+      "title": "(agrarAEF067-01a) Übung: Marketing-Kommunikation",
+      "shortTitle": "",
+      "number": "",
+      "type": "exercise",
+      "rawType": "UE",
+      "lecturers": [],
+      "parentKey": "",
+      "organisation": "Agribusiness",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.agrar.agrar.agrar3.market",
+      "dates": []
+    },
+    {
+      "sourceId": "42625047",
+      "sourceKey": "Lecture.agrar.agrar.agrar3.market_8",
+      "title": "(agrarAEF067-01a) Übung: Marketing-Kommunikation",
+      "shortTitle": "",
+      "number": "070037",
+      "type": "exercise",
+      "rawType": "UE",
+      "lecturers": [
+        "Prof. Dr. Ulrich Orth"
+      ],
+      "parentKey": "",
+      "organisation": "Agribusiness",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.agrar.agrar.agrar3.market_8",
+      "dates": [
+        {
+          "weekday": 2,
+          "startTime": "8:30",
+          "endTime": "10:00",
+          "startDate": "2026-10-20",
+          "endDate": "2027-02-02",
+          "repeat": "w1 2",
+          "excludedDates": [],
+          "room": "Raum offen"
+        }
+      ]
+    },
+    {
+      "sourceId": "42650912",
+      "sourceKey": "Lecture.agrar.agrar.agrar3.market_4",
+      "title": "(agrarAEF067-01a) Übung: Marketing-Kommunikation",
+      "shortTitle": "",
+      "number": "070070",
+      "type": "exercise",
+      "rawType": "UE",
+      "lecturers": [
+        "Dr. Caroline Meyer"
+      ],
+      "parentKey": "",
+      "organisation": "Agribusiness",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.agrar.agrar.agrar3.market_4",
+      "dates": [
+        {
+          "weekday": 2,
+          "startTime": "8:30",
+          "endTime": "10:00",
+          "startDate": "2026-10-20",
+          "endDate": "2027-02-02",
+          "repeat": "w1 2",
+          "excludedDates": [],
+          "room": "Raum offen"
         },
+        {
+          "weekday": 2,
+          "startTime": "8:30",
+          "endTime": "12:00",
+          "startDate": "2027-01-26",
+          "endDate": "2027-01-26",
+          "repeat": "s1",
+          "excludedDates": [],
+          "room": "Raum offen"
+        }
+      ]
+    },
+    {
+      "sourceId": "40959516",
+      "sourceKey": "Lecture.agrar.agrar.agrar3.projek",
+      "title": "(oekAEF021-01a) Übung: Projektarbeit Marketingstrategie und -management",
+      "shortTitle": "",
+      "number": "",
+      "type": "exercise",
+      "rawType": "UE",
+      "lecturers": [
+        "Prof. Dr. Ulrich Orth"
+      ],
+      "parentKey": "",
+      "organisation": "Agribusiness",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.agrar.agrar.agrar3.projek",
+      "dates": []
+    },
+    {
+      "sourceId": "42135238",
+      "sourceKey": "Lecture.agrar.agrar.agrar3.projek_5",
+      "title": "(oekAEF021-01a) Übung: Projektarbeit Marketingstrategie und -management",
+      "shortTitle": "",
+      "number": "070082",
+      "type": "exercise",
+      "rawType": "UE",
+      "lecturers": [
+        "Prof. Dr. Ulrich Orth"
+      ],
+      "parentKey": "",
+      "organisation": "Agribusiness",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.agrar.agrar.agrar3.projek_5",
+      "dates": [
+        {
+          "weekday": 4,
+          "startTime": "14:15",
+          "endTime": "15:45",
+          "startDate": "2026-10-22",
+          "endDate": "2027-02-04",
+          "repeat": "w1 4",
+          "excludedDates": [],
+          "room": "Raum offen"
+        }
+      ]
+    },
+    {
+      "sourceId": "42136990",
+      "sourceKey": "Lecture.agrar.agrar.agrar3.projek_7",
+      "title": "(oekAEF021-01a) Übung: Projektarbeit Marketingstrategie und -management",
+      "shortTitle": "",
+      "number": "070077",
+      "type": "exercise",
+      "rawType": "UE",
+      "lecturers": [
+        "Katharina Behrens"
+      ],
+      "parentKey": "",
+      "organisation": "Agribusiness",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.agrar.agrar.agrar3.projek_7",
+      "dates": [
+        {
+          "weekday": 4,
+          "startTime": "14:15",
+          "endTime": "15:45",
+          "startDate": "2026-10-22",
+          "endDate": "2027-02-04",
+          "repeat": "w1 4",
+          "excludedDates": [],
+          "room": "Raum offen"
+        }
+      ]
+    },
+    {
+      "sourceId": "20959452",
+      "sourceKey": "Lecture.wirtsc.instit_3.lehrst.bungzu",
+      "title": "Übung zu: Marketing (BWL-Mark)",
+      "shortTitle": "",
+      "number": "",
+      "type": "exercise",
+      "rawType": "UE",
+      "lecturers": [
+        "Prof. Dr. Stefan Hoffmann"
+      ],
+      "parentKey": "Lecture.wirtsc.instit_3.lehrst.einfhr",
+      "organisation": "Marketing",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.wirtsc.instit_3.lehrst.bungzu",
+      "dates": []
+    },
+    {
+      "sourceId": "21260967",
+      "sourceKey": "Lecture.wirtsc.instit_3.lehrst.bungzu_5",
+      "title": "Übung zu: Marketing (BWL-Mark)",
+      "shortTitle": "",
+      "number": "030111",
+      "type": "exercise",
+      "rawType": "UE",
+      "lecturers": [
+        "Elena Alvarado Riedel",
+        "Marie Berner"
+      ],
+      "parentKey": "",
+      "organisation": "Marketing",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.wirtsc.instit_3.lehrst.bungzu_5",
+      "dates": []
+    },
+    {
+      "sourceId": "21224869",
+      "sourceKey": "Lecture.wirtsc.instit_3.lehrst.bungzu_8",
+      "title": "Übung zu: Marketing (BWL-Mark)",
+      "shortTitle": "",
+      "number": "030006",
+      "type": "exercise",
+      "rawType": "UE",
+      "lecturers": [
+        "Elena Alvarado Riedel",
+        "Marie Berner"
+      ],
+      "parentKey": "",
+      "organisation": "Marketing",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.wirtsc.instit_3.lehrst.bungzu_8",
+      "dates": []
+    },
+    {
+      "sourceId": "21937082",
+      "sourceKey": "Lecture.wirtsc.instit_3.lehrst.bungzu_35",
+      "title": "Übung zu: Marketing (BWL-Mark)",
+      "shortTitle": "",
+      "number": "030118",
+      "type": "exercise",
+      "rawType": "UE",
+      "lecturers": [
+        "Marie Berner",
+        "Elena Alvarado Riedel"
+      ],
+      "parentKey": "",
+      "organisation": "Marketing",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.wirtsc.instit_3.lehrst.bungzu_35",
+      "dates": []
+    },
+    {
+      "sourceId": "20935273",
+      "sourceKey": "Lecture.wirtsc.instit_3.lehrst.einfhr",
+      "title": "Marketing (BWL-Mark)",
+      "shortTitle": "",
+      "number": "030099",
+      "type": "lecture",
+      "rawType": "V",
+      "lecturers": [
+        "Prof. Dr. Stefan Hoffmann"
+      ],
+      "parentKey": "",
+      "organisation": "Marketing",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.wirtsc.instit_3.lehrst.einfhr",
+      "dates": []
+    },
+    {
+      "sourceId": "41782617",
+      "sourceKey": "Lecture.wirtsc.instit_3.lehrst.forsch",
+      "title": "Forschungsprojektseminar in Marketing und Innovation",
+      "shortTitle": "",
+      "number": "030120",
+      "type": "other",
+      "rawType": "OS",
+      "lecturers": [
+        "Prof. Dr. Stefan Hoffmann",
+        "Prof. Dr. Carsten Schultz"
+      ],
+      "parentKey": "",
+      "organisation": "Marketing",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.wirtsc.instit_3.lehrst.forsch",
+      "dates": [
+        {
+          "weekday": 4,
+          "startTime": "10:00",
+          "endTime": "17:00",
+          "startDate": "2026-11-12",
+          "endDate": "2026-11-12",
+          "repeat": "s1",
+          "excludedDates": [],
+          "room": "WR425 - R.10[ZfB] Gutenberg"
+        },
+        {
+          "weekday": 4,
+          "startTime": "10:00",
+          "endTime": "17:00",
+          "startDate": "2027-01-14",
+          "endDate": "2027-01-14",
+          "repeat": "s1",
+          "excludedDates": [],
+          "room": "WR425 - R.3[ZfB] Schmalenbach"
+        }
+      ]
+    },
+    {
+      "sourceId": "41846462",
+      "sourceKey": "Lecture.wirtsc.instit_3.lehrst.forsch_6",
+      "title": "Forschungsseminar Sustainability Marketing (BWL-FSem3Mark)",
+      "shortTitle": "FSem3Mark",
+      "number": "030345",
+      "type": "seminar",
+      "rawType": "S",
+      "lecturers": [
+        "Prof. Dr. Stefan Hoffmann",
+        "und Mitarbeiter*innen"
+      ],
+      "parentKey": "",
+      "organisation": "Marketing",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.wirtsc.instit_3.lehrst.forsch_6",
+      "dates": []
+    },
+    {
+      "sourceId": "41261082",
+      "sourceKey": "Lecture.wirtsc.instit_3.lehrst.kolloq",
+      "title": "Übung zur Vorlesung Marketing-Forschung",
+      "shortTitle": "",
+      "number": "",
+      "type": "exercise",
+      "rawType": "UE",
+      "lecturers": [
+        "Prof. Dr. Stefan Hoffmann"
+      ],
+      "parentKey": "",
+      "organisation": "Marketing",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.wirtsc.instit_3.lehrst.kolloq",
+      "dates": []
+    },
+    {
+      "sourceId": "41537234",
+      "sourceKey": "Lecture.wirtsc.instit_3.lehrst.kolloq_1",
+      "title": "Übung zur Vorlesung Marketing-Forschung",
+      "shortTitle": "",
+      "number": "030129",
+      "type": "exercise",
+      "rawType": "UE",
+      "lecturers": [
+        "Felix Reimers"
+      ],
+      "parentKey": "",
+      "organisation": "Marketing",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.wirtsc.instit_3.lehrst.kolloq_1",
+      "dates": []
+    },
+    {
+      "sourceId": "41283708",
+      "sourceKey": "Lecture.wirtsc.instit_3.lehrst.kolloq_5",
+      "title": "Übung zur Vorlesung Marketing-Forschung",
+      "shortTitle": "",
+      "number": "030274",
+      "type": "exercise",
+      "rawType": "UE",
+      "lecturers": [
+        "Felix Reimers"
+      ],
+      "parentKey": "",
+      "organisation": "Marketing",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.wirtsc.instit_3.lehrst.kolloq_5",
+      "dates": []
+    },
+    {
+      "sourceId": "41271132",
+      "sourceKey": "Lecture.wirtsc.instit_3.lehrst.kolloq_0",
+      "title": "Übung zur Vorlesung Marketing-Forschung",
+      "shortTitle": "",
+      "number": "030264",
+      "type": "exercise",
+      "rawType": "UE",
+      "lecturers": [
+        "Felix Reimers"
+      ],
+      "parentKey": "",
+      "organisation": "Marketing",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.wirtsc.instit_3.lehrst.kolloq_0",
+      "dates": []
+    },
+    {
+      "sourceId": "41467054",
+      "sourceKey": "Lecture.wirtsc.instit_3.lehrst.marcom",
+      "title": "Marketing Communication (BWL-MarkComm)",
+      "shortTitle": "",
+      "number": "030148",
+      "type": "lecture",
+      "rawType": "V",
+      "lecturers": [
+        "Prof. Dr. Stefan Hoffmann"
+      ],
+      "parentKey": "",
+      "organisation": "Marketing",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.wirtsc.instit_3.lehrst.marcom",
+      "dates": []
+    },
+    {
+      "sourceId": "41404616",
+      "sourceKey": "Lecture.wirtsc.instit_3.lehrst.marcom_3",
+      "title": "Übung zur Vorlesung \"Marketing Communication\"",
+      "shortTitle": "",
+      "number": "",
+      "type": "exercise",
+      "rawType": "UE",
+      "lecturers": [
+        "Prof. Dr. Stefan Hoffmann"
+      ],
+      "parentKey": "Lecture.wirtsc.instit_3.lehrst.marcom",
+      "organisation": "Marketing",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.wirtsc.instit_3.lehrst.marcom_3",
+      "dates": []
+    },
+    {
+      "sourceId": "41732235",
+      "sourceKey": "Lecture.wirtsc.instit_3.lehrst.marcom_2",
+      "title": "Übung zur Vorlesung \"Marketing Communication\"",
+      "shortTitle": "",
+      "number": "030381",
+      "type": "exercise",
+      "rawType": "UE",
+      "lecturers": [
+        "Prof. Dr. Stefan Hoffmann",
+        "Katja Döbel"
+      ],
+      "parentKey": "",
+      "organisation": "Marketing",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.wirtsc.instit_3.lehrst.marcom_2",
+      "dates": []
+    },
+    {
+      "sourceId": "41252586",
+      "sourceKey": "Lecture.wirtsc.instit_3.lehrst.market",
+      "title": "Marketing-Forschung (BWL-MarkFor)",
+      "shortTitle": "",
+      "number": "030209",
+      "type": "lecture",
+      "rawType": "V",
+      "lecturers": [
+        "Prof. Dr. Stefan Hoffmann"
+      ],
+      "parentKey": "",
+      "organisation": "Marketing",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.wirtsc.instit_3.lehrst.market",
+      "dates": []
+    },
+    {
+      "sourceId": "21271046",
+      "sourceKey": "Lecture.wirtsc.instit_3.lehrst.semina",
+      "title": "Seminar zum Marketing (BWL-SemMark)",
+      "shortTitle": "",
+      "number": "030100",
+      "type": "seminar",
+      "rawType": "S",
+      "lecturers": [
+        "Prof. Dr. Stefan Hoffmann"
+      ],
+      "parentKey": "",
+      "organisation": "Marketing",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.wirtsc.instit_3.lehrst.semina",
+      "dates": [
+        {
+          "weekday": 1,
+          "startTime": "16:15",
+          "endTime": "17:45",
+          "startDate": "2026-10-19",
+          "endDate": "2026-10-19",
+          "repeat": "s1",
+          "excludedDates": [],
+          "room": "HHP5 - R.03.001"
+        },
+        {
+          "weekday": 5,
+          "startTime": "9:00",
+          "endTime": "12:00",
+          "startDate": "2027-01-15",
+          "endDate": "2027-01-15",
+          "repeat": "s1",
+          "excludedDates": [],
+          "room": "WR425 - R.321[ZfB]"
+        },
+        {
+          "weekday": 5,
+          "startTime": "9:00",
+          "endTime": "12:00",
+          "startDate": "2027-01-15",
+          "endDate": "2027-01-15",
+          "repeat": "s1",
+          "excludedDates": [],
+          "room": "WR425 - R.3[ZfB] Schmalenbach"
+        }
+      ]
+    },
+    {
+      "sourceId": "42310658",
+      "sourceKey": "Lecture.wirtsc.instit_3.lehrst.semina_8",
+      "title": "Seminar zu aktuellen Fragestellungen des digitalen Marketings",
+      "shortTitle": "SemDigitMarket",
+      "number": "030015",
+      "type": "seminar",
+      "rawType": "S",
+      "lecturers": [
+        "Prof. Dr. Sarah Köcher"
+      ],
+      "parentKey": "",
+      "organisation": "Marketing",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.wirtsc.instit_3.lehrst.semina_8",
+      "dates": []
+    },
+    {
+      "sourceId": "41308842",
+      "sourceKey": "Lecture.wirtsc.instit_3.lehrst.wissar",
+      "title": "Wissenschaftliches Arbeiten im Marketing",
+      "shortTitle": "",
+      "number": "",
+      "type": "seminar",
+      "rawType": "S",
+      "lecturers": [
+        "Prof. Dr. Stefan Hoffmann"
+      ],
+      "parentKey": "",
+      "organisation": "Marketing",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.wirtsc.instit_3.lehrst.wissar",
+      "dates": []
+    },
+    {
+      "sourceId": "41895851",
+      "sourceKey": "Lecture.wirtsc.instit_3.lehrst.wissar_3",
+      "title": "Wissenschaftliches Arbeiten im Marketing",
+      "shortTitle": "",
+      "number": "030152",
+      "type": "seminar",
+      "rawType": "S",
+      "lecturers": [
+        "Katja Döbel"
+      ],
+      "parentKey": "",
+      "organisation": "Marketing",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.wirtsc.instit_3.lehrst.wissar_3",
+      "dates": [
         {
           "weekday": 1,
           "startTime": "16:00",
           "endTime": "18:00",
           "startDate": "2026-10-19",
+          "endDate": "2026-10-19",
+          "repeat": "s1",
+          "excludedDates": [],
+          "room": "WR425 - R.10[ZfB] Gutenberg"
+        },
+        {
+          "weekday": 2,
+          "startTime": "14:00",
+          "endTime": "18:00",
+          "startDate": "2027-01-12",
+          "endDate": "2027-01-12",
+          "repeat": "s1",
+          "excludedDates": [],
+          "room": "WR425 - R.3[ZfB] Schmalenbach"
+        }
+      ]
+    },
+    {
+      "sourceId": "42330999",
+      "sourceKey": "Lecture.wirtsc.instit_3.lehrst.wissar_5",
+      "title": "Einführung in wissenschaftliches Arbeiten (Digital Marketing)",
+      "shortTitle": "Wiss Arbeiten DM",
+      "number": "030403",
+      "type": "other",
+      "rawType": "AW",
+      "lecturers": [
+        "Prof. Dr. Sarah Köcher"
+      ],
+      "parentKey": "",
+      "organisation": "Marketing",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.wirtsc.instit_3.lehrst.wissar_5",
+      "dates": [
+        {
+          "weekday": 5,
+          "startTime": "8:00",
+          "endTime": "12:00",
+          "startDate": "2026-11-06",
+          "endDate": "2026-11-06",
+          "repeat": "s1",
+          "excludedDates": [],
+          "room": "WR425 - R.10[ZfB] Gutenberg"
+        }
+      ]
+    },
+    {
+      "sourceId": "42327702",
+      "sourceKey": "Lecture.agrar.agrar.agrar3._oekae_7",
+      "title": "(oekAEF021-01a) Vorlesung: Einführung in das Agrar- und Ernährungsmarketing",
+      "shortTitle": "",
+      "number": "070115",
+      "type": "lecture",
+      "rawType": "V",
+      "lecturers": [
+        "Jule Timm"
+      ],
+      "parentKey": "",
+      "organisation": "Agribusiness",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.agrar.agrar.agrar3._oekae_7",
+      "dates": [
+        {
+          "weekday": 2,
+          "startTime": "10:15",
+          "endTime": "11:45",
+          "startDate": "2026-10-20",
           "endDate": "2027-02-02",
+          "repeat": "w1 2",
+          "excludedDates": [],
+          "room": "Raum offen"
+        }
+      ]
+    },
+    {
+      "sourceId": "42297695",
+      "sourceKey": "Lecture.agrar.agrar.agrar3._agrar",
+      "title": "(agrarAEF067-01a) Übung: Marketing-Kommunikation",
+      "shortTitle": "",
+      "number": "",
+      "type": "exercise",
+      "rawType": "UE",
+      "lecturers": [],
+      "parentKey": "",
+      "organisation": "Agribusiness",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.agrar.agrar.agrar3._agrar",
+      "dates": []
+    },
+    {
+      "sourceId": "42322576",
+      "sourceKey": "Lecture.agrar.agrar.agrar3._oekae",
+      "title": "(oekAEF021-01a) Übung: Projektarbeit Marketingstrategie und -management",
+      "shortTitle": "",
+      "number": "",
+      "type": "exercise",
+      "rawType": "UE",
+      "lecturers": [
+        "Prof. Dr. Ulrich Orth"
+      ],
+      "parentKey": "",
+      "organisation": "Agribusiness",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.agrar.agrar.agrar3._oekae",
+      "dates": []
+    },
+    {
+      "sourceId": "42643310",
+      "sourceKey": "Lecture.wirtsc.instit.zentr._bungz_4",
+      "title": "Übung zu: Marketing (BWL-Mark)",
+      "shortTitle": "",
+      "number": "",
+      "type": "exercise",
+      "rawType": "UE",
+      "lecturers": [
+        "Prof. Dr. Stefan Hoffmann"
+      ],
+      "parentKey": "",
+      "organisation": "Institut für Volkswirtschaftslehre",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.wirtsc.instit.zentr._bungz_4",
+      "dates": []
+    },
+    {
+      "sourceId": "42256127",
+      "sourceKey": "Lecture.techn.mater.zentr._bungz_5",
+      "title": "Übung zu: Marketing (BWL-Mark)",
+      "shortTitle": "",
+      "number": "",
+      "type": "exercise",
+      "rawType": "UE",
+      "lecturers": [
+        "Prof. Dr. Stefan Hoffmann"
+      ],
+      "parentKey": "",
+      "organisation": "Institut für Materialwissenschaft",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.techn.mater.zentr._bungz_5",
+      "dates": []
+    },
+    {
+      "sourceId": "42260506",
+      "sourceKey": "Lecture.techn.mater.zentr._marke",
+      "title": "Marketing (BWL-Mark)",
+      "shortTitle": "",
+      "number": "030099",
+      "type": "lecture",
+      "rawType": "V",
+      "lecturers": [
+        "Prof. Dr. Stefan Hoffmann"
+      ],
+      "parentKey": "",
+      "organisation": "Institut für Materialwissenschaft",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.techn.mater.zentr._marke",
+      "dates": []
+    },
+    {
+      "sourceId": "42632364",
+      "sourceKey": "Lecture.wirtsc.instit.zentr._marke",
+      "title": "Marketing (BWL-Mark)",
+      "shortTitle": "",
+      "number": "030099",
+      "type": "lecture",
+      "rawType": "V",
+      "lecturers": [
+        "Prof. Dr. Stefan Hoffmann"
+      ],
+      "parentKey": "",
+      "organisation": "Institut für Volkswirtschaftslehre",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.wirtsc.instit.zentr._marke",
+      "dates": []
+    },
+    {
+      "sourceId": "42664777",
+      "sourceKey": "Lecture.zentra_1.servic.studiu.intern.refera_4._marco",
+      "title": "Marketing Communication (BWL-MarkComm)",
+      "shortTitle": "",
+      "number": "030148",
+      "type": "lecture",
+      "rawType": "V",
+      "lecturers": [
+        "Prof. Dr. Stefan Hoffmann"
+      ],
+      "parentKey": "",
+      "organisation": "Referat Studium und Praktikum im Ausland, Koordination ERASMUS",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.zentra_1.servic.studiu.intern.refera_4._marco",
+      "dates": []
+    },
+    {
+      "sourceId": "42015553",
+      "sourceKey": "Lecture.wirtsc.instit_3.lehrst_5.grundl",
+      "title": "Grundlagen der Kapitalmarkttheorie (bwlGKapmarkttheo-01a)",
+      "shortTitle": "",
+      "number": "030008",
+      "type": "lecture",
+      "rawType": "V",
+      "lecturers": [
+        "Prof. Dr. Peter Nippel"
+      ],
+      "parentKey": "",
+      "organisation": "Finanzwirtschaft",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.wirtsc.instit_3.lehrst_5.grundl",
+      "dates": [
+        {
+          "weekday": 3,
+          "startTime": "10:15",
+          "endTime": "11:45",
+          "startDate": "2026-10-21",
+          "endDate": "2027-02-03",
+          "repeat": "w1 3",
+          "excludedDates": [],
+          "room": "Raum offen"
+        }
+      ]
+    },
+    {
+      "sourceId": "42144808",
+      "sourceKey": "Lecture.wirtsc.instit_3.lehrst_5.uegrdl",
+      "title": "Übung Grundlagen der Kapitalmarkttheorie (bwlGKapmarkttheo-01a)",
+      "shortTitle": "",
+      "number": "030019",
+      "type": "exercise",
+      "rawType": "UE",
+      "lecturers": [
+        "Dr. Abdulali Hadizada",
+        "Prof. Dr. Peter Nippel"
+      ],
+      "parentKey": "",
+      "organisation": "Finanzwirtschaft",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.wirtsc.instit_3.lehrst_5.uegrdl",
+      "dates": [
+        {
+          "weekday": 3,
+          "startTime": "14:15",
+          "endTime": "15:45",
+          "startDate": "2026-10-21",
+          "endDate": "2027-02-03",
+          "repeat": "w1 3",
+          "excludedDates": [],
+          "room": "Raum offen"
+        }
+      ]
+    },
+    {
+      "sourceId": "41760019",
+      "sourceKey": "Lecture.wirtsc.instit_3.untern.bunggr",
+      "title": "Übung Grundlagen der internationalen Unternehmensbesteuerung",
+      "shortTitle": "",
+      "number": "030284",
+      "type": "exercise",
+      "rawType": "UE",
+      "lecturers": [
+        "Rieke Vanini"
+      ],
+      "parentKey": "Lecture.wirtsc.instit_3.untern.grundl",
+      "organisation": "Unternehmensrechnung und Unternehmensbesteuerung",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.wirtsc.instit_3.untern.bunggr",
+      "dates": []
+    },
+    {
+      "sourceId": "41724044",
+      "sourceKey": "Lecture.wirtsc.instit_3.untern.grundl",
+      "title": "Grundlagen der internationalen Unternehmensbesteuerung (BWL-IntUntbest)",
+      "shortTitle": "",
+      "number": "030352",
+      "type": "lecture",
+      "rawType": "V",
+      "lecturers": [
+        "Prof. Dr. Jost Heckemeyer"
+      ],
+      "parentKey": "",
+      "organisation": "Unternehmensrechnung und Unternehmensbesteuerung",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.wirtsc.instit_3.untern.grundl",
+      "dates": []
+    },
+    {
+      "sourceId": "41916809",
+      "sourceKey": "Lecture.wirtsc.instit_3.servic.servic",
+      "title": "Service Process Modeling (ehemals: Service Science)(bwlServiceScience-01a)",
+      "shortTitle": "",
+      "number": "030217",
+      "type": "lecture",
+      "rawType": "V",
+      "lecturers": [
+        "Prof. Dr. Catherine Cleophas"
+      ],
+      "parentKey": "",
+      "organisation": "Service Analytics",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.wirtsc.instit_3.servic.servic",
+      "dates": [
+        {
+          "weekday": 5,
+          "startTime": "8:15",
+          "endTime": "9:45",
+          "startDate": "2026-11-06",
+          "endDate": "2026-11-06",
+          "repeat": "s1",
+          "excludedDates": [],
+          "room": "WR425 - R.3[ZfB] Schmalenbach"
+        }
+      ]
+    },
+    {
+      "sourceId": "41901855",
+      "sourceKey": "Lecture.wirtsc.instit_3.servic.servic_2",
+      "title": "Übung zu Service Process Modeling (ehemals: Service Science) (bwlServiceScience-01a)",
+      "shortTitle": "",
+      "number": "030219",
+      "type": "exercise",
+      "rawType": "UE",
+      "lecturers": [
+        "Michael Busch"
+      ],
+      "parentKey": "Lecture.wirtsc.instit_3.servic.servic",
+      "organisation": "Service Analytics",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.wirtsc.instit_3.servic.servic_2",
+      "dates": []
+    },
+    {
+      "sourceId": "42621400",
+      "sourceKey": "Lecture.zentra_1.servic.studiu.intern.refera_4._servi",
+      "title": "Service Process Modeling (ehemals: Service Science)(bwlServiceScience-01a)",
+      "shortTitle": "",
+      "number": "030217",
+      "type": "lecture",
+      "rawType": "V",
+      "lecturers": [
+        "Prof. Dr. Catherine Cleophas"
+      ],
+      "parentKey": "",
+      "organisation": "Referat Studium und Praktikum im Ausland, Koordination ERASMUS",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.zentra_1.servic.studiu.intern.refera_4._servi",
+      "dates": [
+        {
+          "weekday": 5,
+          "startTime": "8:15",
+          "endTime": "9:45",
+          "startDate": "2026-11-06",
+          "endDate": "2026-11-06",
+          "repeat": "s1",
+          "excludedDates": [],
+          "room": "WR425 - R.3[ZfB] Schmalenbach"
+        }
+      ]
+    },
+    {
+      "sourceId": "21803002",
+      "sourceKey": "Lecture.wirtsc.instit_3.person.lio",
+      "title": "Leadership in Organizations (BWL-PersFhrg)",
+      "shortTitle": "",
+      "number": "030203",
+      "type": "lecture",
+      "rawType": "V",
+      "lecturers": [
+        "Dr. Christoph Daldrop",
+        "Prof. Dr. Claudia Buengeler"
+      ],
+      "parentKey": "",
+      "organisation": "Personal und Organisation",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.wirtsc.instit_3.person.lio",
+      "dates": [
+        {
+          "weekday": 2,
+          "startTime": "16:15",
+          "endTime": "17:45",
+          "startDate": "2026-10-20",
+          "endDate": "2027-02-07",
+          "repeat": "w1 2",
+          "excludedDates": [
+            "2026-10-20"
+          ],
+          "room": "Raum offen"
+        }
+      ]
+    },
+    {
+      "sourceId": "21846367",
+      "sourceKey": "Lecture.wirtsc.instit_3.person.uelio",
+      "title": "Tutorial Leadership in Organizations (BWL-PersFhrg)",
+      "shortTitle": "",
+      "number": "",
+      "type": "exercise",
+      "rawType": "UE",
+      "lecturers": [],
+      "parentKey": "Lecture.wirtsc.instit_3.person.lio",
+      "organisation": "Personal und Organisation",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.wirtsc.instit_3.person.uelio",
+      "dates": []
+    },
+    {
+      "sourceId": "21834475",
+      "sourceKey": "Lecture.wirtsc.instit_3.person.uelio__0",
+      "title": "Tutorial Leadership in Organizations (BWL-PersFhrg)",
+      "shortTitle": "",
+      "number": "030231",
+      "type": "exercise",
+      "rawType": "UE",
+      "lecturers": [],
+      "parentKey": "",
+      "organisation": "Personal und Organisation",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.wirtsc.instit_3.person.uelio__0",
+      "dates": [
+        {
+          "weekday": 4,
+          "startTime": "14:15",
+          "endTime": "15:45",
+          "startDate": "2026-10-22",
+          "endDate": "2027-02-07",
+          "repeat": "w2 4",
+          "excludedDates": [
+            "2026-10-22"
+          ],
+          "room": "Raum offen"
+        }
+      ]
+    },
+    {
+      "sourceId": "22299856",
+      "sourceKey": "Lecture.wirtsc.instit_3.person.uelio_",
+      "title": "Tutorial Leadership in Organizations (BWL-PersFhrg)",
+      "shortTitle": "",
+      "number": "030230",
+      "type": "exercise",
+      "rawType": "UE",
+      "lecturers": [],
+      "parentKey": "",
+      "organisation": "Personal und Organisation",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.wirtsc.instit_3.person.uelio_",
+      "dates": [
+        {
+          "weekday": 4,
+          "startTime": "16:15",
+          "endTime": "17:45",
+          "startDate": "2026-10-22",
+          "endDate": "2027-02-07",
+          "repeat": "w2 4",
+          "excludedDates": [
+            "2026-10-22"
+          ],
+          "room": "Raum offen"
+        }
+      ]
+    },
+    {
+      "sourceId": "42690855",
+      "sourceKey": "Lecture.zentra_1.servic.studiu.intern.refera_4._lio",
+      "title": "Leadership in Organizations (BWL-PersFhrg)",
+      "shortTitle": "",
+      "number": "030203",
+      "type": "lecture",
+      "rawType": "V",
+      "lecturers": [
+        "Dr. Christoph Daldrop",
+        "Prof. Dr. Claudia Buengeler"
+      ],
+      "parentKey": "",
+      "organisation": "Referat Studium und Praktikum im Ausland, Koordination ERASMUS",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.zentra_1.servic.studiu.intern.refera_4._lio",
+      "dates": [
+        {
+          "weekday": 2,
+          "startTime": "16:15",
+          "endTime": "17:45",
+          "startDate": "2026-10-20",
+          "endDate": "2027-02-07",
+          "repeat": "w1 2",
+          "excludedDates": [
+            "2026-10-20"
+          ],
+          "room": "Raum offen"
+        }
+      ]
+    },
+    {
+      "sourceId": "41758122",
+      "sourceKey": "Lecture.wirtsc.instit_3.person.humanr",
+      "title": "Advanced Human Resource Management (bwlAdvHRM-01a)",
+      "shortTitle": "",
+      "number": "030338",
+      "type": "lecture",
+      "rawType": "V",
+      "lecturers": [
+        "Prof. Dr. Claudia Buengeler"
+      ],
+      "parentKey": "",
+      "organisation": "Personal und Organisation",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.wirtsc.instit_3.person.humanr",
+      "dates": [
+        {
+          "weekday": 2,
+          "startTime": "12:00",
+          "endTime": "14:00",
+          "startDate": "2026-10-20",
+          "endDate": "2027-02-07",
+          "repeat": "w1 2",
+          "excludedDates": [],
+          "room": "HHP5 - R.03.001"
+        }
+      ]
+    },
+    {
+      "sourceId": "41723363",
+      "sourceKey": "Lecture.wirtsc.instit_3.person.humanr_7",
+      "title": "Tutorial Advanced Human Resource Management",
+      "shortTitle": "",
+      "number": "030339",
+      "type": "exercise",
+      "rawType": "UE",
+      "lecturers": [
+        "Prof. Dr. Claudia Buengeler"
+      ],
+      "parentKey": "Lecture.wirtsc.instit_3.person.humanr",
+      "organisation": "Personal und Organisation",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.wirtsc.instit_3.person.humanr_7",
+      "dates": [
+        {
+          "weekday": 4,
+          "startTime": "14:00",
+          "endTime": "16:00",
+          "startDate": "2026-10-22",
+          "endDate": "2027-02-07",
+          "repeat": "w1 4",
+          "excludedDates": [],
+          "room": "HHP5 - R.03.001"
+        }
+      ]
+    },
+    {
+      "sourceId": "42608469",
+      "sourceKey": "Lecture.zentra_1.servic.studiu.intern.refera_4._human_0",
+      "title": "Advanced Human Resource Management (bwlAdvHRM-01a)",
+      "shortTitle": "",
+      "number": "030338",
+      "type": "lecture",
+      "rawType": "V",
+      "lecturers": [
+        "Prof. Dr. Claudia Buengeler"
+      ],
+      "parentKey": "",
+      "organisation": "Referat Studium und Praktikum im Ausland, Koordination ERASMUS",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.zentra_1.servic.studiu.intern.refera_4._human_0",
+      "dates": [
+        {
+          "weekday": 2,
+          "startTime": "12:00",
+          "endTime": "14:00",
+          "startDate": "2026-10-20",
+          "endDate": "2027-02-07",
+          "repeat": "w1 2",
+          "excludedDates": [],
+          "room": "HHP5 - R.03.001"
+        }
+      ]
+    },
+    {
+      "sourceId": "42626566",
+      "sourceKey": "Lecture.zentra_1.servic.studiu.intern.refera_4._human",
+      "title": "Tutorial Advanced Human Resource Management",
+      "shortTitle": "",
+      "number": "030339",
+      "type": "exercise",
+      "rawType": "UE",
+      "lecturers": [
+        "Prof. Dr. Claudia Buengeler"
+      ],
+      "parentKey": "",
+      "organisation": "Referat Studium und Praktikum im Ausland, Koordination ERASMUS",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.zentra_1.servic.studiu.intern.refera_4._human",
+      "dates": [
+        {
+          "weekday": 4,
+          "startTime": "14:00",
+          "endTime": "16:00",
+          "startDate": "2026-10-22",
+          "endDate": "2027-02-07",
+          "repeat": "w1 4",
+          "excludedDates": [],
+          "room": "HHP5 - R.03.001"
+        }
+      ]
+    },
+    {
+      "sourceId": "21258018",
+      "sourceKey": "Lecture.wirtsc.instit_3.grndun.einfhr",
+      "title": "Seminar zur Vorbereitung auf die Bachelorarbeit am Lehrstuhl für Gründungs- und Innovationsmanagement (BWL-SemBA)",
+      "shortTitle": "",
+      "number": "030380",
+      "type": "seminar",
+      "rawType": "S",
+      "lecturers": [
+        "Prof. Dr. Achim Walter",
+        "Alexander Dobers-Tarasevich",
+        "Carolin Lielienthal",
+        "Monika Sienknecht"
+      ],
+      "parentKey": "",
+      "organisation": "Gründungs- und Innovationsmanagement",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.wirtsc.instit_3.grndun.einfhr",
+      "dates": [
+        {
+          "weekday": 4,
+          "startTime": "16:15",
+          "endTime": "18:45",
+          "startDate": "2026-10-22",
+          "endDate": "2026-10-22",
+          "repeat": "s1",
+          "excludedDates": [],
+          "room": "WR425 - R.10[ZfB] Gutenberg"
+        },
+        {
+          "weekday": 5,
+          "startTime": "14:15",
+          "endTime": "17:45",
+          "startDate": "2026-10-23",
+          "endDate": "2026-10-23",
+          "repeat": "s1",
+          "excludedDates": [],
+          "room": "Online-Veranstaltung"
+        },
+        {
+          "weekday": 5,
+          "startTime": "14:15",
+          "endTime": "17:45",
+          "startDate": "2026-10-30",
+          "endDate": "2026-10-30",
+          "repeat": "s1",
+          "excludedDates": [],
+          "room": "Online-Veranstaltung"
+        },
+        {
+          "weekday": 5,
+          "startTime": "16:15",
+          "endTime": "17:45",
+          "startDate": "2026-11-27",
+          "endDate": "2026-11-27",
+          "repeat": "s1",
+          "excludedDates": [],
+          "room": "Online-Veranstaltung"
+        },
+        {
+          "weekday": 5,
+          "startTime": "16:15",
+          "endTime": "17:45",
+          "startDate": "2026-12-04",
+          "endDate": "2026-12-04",
+          "repeat": "s1",
+          "excludedDates": [],
+          "room": "Online-Veranstaltung"
+        }
+      ]
+    },
+    {
+      "sourceId": "40028481",
+      "sourceKey": "Lecture.techn.elekt.halbl.bungen",
+      "title": "etit1001-01a: Grundgebiete der Elektrotechnik I (Übung)",
+      "shortTitle": "Grundgebiete der Elektrotechnik I (Ü)",
+      "number": "",
+      "type": "exercise",
+      "rawType": "UE",
+      "lecturers": [
+        "Dr.-Ing. Fabio Aldo Kraft"
+      ],
+      "parentKey": "Lecture.techn.elekt.halbl.grundg",
+      "organisation": "Nanoelektronik",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.techn.elekt.halbl.bungen",
+      "dates": []
+    },
+    {
+      "sourceId": "41847774",
+      "sourceKey": "Lecture.techn.elekt.halbl.bungen_43",
+      "title": "etit1001-01a: Grundgebiete der Elektrotechnik I (Übung)",
+      "shortTitle": "Grundgebiete der Elektrotechnik I (Ü)",
+      "number": "080123",
+      "type": "exercise",
+      "rawType": "UE",
+      "lecturers": [
+        "Dr.-Ing. Fabio Aldo Kraft"
+      ],
+      "parentKey": "",
+      "organisation": "Nanoelektronik",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.techn.elekt.halbl.bungen_43",
+      "dates": []
+    },
+    {
+      "sourceId": "41835788",
+      "sourceKey": "Lecture.techn.elekt.halbl.bungen_4",
+      "title": "etit1001-01a: Grundgebiete der Elektrotechnik I (Übung)",
+      "shortTitle": "Grundgebiete der Elektrotechnik I (Ü)",
+      "number": "080185",
+      "type": "exercise",
+      "rawType": "UE",
+      "lecturers": [
+        "Dr.-Ing. Fabio Aldo Kraft"
+      ],
+      "parentKey": "",
+      "organisation": "Nanoelektronik",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.techn.elekt.halbl.bungen_4",
+      "dates": []
+    },
+    {
+      "sourceId": "41750000",
+      "sourceKey": "Lecture.techn.elekt.halbl.bungen_8",
+      "title": "etit1001-01a: Grundgebiete der Elektrotechnik I (Übung)",
+      "shortTitle": "Grundgebiete der Elektrotechnik I (Ü)",
+      "number": "080084",
+      "type": "exercise",
+      "rawType": "UE",
+      "lecturers": [
+        "Dr.-Ing. Fabio Aldo Kraft"
+      ],
+      "parentKey": "",
+      "organisation": "Nanoelektronik",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.techn.elekt.halbl.bungen_8",
+      "dates": []
+    },
+    {
+      "sourceId": "40038324",
+      "sourceKey": "Lecture.techn.elekt.halbl.grundg",
+      "title": "etit1001-01a: Grundgebiete der Elektrotechnik I",
+      "shortTitle": "Grundgebiete der Elektrotechnik I (V)",
+      "number": "080159",
+      "type": "lecture",
+      "rawType": "V",
+      "lecturers": [
+        "Dr. Wilhelm Braun"
+      ],
+      "parentKey": "",
+      "organisation": "Nanoelektronik",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.techn.elekt.halbl.grundg",
+      "dates": [
+        {
+          "weekday": 2,
+          "startTime": "10:15",
+          "endTime": "11:45",
+          "startDate": "2026-10-20",
+          "endDate": "2027-02-07",
+          "repeat": "w1 2",
+          "excludedDates": [],
+          "room": "Raum offen"
+        },
+        {
+          "weekday": 4,
+          "startTime": "16:15",
+          "endTime": "17:45",
+          "startDate": "2026-10-22",
+          "endDate": "2027-02-07",
+          "repeat": "w2 4",
+          "excludedDates": [],
+          "room": "Raum offen"
+        }
+      ]
+    },
+    {
+      "sourceId": "21946548",
+      "sourceKey": "Lecture.techn.elekt.halbl.grundg_8",
+      "title": "etit1001-01a: Grundgebiete der Elektrotechnik I (getLab)",
+      "shortTitle": "Grundgebiete der Elektrotechnik I (getLab)",
+      "number": "",
+      "type": "other",
+      "rawType": "FPUE",
+      "lecturers": [],
+      "parentKey": "",
+      "organisation": "Nanoelektronik",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.techn.elekt.halbl.grundg_8",
+      "dates": []
+    },
+    {
+      "sourceId": "42504962",
+      "sourceKey": "Lecture.techn.elekt.halbl.grundg_2",
+      "title": "etit1001-01a: Grundgebiete der Elektrotechnik I (getLab)",
+      "shortTitle": "Grundgebiete der Elektrotechnik I (getLab)",
+      "number": "080076",
+      "type": "other",
+      "rawType": "FPUE",
+      "lecturers": [
+        "Dr. Natalia Liserre",
+        "Dr.-Ing. Michael Meißer",
+        "Dr.-Ing. Kirstin Scholz"
+      ],
+      "parentKey": "",
+      "organisation": "Nanoelektronik",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.techn.elekt.halbl.grundg_2",
+      "dates": [
+        {
+          "weekday": 4,
+          "startTime": "8:30",
+          "endTime": "11:30",
+          "startDate": "2026-10-22",
+          "endDate": "2027-02-07",
+          "repeat": "w1 4",
+          "excludedDates": [],
+          "room": "KS2/Geb.G - R.014"
+        },
+        {
+          "weekday": 4,
+          "startTime": "8:30",
+          "endTime": "11:30",
+          "startDate": "2026-10-22",
+          "endDate": "2027-02-07",
+          "repeat": "w1 4",
+          "excludedDates": [],
+          "room": "KS2/Geb.G - R.016"
+        }
+      ]
+    },
+    {
+      "sourceId": "42500630",
+      "sourceKey": "Lecture.techn.elekt.halbl.grundg_9",
+      "title": "etit1001-01a: Grundgebiete der Elektrotechnik I (getLab)",
+      "shortTitle": "Grundgebiete der Elektrotechnik I (getLab)",
+      "number": "080337",
+      "type": "other",
+      "rawType": "FPUE",
+      "lecturers": [
+        "Dr. Natalia Liserre",
+        "Dr.-Ing. Michael Meißer",
+        "Dr.-Ing. Kirstin Scholz"
+      ],
+      "parentKey": "",
+      "organisation": "Nanoelektronik",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.techn.elekt.halbl.grundg_9",
+      "dates": [
+        {
+          "weekday": 2,
+          "startTime": "14:30",
+          "endTime": "17:30",
+          "startDate": "2026-10-20",
+          "endDate": "2027-02-07",
+          "repeat": "w1 2",
+          "excludedDates": [],
+          "room": "KS2/Geb.G - R.014"
+        },
+        {
+          "weekday": 2,
+          "startTime": "14:30",
+          "endTime": "17:30",
+          "startDate": "2026-10-20",
+          "endDate": "2027-02-07",
+          "repeat": "w1 2",
+          "excludedDates": [],
+          "room": "KS2/Geb.G - R.016"
+        }
+      ]
+    },
+    {
+      "sourceId": "42640578",
+      "sourceKey": "Lecture.techn.elekt.halbl.grundg_7",
+      "title": "etit1001-01a: Grundgebiete der Elektrotechnik I (getLab)",
+      "shortTitle": "Grundgebiete der Elektrotechnik I (getLab)",
+      "number": "080109",
+      "type": "other",
+      "rawType": "FPUE",
+      "lecturers": [
+        "Dr. Natalia Liserre",
+        "Dr.-Ing. Michael Meißer",
+        "Dr.-Ing. Kirstin Scholz"
+      ],
+      "parentKey": "",
+      "organisation": "Nanoelektronik",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.techn.elekt.halbl.grundg_7",
+      "dates": [
+        {
+          "weekday": 5,
+          "startTime": "8:30",
+          "endTime": "11:30",
+          "startDate": "2026-10-23",
+          "endDate": "2027-02-07",
+          "repeat": "w1 5",
+          "excludedDates": [],
+          "room": "KS2/Geb.G - R.014"
+        },
+        {
+          "weekday": 5,
+          "startTime": "8:30",
+          "endTime": "11:30",
+          "startDate": "2026-10-23",
+          "endDate": "2027-02-07",
+          "repeat": "w1 5",
+          "excludedDates": [],
+          "room": "KS2/Geb.G - R.016"
+        }
+      ]
+    },
+    {
+      "sourceId": "42642782",
+      "sourceKey": "Lecture.techn.elekt.halbl._etit1_4",
+      "title": "etit1001-01a: Grundgebiete der Elektrotechnik I (Übung)",
+      "shortTitle": "Grundgebiete der Elektrotechnik I (Ü)",
+      "number": "",
+      "type": "exercise",
+      "rawType": "UE",
+      "lecturers": [
+        "Dr.-Ing. Fabio Aldo Kraft"
+      ],
+      "parentKey": "",
+      "organisation": "Nanoelektronik",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.techn.elekt.halbl._etit1_4",
+      "dates": []
+    },
+    {
+      "sourceId": "42680271",
+      "sourceKey": "Lecture.techn.elekt.halbl._etit1_3",
+      "title": "etit1001-01a: Grundgebiete der Elektrotechnik I (Übung)",
+      "shortTitle": "Grundgebiete der Elektrotechnik I (Ü)",
+      "number": "",
+      "type": "exercise",
+      "rawType": "UE",
+      "lecturers": [
+        "Dr.-Ing. Fabio Aldo Kraft"
+      ],
+      "parentKey": "",
+      "organisation": "Nanoelektronik",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.techn.elekt.halbl._etit1_3",
+      "dates": []
+    },
+    {
+      "sourceId": "42667216",
+      "sourceKey": "Lecture.techn.elekt.halbl._etit1",
+      "title": "etit1001-01a: Grundgebiete der Elektrotechnik I",
+      "shortTitle": "Grundgebiete der Elektrotechnik I (V)",
+      "number": "080159",
+      "type": "lecture",
+      "rawType": "V",
+      "lecturers": [
+        "Dr. Wilhelm Braun"
+      ],
+      "parentKey": "",
+      "organisation": "Nanoelektronik",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.techn.elekt.halbl._etit1",
+      "dates": [
+        {
+          "weekday": 2,
+          "startTime": "10:15",
+          "endTime": "11:45",
+          "startDate": "2026-10-20",
+          "endDate": "2027-02-07",
+          "repeat": "w1 2",
+          "excludedDates": [],
+          "room": "Raum offen"
+        },
+        {
+          "weekday": 4,
+          "startTime": "16:15",
+          "endTime": "17:45",
+          "startDate": "2026-10-22",
+          "endDate": "2027-02-07",
+          "repeat": "w2 4",
+          "excludedDates": [],
+          "room": "Raum offen"
+        }
+      ]
+    },
+    {
+      "sourceId": "42633671",
+      "sourceKey": "Lecture.techn.elekt.halbl._etit1_2",
+      "title": "etit1001-01a: Grundgebiete der Elektrotechnik I",
+      "shortTitle": "Grundgebiete der Elektrotechnik I (V)",
+      "number": "080159",
+      "type": "lecture",
+      "rawType": "V",
+      "lecturers": [
+        "Dr. Wilhelm Braun"
+      ],
+      "parentKey": "",
+      "organisation": "Nanoelektronik",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.techn.elekt.halbl._etit1_2",
+      "dates": [
+        {
+          "weekday": 2,
+          "startTime": "10:15",
+          "endTime": "11:45",
+          "startDate": "2026-10-20",
+          "endDate": "2027-02-07",
+          "repeat": "w1 2",
+          "excludedDates": [],
+          "room": "Raum offen"
+        },
+        {
+          "weekday": 4,
+          "startTime": "16:15",
+          "endTime": "17:45",
+          "startDate": "2026-10-22",
+          "endDate": "2027-02-07",
+          "repeat": "w2 4",
+          "excludedDates": [],
+          "room": "Raum offen"
+        }
+      ]
+    },
+    {
+      "sourceId": "42623924",
+      "sourceKey": "Lecture.techn.elekt.halbl._etit1_5",
+      "title": "etit1001-01a: Grundgebiete der Elektrotechnik I (getLab)",
+      "shortTitle": "Grundgebiete der Elektrotechnik I (getLab)",
+      "number": "",
+      "type": "other",
+      "rawType": "FPUE",
+      "lecturers": [],
+      "parentKey": "",
+      "organisation": "Nanoelektronik",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.techn.elekt.halbl._etit1_5",
+      "dates": []
+    },
+    {
+      "sourceId": "42672336",
+      "sourceKey": "Lecture.techn.elekt.halbl._etit1_8",
+      "title": "etit1001-01a: Grundgebiete der Elektrotechnik I (getLab)",
+      "shortTitle": "Grundgebiete der Elektrotechnik I (getLab)",
+      "number": "",
+      "type": "other",
+      "rawType": "FPUE",
+      "lecturers": [],
+      "parentKey": "",
+      "organisation": "Nanoelektronik",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.techn.elekt.halbl._etit1_8",
+      "dates": []
+    },
+    {
+      "sourceId": "40969197",
+      "sourceKey": "Lecture.techn.elekt.digita.signal",
+      "title": "etit1008-01a: Signale und Systeme II",
+      "shortTitle": "Signale und Systeme II (V)",
+      "number": "080188",
+      "type": "lecture",
+      "rawType": "V",
+      "lecturers": [
+        "Prof. Dr.-Ing. Gerhard Schmidt"
+      ],
+      "parentKey": "",
+      "organisation": "Digitale Signalverarbeitung und Systemtheorie",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.techn.elekt.digita.signal",
+      "dates": [
+        {
+          "weekday": 1,
+          "startTime": "8:15",
+          "endTime": "9:45",
+          "startDate": "2026-10-19",
+          "endDate": "2027-02-07",
           "repeat": "w1 1",
+          "excludedDates": [],
+          "room": "ES21/Geb.D - EG.004 (HS II)"
+        }
+      ]
+    },
+    {
+      "sourceId": "40909469",
+      "sourceKey": "Lecture.techn.elekt.digita.signal_9",
+      "title": "etit1008-01a: Signale und Systeme II (Übung)",
+      "shortTitle": "Signale und Systeme II (Ü)",
+      "number": "080116",
+      "type": "exercise",
+      "rawType": "UE",
+      "lecturers": [
+        "Prof. Dr.-Ing. Gerhard Schmidt",
+        "sowie Mitarbeiterinnen und Mitarbeiter"
+      ],
+      "parentKey": "Lecture.techn.elekt.digita.signal",
+      "organisation": "Digitale Signalverarbeitung und Systemtheorie",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.techn.elekt.digita.signal_9",
+      "dates": [
+        {
+          "weekday": 1,
+          "startTime": "10:00",
+          "endTime": "10:45",
+          "startDate": "2026-10-19",
+          "endDate": "2027-02-07",
+          "repeat": "w1 1",
+          "excludedDates": [],
+          "room": "ES21/Geb.D - EG.004 (HS II)"
+        }
+      ]
+    },
+    {
+      "sourceId": "42639121",
+      "sourceKey": "Lecture.techn.elekt.digita._etit1",
+      "title": "etit1008-01a: Signale und Systeme II",
+      "shortTitle": "Signale und Systeme II (V)",
+      "number": "080188",
+      "type": "lecture",
+      "rawType": "V",
+      "lecturers": [
+        "Prof. Dr.-Ing. Gerhard Schmidt"
+      ],
+      "parentKey": "",
+      "organisation": "Digitale Signalverarbeitung und Systemtheorie",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.techn.elekt.digita._etit1",
+      "dates": [
+        {
+          "weekday": 1,
+          "startTime": "8:15",
+          "endTime": "9:45",
+          "startDate": "2026-10-19",
+          "endDate": "2027-02-07",
+          "repeat": "w1 1",
+          "excludedDates": [],
+          "room": "ES21/Geb.D - EG.004 (HS II)"
+        }
+      ]
+    },
+    {
+      "sourceId": "42673079",
+      "sourceKey": "Lecture.techn.elekt.digita._etit1_4",
+      "title": "etit1008-01a: Signale und Systeme II (Übung)",
+      "shortTitle": "Signale und Systeme II (Ü)",
+      "number": "080116",
+      "type": "exercise",
+      "rawType": "UE",
+      "lecturers": [
+        "Prof. Dr.-Ing. Gerhard Schmidt",
+        "sowie Mitarbeiterinnen und Mitarbeiter"
+      ],
+      "parentKey": "",
+      "organisation": "Digitale Signalverarbeitung und Systemtheorie",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.techn.elekt.digita._etit1_4",
+      "dates": [
+        {
+          "weekday": 1,
+          "startTime": "10:00",
+          "endTime": "10:45",
+          "startDate": "2026-10-19",
+          "endDate": "2027-02-07",
+          "repeat": "w1 1",
+          "excludedDates": [],
+          "room": "ES21/Geb.D - EG.004 (HS II)"
+        }
+      ]
+    },
+    {
+      "sourceId": "40952368",
+      "sourceKey": "Lecture.techn.elekt.funkko.grundg",
+      "title": "etit1004-01a: Grundlagen der Schaltungstechnik",
+      "shortTitle": "Grundlagen der Schaltungstechnik (V)",
+      "number": "080071",
+      "type": "lecture",
+      "rawType": "V",
+      "lecturers": [
+        "Prof. Dr. Robert Rieger"
+      ],
+      "parentKey": "",
+      "organisation": "Vernetzte Elektronische Systeme",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.techn.elekt.funkko.grundg",
+      "dates": [
+        {
+          "weekday": 5,
+          "startTime": "14:15",
+          "endTime": "16:45",
+          "startDate": "2026-10-23",
+          "endDate": "2027-02-07",
+          "repeat": "w1 5",
+          "excludedDates": [],
+          "room": "Raum offen"
+        }
+      ]
+    },
+    {
+      "sourceId": "40946907",
+      "sourceKey": "Lecture.techn.elekt.funkko.grundg_3",
+      "title": "etit1004-01a: Grundlagen der Schaltungstechnik (Übung)",
+      "shortTitle": "Grundlagen der Schaltungstechnik (Ü)",
+      "number": "080115",
+      "type": "exercise",
+      "rawType": "UE",
+      "lecturers": [
+        "Prof. Dr. Robert Rieger"
+      ],
+      "parentKey": "Lecture.techn.elekt.funkko.grundg",
+      "organisation": "Vernetzte Elektronische Systeme",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.techn.elekt.funkko.grundg_3",
+      "dates": [
+        {
+          "weekday": 1,
+          "startTime": "14:15",
+          "endTime": "15:45",
+          "startDate": "2026-10-19",
+          "endDate": "2027-02-07",
+          "repeat": "w1 1",
+          "excludedDates": [],
+          "room": "Raum offen"
+        }
+      ]
+    },
+    {
+      "sourceId": "42662402",
+      "sourceKey": "Lecture.techn.elekt.funkko._etit1",
+      "title": "etit1004-01a: Grundlagen der Schaltungstechnik",
+      "shortTitle": "Grundlagen der Schaltungstechnik (V)",
+      "number": "080071",
+      "type": "lecture",
+      "rawType": "V",
+      "lecturers": [
+        "Prof. Dr. Robert Rieger"
+      ],
+      "parentKey": "",
+      "organisation": "Vernetzte Elektronische Systeme",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.techn.elekt.funkko._etit1",
+      "dates": [
+        {
+          "weekday": 5,
+          "startTime": "14:15",
+          "endTime": "16:45",
+          "startDate": "2026-10-23",
+          "endDate": "2027-02-07",
+          "repeat": "w1 5",
+          "excludedDates": [],
+          "room": "Raum offen"
+        }
+      ]
+    },
+    {
+      "sourceId": "42620222",
+      "sourceKey": "Lecture.techn.elekt.funkko._etit1_3",
+      "title": "etit1004-01a: Grundlagen der Schaltungstechnik (Übung)",
+      "shortTitle": "Grundlagen der Schaltungstechnik (Ü)",
+      "number": "080115",
+      "type": "exercise",
+      "rawType": "UE",
+      "lecturers": [
+        "Prof. Dr. Robert Rieger"
+      ],
+      "parentKey": "",
+      "organisation": "Vernetzte Elektronische Systeme",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.techn.elekt.funkko._etit1_3",
+      "dates": [
+        {
+          "weekday": 1,
+          "startTime": "14:15",
+          "endTime": "15:45",
+          "startDate": "2026-10-19",
+          "endDate": "2027-02-07",
+          "repeat": "w1 1",
+          "excludedDates": [],
+          "room": "Raum offen"
+        }
+      ]
+    },
+    {
+      "sourceId": "41835244",
+      "sourceKey": "Lecture.mathe.mathem.arbeit.gla1",
+      "title": "Plenarübung zu Lineare Algebra I",
+      "shortTitle": "PleÜ:LA1",
+      "number": "",
+      "type": "exercise",
+      "rawType": "UE",
+      "lecturers": [
+        "Dr. Alexander Ullmann"
+      ],
+      "parentKey": "Lecture.mathe.mathem.arbeit.vlinal",
+      "organisation": "Algebra",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.mathe.mathem.arbeit.gla1",
+      "dates": []
+    },
+    {
+      "sourceId": "41828951",
+      "sourceKey": "Lecture.mathe.mathem.arbeit.gla1_5",
+      "title": "Plenarübung zu Lineare Algebra I",
+      "shortTitle": "PleÜ:LA1",
+      "number": "061204",
+      "type": "exercise",
+      "rawType": "UE",
+      "lecturers": [
+        "Dr. Alexander Ullmann"
+      ],
+      "parentKey": "",
+      "organisation": "Algebra",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.mathe.mathem.arbeit.gla1_5",
+      "dates": [
+        {
+          "weekday": 3,
+          "startTime": "10:15",
+          "endTime": "11:45",
+          "startDate": "2026-10-21",
+          "endDate": "2027-02-07",
+          "repeat": "w1 3",
+          "excludedDates": [],
+          "room": "HHP6 - R.EG.003"
+        }
+      ]
+    },
+    {
+      "sourceId": "41313096",
+      "sourceKey": "Lecture.mathe.mathem.arbeit.linalg",
+      "title": "Übungen zu Lineare Algebra I",
+      "shortTitle": "Ü:LinAlg1AG",
+      "number": "",
+      "type": "exercise",
+      "rawType": "UE",
+      "lecturers": [
+        "Priv.-Doz. Dr. Markus Nieß"
+      ],
+      "parentKey": "Lecture.mathe.mathem.arbeit.vlinal",
+      "organisation": "Algebra",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.mathe.mathem.arbeit.linalg",
+      "dates": []
+    },
+    {
+      "sourceId": "42695350",
+      "sourceKey": "Lecture.mathe.mathem.arbeit.linalg_24",
+      "title": "Übungen zu Lineare Algebra I",
+      "shortTitle": "Ü:LinAlg1AG",
+      "number": "060028",
+      "type": "exercise",
+      "rawType": "UE",
+      "lecturers": [
+        "Priv.-Doz. Dr. Markus Nieß"
+      ],
+      "parentKey": "",
+      "organisation": "Algebra",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.mathe.mathem.arbeit.linalg_24",
+      "dates": [
+        {
+          "weekday": 4,
+          "startTime": "10:15",
+          "endTime": "11:45",
+          "startDate": "2026-10-22",
+          "endDate": "2027-02-04",
+          "repeat": "w1 4",
+          "excludedDates": [],
+          "room": "LMS4 - R.526"
+        }
+      ]
+    },
+    {
+      "sourceId": "42595661",
+      "sourceKey": "Lecture.mathe.mathem.arbeit.linalg_7",
+      "title": "Übungen zu Lineare Algebra I",
+      "shortTitle": "Ü:LinAlg1AG",
+      "number": "060086",
+      "type": "exercise",
+      "rawType": "UE",
+      "lecturers": [
+        "Priv.-Doz. Dr. Markus Nieß"
+      ],
+      "parentKey": "",
+      "organisation": "Algebra",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.mathe.mathem.arbeit.linalg_7",
+      "dates": [
+        {
+          "weekday": 4,
+          "startTime": "12:15",
+          "endTime": "13:45",
+          "startDate": "2026-10-22",
+          "endDate": "2027-02-04",
+          "repeat": "w1 4",
+          "excludedDates": [],
+          "room": "HHP6 - R.EG.003"
+        }
+      ]
+    },
+    {
+      "sourceId": "42308485",
+      "sourceKey": "Lecture.mathe.mathem.arbeit.linalg_3",
+      "title": "Übungen zu Lineare Algebra I",
+      "shortTitle": "Ü:LinAlg1AG",
+      "number": "060256",
+      "type": "exercise",
+      "rawType": "UE",
+      "lecturers": [
+        "Priv.-Doz. Dr. Markus Nieß"
+      ],
+      "parentKey": "",
+      "organisation": "Algebra",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.mathe.mathem.arbeit.linalg_3",
+      "dates": [
+        {
+          "weekday": 4,
+          "startTime": "14:15",
+          "endTime": "15:45",
+          "startDate": "2026-10-22",
+          "endDate": "2027-02-04",
+          "repeat": "w1 4",
+          "excludedDates": [],
+          "room": "HRS7 - R.7"
+        }
+      ]
+    },
+    {
+      "sourceId": "42332548",
+      "sourceKey": "Lecture.mathe.mathem.arbeit.linalg_1",
+      "title": "Übungen zu Lineare Algebra I",
+      "shortTitle": "Ü:LinAlg1AG",
+      "number": "060236",
+      "type": "exercise",
+      "rawType": "UE",
+      "lecturers": [
+        "Priv.-Doz. Dr. Markus Nieß"
+      ],
+      "parentKey": "",
+      "organisation": "Algebra",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.mathe.mathem.arbeit.linalg_1",
+      "dates": [
+        {
+          "weekday": 4,
+          "startTime": "10:15",
+          "endTime": "11:45",
+          "startDate": "2026-10-22",
+          "endDate": "2027-02-04",
+          "repeat": "w1 4",
+          "excludedDates": [],
+          "room": "HRS7 - R.7"
+        }
+      ]
+    },
+    {
+      "sourceId": "42583209",
+      "sourceKey": "Lecture.mathe.mathem.arbeit.linalg_80",
+      "title": "Übungen zu Lineare Algebra I",
+      "shortTitle": "Ü:LinAlg1AG",
+      "number": "060501",
+      "type": "exercise",
+      "rawType": "UE",
+      "lecturers": [
+        "Priv.-Doz. Dr. Markus Nieß"
+      ],
+      "parentKey": "",
+      "organisation": "Algebra",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.mathe.mathem.arbeit.linalg_80",
+      "dates": [
+        {
+          "weekday": 4,
+          "startTime": "16:15",
+          "endTime": "17:45",
+          "startDate": "2026-10-22",
+          "endDate": "2027-02-04",
+          "repeat": "w1 4",
+          "excludedDates": [],
+          "room": "HHP6 - R.EG.003"
+        }
+      ]
+    },
+    {
+      "sourceId": "42346316",
+      "sourceKey": "Lecture.mathe.mathem.arbeit.linalg_4",
+      "title": "Übungen zu Lineare Algebra I",
+      "shortTitle": "Ü:LinAlg1AG",
+      "number": "060100",
+      "type": "exercise",
+      "rawType": "UE",
+      "lecturers": [
+        "Priv.-Doz. Dr. Markus Nieß"
+      ],
+      "parentKey": "",
+      "organisation": "Algebra",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.mathe.mathem.arbeit.linalg_4",
+      "dates": [
+        {
+          "weekday": 4,
+          "startTime": "8:15",
+          "endTime": "9:45",
+          "startDate": "2026-10-22",
+          "endDate": "2027-02-04",
+          "repeat": "w1 4",
+          "excludedDates": [],
+          "room": "HHP6 - R.EG.004"
+        }
+      ]
+    },
+    {
+      "sourceId": "42391271",
+      "sourceKey": "Lecture.mathe.mathem.arbeit.linalg_0",
+      "title": "Übungen zu Lineare Algebra I",
+      "shortTitle": "Ü:LinAlg1AG",
+      "number": "060104",
+      "type": "exercise",
+      "rawType": "UE",
+      "lecturers": [
+        "Priv.-Doz. Dr. Markus Nieß"
+      ],
+      "parentKey": "",
+      "organisation": "Algebra",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.mathe.mathem.arbeit.linalg_0",
+      "dates": []
+    },
+    {
+      "sourceId": "42314293",
+      "sourceKey": "Lecture.mathe.mathem.arbeit.linalg_81",
+      "title": "Übungen zu Lineare Algebra I",
+      "shortTitle": "Ü:LinAlg1AG",
+      "number": "060253",
+      "type": "exercise",
+      "rawType": "UE",
+      "lecturers": [
+        "Priv.-Doz. Dr. Markus Nieß"
+      ],
+      "parentKey": "",
+      "organisation": "Algebra",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.mathe.mathem.arbeit.linalg_81",
+      "dates": [
+        {
+          "weekday": 4,
+          "startTime": "14:15",
+          "endTime": "15:45",
+          "startDate": "2026-10-22",
+          "endDate": "2027-02-04",
+          "repeat": "w1 4",
+          "excludedDates": [],
+          "room": "HRS7 - R.8"
+        }
+      ]
+    },
+    {
+      "sourceId": "41110935",
+      "sourceKey": "Lecture.mathe.mathem.arbeit.vlinal",
+      "title": "Lineare Algebra I",
+      "shortTitle": "V:LinAlg1",
+      "number": "060116",
+      "type": "lecture",
+      "rawType": "V",
+      "lecturers": [
+        "Priv.-Doz. Dr. Markus Nieß"
+      ],
+      "parentKey": "",
+      "organisation": "Algebra",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.mathe.mathem.arbeit.vlinal",
+      "dates": [
+        {
+          "weekday": 1,
+          "startTime": "8:15",
+          "endTime": "9:45",
+          "startDate": "2026-10-12",
+          "endDate": "2027-02-03",
+          "repeat": "w1 1",
+          "excludedDates": [],
+          "room": "HHP6 - R.EG.004"
+        },
+        {
+          "weekday": 1,
+          "startTime": "8:15",
+          "endTime": "9:45",
+          "startDate": "2026-10-12",
+          "endDate": "2027-02-03",
+          "repeat": "w1 1",
+          "excludedDates": [],
+          "room": "HHP6 - R.EG.003"
+        },
+        {
+          "weekday": 3,
+          "startTime": "8:15",
+          "endTime": "9:45",
+          "startDate": "2026-10-14",
+          "endDate": "2027-02-03",
+          "repeat": "w1 3",
+          "excludedDates": [],
+          "room": "HHP6 - R.EG.003"
+        },
+        {
+          "weekday": 3,
+          "startTime": "8:15",
+          "endTime": "9:45",
+          "startDate": "2026-10-14",
+          "endDate": "2027-02-03",
+          "repeat": "w1 3",
+          "excludedDates": [],
+          "room": "HHP6 - R.EG.004"
+        },
+        {
+          "weekday": 1,
+          "startTime": "8:15",
+          "endTime": "9:45",
+          "startDate": "2026-10-12",
+          "endDate": "2027-02-03",
+          "repeat": "w1 1",
+          "excludedDates": [],
+          "room": "LMS6 - R.10 Steinitz-Hörsaal"
+        },
+        {
+          "weekday": 3,
+          "startTime": "8:15",
+          "endTime": "9:45",
+          "startDate": "2026-10-14",
+          "endDate": "2027-02-03",
+          "repeat": "w1 3",
+          "excludedDates": [],
+          "room": "LMS6 - R.10 Steinitz-Hörsaal"
+        }
+      ]
+    },
+    {
+      "sourceId": "42690399",
+      "sourceKey": "Lecture.zentra_1.servic.studiu.intern.refera_4._gla1",
+      "title": "Plenarübung zu Lineare Algebra I",
+      "shortTitle": "PleÜ:LA1",
+      "number": "",
+      "type": "exercise",
+      "rawType": "UE",
+      "lecturers": [
+        "Dr. Alexander Ullmann"
+      ],
+      "parentKey": "",
+      "organisation": "Referat Studium und Praktikum im Ausland, Koordination ERASMUS",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.zentra_1.servic.studiu.intern.refera_4._gla1",
+      "dates": []
+    },
+    {
+      "sourceId": "42620921",
+      "sourceKey": "Lecture.mathe.mathem.arbeit._plena",
+      "title": "Plenarübung zu Lineare Algebra I",
+      "shortTitle": "PleÜ:LA1",
+      "number": "",
+      "type": "exercise",
+      "rawType": "UE",
+      "lecturers": [
+        "Dr. Alexander Ullmann"
+      ],
+      "parentKey": "Lecture.mathe.mathem.arbeit._linea",
+      "organisation": "Algebra",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.mathe.mathem.arbeit._plena",
+      "dates": []
+    },
+    {
+      "sourceId": "42628487",
+      "sourceKey": "Lecture.zentra_1.servic.studiu.intern.refera_4._linal",
+      "title": "Übungen zu Lineare Algebra I",
+      "shortTitle": "Ü:LinAlg1AG",
+      "number": "",
+      "type": "exercise",
+      "rawType": "UE",
+      "lecturers": [
+        "Priv.-Doz. Dr. Markus Nieß"
+      ],
+      "parentKey": "",
+      "organisation": "Referat Studium und Praktikum im Ausland, Koordination ERASMUS",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.zentra_1.servic.studiu.intern.refera_4._linal",
+      "dates": []
+    },
+    {
+      "sourceId": "42665919",
+      "sourceKey": "Lecture.mathe.mathem.arbeit._bunge",
+      "title": "Übungen zu Lineare Algebra I",
+      "shortTitle": "Ü:LinAlg1AG",
+      "number": "",
+      "type": "exercise",
+      "rawType": "UE",
+      "lecturers": [
+        "Priv.-Doz. Dr. Markus Nieß"
+      ],
+      "parentKey": "Lecture.mathe.mathem.arbeit._linea",
+      "organisation": "Algebra",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.mathe.mathem.arbeit._bunge",
+      "dates": []
+    },
+    {
+      "sourceId": "42608129",
+      "sourceKey": "Lecture.mathe.mathem.arbeit._linea",
+      "title": "Lineare Algebra I",
+      "shortTitle": "V:LinAlg1",
+      "number": "060116",
+      "type": "lecture",
+      "rawType": "V",
+      "lecturers": [
+        "Priv.-Doz. Dr. Markus Nieß"
+      ],
+      "parentKey": "",
+      "organisation": "Algebra",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.mathe.mathem.arbeit._linea",
+      "dates": [
+        {
+          "weekday": 1,
+          "startTime": "8:15",
+          "endTime": "9:45",
+          "startDate": "2026-10-12",
+          "endDate": "2027-02-03",
+          "repeat": "w1 1",
+          "excludedDates": [],
+          "room": "HHP6 - R.EG.004"
+        },
+        {
+          "weekday": 1,
+          "startTime": "8:15",
+          "endTime": "9:45",
+          "startDate": "2026-10-12",
+          "endDate": "2027-02-03",
+          "repeat": "w1 1",
+          "excludedDates": [],
+          "room": "HHP6 - R.EG.003"
+        },
+        {
+          "weekday": 3,
+          "startTime": "8:15",
+          "endTime": "9:45",
+          "startDate": "2026-10-14",
+          "endDate": "2027-02-03",
+          "repeat": "w1 3",
+          "excludedDates": [],
+          "room": "HHP6 - R.EG.003"
+        },
+        {
+          "weekday": 3,
+          "startTime": "8:15",
+          "endTime": "9:45",
+          "startDate": "2026-10-14",
+          "endDate": "2027-02-03",
+          "repeat": "w1 3",
+          "excludedDates": [],
+          "room": "HHP6 - R.EG.004"
+        },
+        {
+          "weekday": 1,
+          "startTime": "8:15",
+          "endTime": "9:45",
+          "startDate": "2026-10-12",
+          "endDate": "2027-02-03",
+          "repeat": "w1 1",
+          "excludedDates": [],
+          "room": "LMS6 - R.10 Steinitz-Hörsaal"
+        },
+        {
+          "weekday": 3,
+          "startTime": "8:15",
+          "endTime": "9:45",
+          "startDate": "2026-10-14",
+          "endDate": "2027-02-03",
+          "repeat": "w1 3",
+          "excludedDates": [],
+          "room": "LMS6 - R.10 Steinitz-Hörsaal"
+        }
+      ]
+    },
+    {
+      "sourceId": "42632130",
+      "sourceKey": "Lecture.zentra_1.servic.studiu.intern.refera_4._vlina",
+      "title": "Lineare Algebra I",
+      "shortTitle": "V:LinAlg1",
+      "number": "060116",
+      "type": "lecture",
+      "rawType": "V",
+      "lecturers": [
+        "Priv.-Doz. Dr. Markus Nieß"
+      ],
+      "parentKey": "",
+      "organisation": "Referat Studium und Praktikum im Ausland, Koordination ERASMUS",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.zentra_1.servic.studiu.intern.refera_4._vlina",
+      "dates": [
+        {
+          "weekday": 1,
+          "startTime": "8:15",
+          "endTime": "9:45",
+          "startDate": "2026-10-12",
+          "endDate": "2027-02-03",
+          "repeat": "w1 1",
+          "excludedDates": [],
+          "room": "HHP6 - R.EG.004"
+        },
+        {
+          "weekday": 1,
+          "startTime": "8:15",
+          "endTime": "9:45",
+          "startDate": "2026-10-12",
+          "endDate": "2027-02-03",
+          "repeat": "w1 1",
+          "excludedDates": [],
+          "room": "HHP6 - R.EG.003"
+        },
+        {
+          "weekday": 3,
+          "startTime": "8:15",
+          "endTime": "9:45",
+          "startDate": "2026-10-14",
+          "endDate": "2027-02-03",
+          "repeat": "w1 3",
+          "excludedDates": [],
+          "room": "HHP6 - R.EG.003"
+        },
+        {
+          "weekday": 3,
+          "startTime": "8:15",
+          "endTime": "9:45",
+          "startDate": "2026-10-14",
+          "endDate": "2027-02-03",
+          "repeat": "w1 3",
+          "excludedDates": [],
+          "room": "HHP6 - R.EG.004"
+        },
+        {
+          "weekday": 1,
+          "startTime": "8:15",
+          "endTime": "9:45",
+          "startDate": "2026-10-12",
+          "endDate": "2027-02-03",
+          "repeat": "w1 1",
+          "excludedDates": [],
+          "room": "LMS6 - R.10 Steinitz-Hörsaal"
+        },
+        {
+          "weekday": 3,
+          "startTime": "8:15",
+          "endTime": "9:45",
+          "startDate": "2026-10-14",
+          "endDate": "2027-02-03",
+          "repeat": "w1 3",
+          "excludedDates": [],
+          "room": "LMS6 - R.10 Steinitz-Hörsaal"
+        }
+      ]
+    },
+    {
+      "sourceId": "41166682",
+      "sourceKey": "Lecture.agrar.phyto.zentr.genome",
+      "title": "(AEF agrig002) Vorlesung: Genome analysis II, functional genome analysis",
+      "shortTitle": "",
+      "number": "070284",
+      "type": "lecture",
+      "rawType": "V",
+      "lecturers": [
+        "Prof. Dr. Bahar Razavi"
+      ],
+      "parentKey": "",
+      "organisation": "Institut für Phytopathologie",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.agrar.phyto.zentr.genome",
+      "dates": []
+    },
+    {
+      "sourceId": "41193349",
+      "sourceKey": "Lecture.agrar.tierz.tierz.agrige",
+      "title": "AEF-agrig002 Vorlesung: Genome analysis I: structural genome analysis",
+      "shortTitle": "",
+      "number": "070356",
+      "type": "lecture",
+      "rawType": "V",
+      "lecturers": [
+        "Dr. agr. Mohammed Saeed-Zidane"
+      ],
+      "parentKey": "",
+      "organisation": "Tierzucht und Haustiergenetik",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.agrar.tierz.tierz.agrige",
+      "dates": []
+    },
+    {
+      "sourceId": "41258465",
+      "sourceKey": "Lecture.agrar.tierz.tierz.agrige_9",
+      "title": "AEF-agrig010 Vorlesung: Utilization of genome analysis in animal breeding",
+      "shortTitle": "",
+      "number": "070171",
+      "type": "lecture",
+      "rawType": "V",
+      "lecturers": [
+        "Dr. agr. Nina Krattenmacher",
+        "Dr. Anita Seidel",
+        "Dr. Katharina Voß"
+      ],
+      "parentKey": "",
+      "organisation": "Tierzucht und Haustiergenetik",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.agrar.tierz.tierz.agrige_9",
+      "dates": []
+    },
+    {
+      "sourceId": "21271164",
+      "sourceKey": "Lecture.mathe.mathem.arbeit_1.ana2",
+      "title": "Übungen zur Analysis I",
+      "shortTitle": "Ü:Ana1",
+      "number": "",
+      "type": "exercise",
+      "rawType": "UE",
+      "lecturers": [
+        "Dr. Raffael Hagger"
+      ],
+      "parentKey": "Lecture.mathe.mathem.arbeit_1.anai",
+      "organisation": "Analysis",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.mathe.mathem.arbeit_1.ana2",
+      "dates": []
+    },
+    {
+      "sourceId": "42538181",
+      "sourceKey": "Lecture.mathe.mathem.arbeit_1.ana2_6",
+      "title": "Übungen zur Analysis I",
+      "shortTitle": "Ü:Ana1",
+      "number": "060087",
+      "type": "exercise",
+      "rawType": "UE",
+      "lecturers": [
+        "Dr. Raffael Hagger"
+      ],
+      "parentKey": "",
+      "organisation": "Analysis",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.mathe.mathem.arbeit_1.ana2_6",
+      "dates": [
+        {
+          "weekday": 2,
+          "startTime": "10:15",
+          "endTime": "11:45",
+          "startDate": "2026-10-27",
+          "endDate": "2027-02-02",
+          "repeat": "w1 2",
+          "excludedDates": [],
+          "room": "LMS4 - R.526"
+        }
+      ]
+    },
+    {
+      "sourceId": "42539317",
+      "sourceKey": "Lecture.mathe.mathem.arbeit_1.ana2_5",
+      "title": "Übungen zur Analysis I",
+      "shortTitle": "Ü:Ana1",
+      "number": "060736",
+      "type": "exercise",
+      "rawType": "UE",
+      "lecturers": [
+        "Dr. Raffael Hagger"
+      ],
+      "parentKey": "",
+      "organisation": "Analysis",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.mathe.mathem.arbeit_1.ana2_5",
+      "dates": [
+        {
+          "weekday": 1,
+          "startTime": "12:15",
+          "endTime": "13:45",
+          "startDate": "2026-10-26",
+          "endDate": "2027-02-01",
+          "repeat": "w1 1",
+          "excludedDates": [],
+          "room": "LMS4 - R.526"
+        }
+      ]
+    },
+    {
+      "sourceId": "41834701",
+      "sourceKey": "Lecture.mathe.mathem.arbeit_1.ana2_7",
+      "title": "Übungen zur Analysis I",
+      "shortTitle": "Ü:Ana1",
+      "number": "060891",
+      "type": "exercise",
+      "rawType": "UE",
+      "lecturers": [
+        "Dr. Raffael Hagger"
+      ],
+      "parentKey": "",
+      "organisation": "Analysis",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.mathe.mathem.arbeit_1.ana2_7",
+      "dates": [
+        {
+          "weekday": 1,
+          "startTime": "10:15",
+          "endTime": "11:45",
+          "startDate": "2026-10-26",
+          "endDate": "2027-02-01",
+          "repeat": "w1 1",
+          "excludedDates": [],
+          "room": "LMS4 - R.526"
+        }
+      ]
+    },
+    {
+      "sourceId": "42180265",
+      "sourceKey": "Lecture.mathe.mathem.arbeit_1.ana2_1",
+      "title": "Übungen zur Analysis I",
+      "shortTitle": "Ü:Ana1",
+      "number": "060115",
+      "type": "exercise",
+      "rawType": "UE",
+      "lecturers": [
+        "Dr. Raffael Hagger"
+      ],
+      "parentKey": "",
+      "organisation": "Analysis",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.mathe.mathem.arbeit_1.ana2_1",
+      "dates": [
+        {
+          "weekday": 1,
+          "startTime": "14:15",
+          "endTime": "15:45",
+          "startDate": "2026-10-26",
+          "endDate": "2027-02-01",
+          "repeat": "w1 1",
+          "excludedDates": [],
+          "room": "LMS4 - R.526"
+        }
+      ]
+    },
+    {
+      "sourceId": "41729043",
+      "sourceKey": "Lecture.mathe.mathem.arbeit_1.ana3la",
+      "title": "Übungen zur Analysis III",
+      "shortTitle": "Ü:Ana3",
+      "number": "",
+      "type": "exercise",
+      "rawType": "UE",
+      "lecturers": [
+        "Dr. Raffael Hagger"
+      ],
+      "parentKey": "Lecture.mathe.mathem.arbeit_1.vanaii",
+      "organisation": "Analysis",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.mathe.mathem.arbeit_1.ana3la",
+      "dates": []
+    },
+    {
+      "sourceId": "41711135",
+      "sourceKey": "Lecture.mathe.mathem.arbeit_1.ana3la_3",
+      "title": "Übungen zur Analysis III",
+      "shortTitle": "Ü:Ana3",
+      "number": "060714",
+      "type": "exercise",
+      "rawType": "UE",
+      "lecturers": [
+        "Dr. Raffael Hagger"
+      ],
+      "parentKey": "",
+      "organisation": "Analysis",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.mathe.mathem.arbeit_1.ana3la_3",
+      "dates": [
+        {
+          "weekday": 4,
+          "startTime": "10:15",
+          "endTime": "11:45",
+          "startDate": "2026-10-22",
+          "endDate": "2027-02-04",
+          "repeat": "w1 4",
           "excludedDates": [],
           "room": "LMS4 - R.424"
         }
       ]
     },
     {
-      "sourceId": "42663284",
-      "sourceKey": "Lecture.zentra_1.servic.studiu.intern.refera_4._vmath",
-      "title": "Inf-Math-A: Mathematik für die Informatik A",
-      "shortTitle": "V:InfMathA",
-      "number": "060107",
+      "sourceId": "40513424",
+      "sourceKey": "Lecture.mathe.mathem.arbeit_1.anai",
+      "title": "Analysis I",
+      "shortTitle": "V:Ana1",
+      "number": "060170",
       "type": "lecture",
       "rawType": "V",
       "lecturers": [
-        "Dr. Barbara Langfeld"
+        "Dr. Raffael Hagger"
       ],
       "parentKey": "",
-      "organisation": "Referat Studium und Praktikum im Ausland, Koordination ERASMUS",
-      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.zentra_1.servic.studiu.intern.refera_4._vmath",
+      "organisation": "Analysis",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.mathe.mathem.arbeit_1.anai",
       "dates": [
         {
-          "weekday": 3,
+          "weekday": 4,
+          "startTime": "12:15",
+          "endTime": "13:45",
+          "startDate": "2026-10-15",
+          "endDate": "2027-02-05",
+          "repeat": "w1 4",
+          "excludedDates": [],
+          "room": "LMS6 - R.10 Steinitz-Hörsaal"
+        },
+        {
+          "weekday": 5,
+          "startTime": "10:15",
+          "endTime": "11:45",
+          "startDate": "2026-10-16",
+          "endDate": "2027-02-05",
+          "repeat": "w1 5",
+          "excludedDates": [],
+          "room": "LMS6 - R.10 Steinitz-Hörsaal"
+        }
+      ]
+    },
+    {
+      "sourceId": "41177577",
+      "sourceKey": "Lecture.mathe.mathem.arbeit_1.anaiii",
+      "title": "Übungen zur Analysis III (LAG)",
+      "shortTitle": "Ü:Ana3(LAG)",
+      "number": "",
+      "type": "exercise",
+      "rawType": "UE",
+      "lecturers": [
+        "Dr. rer. nat. Sascha Trostorff"
+      ],
+      "parentKey": "Lecture.mathe.mathem.arbeit_1.analys",
+      "organisation": "Analysis",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.mathe.mathem.arbeit_1.anaiii",
+      "dates": []
+    },
+    {
+      "sourceId": "42561875",
+      "sourceKey": "Lecture.mathe.mathem.arbeit_1.anaiii_81",
+      "title": "Übungen zur Analysis III (LAG)",
+      "shortTitle": "Ü:Ana3(LAG)",
+      "number": "060194",
+      "type": "exercise",
+      "rawType": "UE",
+      "lecturers": [
+        "Dr. rer. nat. Sascha Trostorff"
+      ],
+      "parentKey": "",
+      "organisation": "Analysis",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.mathe.mathem.arbeit_1.anaiii_81",
+      "dates": [
+        {
+          "weekday": 4,
+          "startTime": "14:15",
+          "endTime": "15:45",
+          "startDate": "2026-10-22",
+          "endDate": "2027-02-04",
+          "repeat": "w1 4",
+          "excludedDates": [],
+          "room": "LMS4 - R.526"
+        }
+      ]
+    },
+    {
+      "sourceId": "42388077",
+      "sourceKey": "Lecture.mathe.mathem.arbeit_1.anaiii_4",
+      "title": "Übungen zur Analysis III (LAG)",
+      "shortTitle": "Ü:Ana3(LAG)",
+      "number": "060193",
+      "type": "exercise",
+      "rawType": "UE",
+      "lecturers": [
+        "Dr. rer. nat. Sascha Trostorff"
+      ],
+      "parentKey": "",
+      "organisation": "Analysis",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.mathe.mathem.arbeit_1.anaiii_4",
+      "dates": [
+        {
+          "weekday": 4,
+          "startTime": "12:15",
+          "endTime": "13:45",
+          "startDate": "2026-10-22",
+          "endDate": "2027-02-04",
+          "repeat": "w1 4",
+          "excludedDates": [],
+          "room": "HRS7 - R.7"
+        }
+      ]
+    },
+    {
+      "sourceId": "42192499",
+      "sourceKey": "Lecture.mathe.mathem.arbeit_1.anaiii_1",
+      "title": "Übungen zur Analysis III (LAG)",
+      "shortTitle": "Ü:Ana3(LAG)",
+      "number": "060177",
+      "type": "exercise",
+      "rawType": "UE",
+      "lecturers": [
+        "Dr. rer. nat. Sascha Trostorff"
+      ],
+      "parentKey": "",
+      "organisation": "Analysis",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.mathe.mathem.arbeit_1.anaiii_1",
+      "dates": [
+        {
+          "weekday": 4,
           "startTime": "8:15",
           "endTime": "9:45",
-          "startDate": "2026-10-21",
-          "endDate": "2027-02-05",
-          "repeat": "w1 3",
+          "startDate": "2026-10-22",
+          "endDate": "2027-02-04",
+          "repeat": "w1 4",
           "excludedDates": [],
-          "room": "Raum offen"
+          "room": "HRS7 - R.7"
+        }
+      ]
+    },
+    {
+      "sourceId": "41763596",
+      "sourceKey": "Lecture.mathe.mathem.arbeit_1.analys",
+      "title": "Analysis III (LAG)",
+      "shortTitle": "V:Ana3(LAG)",
+      "number": "060484",
+      "type": "lecture",
+      "rawType": "V",
+      "lecturers": [
+        "Dr. rer. nat. Sascha Trostorff"
+      ],
+      "parentKey": "",
+      "organisation": "Analysis",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.mathe.mathem.arbeit_1.analys",
+      "dates": [
+        {
+          "weekday": 2,
+          "startTime": "12:15",
+          "endTime": "13:45",
+          "startDate": "2026-10-20",
+          "endDate": "2027-02-05",
+          "repeat": "w1 2",
+          "excludedDates": [],
+          "room": "HHP6 - R.EG.024"
         },
         {
           "weekday": 5,
@@ -12962,39 +16162,341 @@
           "endDate": "2027-02-05",
           "repeat": "w1 5",
           "excludedDates": [],
-          "room": "Raum offen"
+          "room": "HHP6 - R.EG.024"
         }
       ]
     },
     {
-      "sourceId": "42641636",
-      "sourceKey": "Lecture.zentra_1.servic.studiu.intern.refera_4._mathi_31",
-      "title": "Inf-Math-C: Mathematik für die Informatik C",
-      "shortTitle": "V:MathInfC",
-      "number": "060172",
+      "sourceId": "42135702",
+      "sourceKey": "Lecture.mathe.mathem.arbeit_1.perlet",
+      "title": "Tutorien für Übungsaufgaben (LuL) zur Analysis I",
+      "shortTitle": "TutÜAnaI",
+      "number": "061039",
+      "type": "tutorial",
+      "rawType": "TU",
+      "lecturers": [
+        "Dr. Alexander Ullmann"
+      ],
+      "parentKey": "Lecture.mathe.mathem.arbeit_1.anai",
+      "organisation": "Analysis",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.mathe.mathem.arbeit_1.perlet",
+      "dates": [
+        {
+          "weekday": 2,
+          "startTime": "14:00",
+          "endTime": "18:00",
+          "startDate": "2026-10-20",
+          "endDate": "2027-02-03",
+          "repeat": "w1 2",
+          "excludedDates": [],
+          "room": "HHP6 - R.EG.003"
+        },
+        {
+          "weekday": 3,
+          "startTime": "14:00",
+          "endTime": "18:00",
+          "startDate": "2026-10-21",
+          "endDate": "2027-02-03",
+          "repeat": "w1 3",
+          "excludedDates": [],
+          "room": "LMS4 - R.526"
+        }
+      ]
+    },
+    {
+      "sourceId": "41191147",
+      "sourceKey": "Lecture.mathe.mathem.arbeit_1.vanaii",
+      "title": "Analysis III",
+      "shortTitle": "V:Ana3",
+      "number": "060215",
       "type": "lecture",
       "rawType": "V",
       "lecturers": [
-        "Dr. Lasse Kliemann"
+        "Dr. Raffael Hagger"
+      ],
+      "parentKey": "",
+      "organisation": "Analysis",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.mathe.mathem.arbeit_1.vanaii",
+      "dates": [
+        {
+          "weekday": 1,
+          "startTime": "10:15",
+          "endTime": "11:45",
+          "startDate": "2026-10-19",
+          "endDate": "2027-02-03",
+          "repeat": "w1 1",
+          "excludedDates": [],
+          "room": "HHP6 - R.EG.004"
+        },
+        {
+          "weekday": 3,
+          "startTime": "10:15",
+          "endTime": "11:45",
+          "startDate": "2026-10-21",
+          "endDate": "2027-02-03",
+          "repeat": "w1 3",
+          "excludedDates": [],
+          "room": "HHP6 - R.EG.004"
+        }
+      ]
+    },
+    {
+      "sourceId": "40049460",
+      "sourceKey": "Lecture.techn.mater.realst.bungen",
+      "title": "mawi1004-01a: Analytics - Exercises",
+      "shortTitle": "Analytics Ex",
+      "number": "",
+      "type": "other",
+      "rawType": "FPUE",
+      "lecturers": [
+        "Dr. rer. nat. Ulrich Schürmann"
+      ],
+      "parentKey": "Lecture.techn.mater.realst.materi",
+      "organisation": "Synthese und Realstruktur",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.techn.mater.realst.bungen",
+      "dates": []
+    },
+    {
+      "sourceId": "42566191",
+      "sourceKey": "Lecture.techn.mater.realst.bungen_9",
+      "title": "mawi1004-01a: Analytics - Exercises",
+      "shortTitle": "Analytics Ex",
+      "number": "080284",
+      "type": "other",
+      "rawType": "FPUE",
+      "lecturers": [
+        "Dr. rer. nat. Ulrich Schürmann",
+        "Dr.-Ing. Niklas Wolff"
+      ],
+      "parentKey": "",
+      "organisation": "Synthese und Realstruktur",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.techn.mater.realst.bungen_9",
+      "dates": [
+        {
+          "weekday": 2,
+          "startTime": "15:00",
+          "endTime": "15:45",
+          "startDate": "2026-10-20",
+          "endDate": "2027-02-07",
+          "repeat": "w1 2",
+          "excludedDates": [],
+          "room": "KS2/Geb.F - SR-III"
+        }
+      ]
+    },
+    {
+      "sourceId": "40002044",
+      "sourceKey": "Lecture.techn.mater.realst.materi",
+      "title": "mawi1004-01a: Analytics",
+      "shortTitle": "Analytics",
+      "number": "080187",
+      "type": "lecture",
+      "rawType": "V",
+      "lecturers": [
+        "Dr. rer. nat. Ulrich Schürmann",
+        "Dr.-Ing. Niklas Wolff"
+      ],
+      "parentKey": "",
+      "organisation": "Synthese und Realstruktur",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.techn.mater.realst.materi",
+      "dates": [
+        {
+          "weekday": 2,
+          "startTime": "13:15",
+          "endTime": "14:45",
+          "startDate": "2026-10-20",
+          "endDate": "2027-02-07",
+          "repeat": "w1 2",
+          "excludedDates": [],
+          "room": "KS2/Geb.F - SR-III"
+        }
+      ]
+    },
+    {
+      "sourceId": "42504424",
+      "sourceKey": "Lecture.agrar.tierz.tierz._aefag",
+      "title": "AEF-agrig010 Vorlesung: Utilization of genome analysis in animal breeding",
+      "shortTitle": "",
+      "number": "070171",
+      "type": "lecture",
+      "rawType": "V",
+      "lecturers": [
+        "Dr. agr. Nina Krattenmacher",
+        "Dr. Anita Seidel",
+        "Dr. Katharina Voß"
+      ],
+      "parentKey": "",
+      "organisation": "Tierzucht und Haustiergenetik",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.agrar.tierz.tierz._aefag",
+      "dates": []
+    },
+    {
+      "sourceId": "42668139",
+      "sourceKey": "Lecture.mathe.mathem.arbeit_1._bunge",
+      "title": "Übungen zur Analysis I",
+      "shortTitle": "Ü:Ana1",
+      "number": "",
+      "type": "exercise",
+      "rawType": "UE",
+      "lecturers": [
+        "Dr. Raffael Hagger"
+      ],
+      "parentKey": "Lecture.mathe.mathem.arbeit_1._analy",
+      "organisation": "Analysis",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.mathe.mathem.arbeit_1._bunge",
+      "dates": []
+    },
+    {
+      "sourceId": "42602715",
+      "sourceKey": "Lecture.zentra_1.servic.studiu.intern.refera_4._ana2",
+      "title": "Übungen zur Analysis I",
+      "shortTitle": "Ü:Ana1",
+      "number": "",
+      "type": "exercise",
+      "rawType": "UE",
+      "lecturers": [
+        "Dr. Raffael Hagger"
       ],
       "parentKey": "",
       "organisation": "Referat Studium und Praktikum im Ausland, Koordination ERASMUS",
-      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.zentra_1.servic.studiu.intern.refera_4._mathi_31",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.zentra_1.servic.studiu.intern.refera_4._ana2",
+      "dates": []
+    },
+    {
+      "sourceId": "42699945",
+      "sourceKey": "Lecture.zentra_1.servic.studiu.intern.refera_4._ana3l",
+      "title": "Übungen zur Analysis III",
+      "shortTitle": "Ü:Ana3",
+      "number": "",
+      "type": "exercise",
+      "rawType": "UE",
+      "lecturers": [
+        "Dr. Raffael Hagger"
+      ],
+      "parentKey": "",
+      "organisation": "Referat Studium und Praktikum im Ausland, Koordination ERASMUS",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.zentra_1.servic.studiu.intern.refera_4._ana3l",
+      "dates": []
+    },
+    {
+      "sourceId": "42652195",
+      "sourceKey": "Lecture.mathe.mathem.arbeit_1._analy",
+      "title": "Analysis I",
+      "shortTitle": "V:Ana1",
+      "number": "060170",
+      "type": "lecture",
+      "rawType": "V",
+      "lecturers": [
+        "Dr. Raffael Hagger"
+      ],
+      "parentKey": "",
+      "organisation": "Analysis",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.mathe.mathem.arbeit_1._analy",
       "dates": [
         {
           "weekday": 4,
           "startTime": "12:15",
           "endTime": "13:45",
-          "startDate": "2026-10-22",
+          "startDate": "2026-10-15",
           "endDate": "2027-02-05",
           "repeat": "w1 4",
+          "excludedDates": [],
+          "room": "LMS6 - R.10 Steinitz-Hörsaal"
+        },
+        {
+          "weekday": 5,
+          "startTime": "10:15",
+          "endTime": "11:45",
+          "startDate": "2026-10-16",
+          "endDate": "2027-02-05",
+          "repeat": "w1 5",
+          "excludedDates": [],
+          "room": "LMS6 - R.10 Steinitz-Hörsaal"
+        }
+      ]
+    },
+    {
+      "sourceId": "42667229",
+      "sourceKey": "Lecture.zentra_1.servic.studiu.intern.refera_4._anai",
+      "title": "Analysis I",
+      "shortTitle": "V:Ana1",
+      "number": "060170",
+      "type": "lecture",
+      "rawType": "V",
+      "lecturers": [
+        "Dr. Raffael Hagger"
+      ],
+      "parentKey": "",
+      "organisation": "Referat Studium und Praktikum im Ausland, Koordination ERASMUS",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.zentra_1.servic.studiu.intern.refera_4._anai",
+      "dates": [
+        {
+          "weekday": 4,
+          "startTime": "12:15",
+          "endTime": "13:45",
+          "startDate": "2026-10-15",
+          "endDate": "2027-02-05",
+          "repeat": "w1 4",
+          "excludedDates": [],
+          "room": "LMS6 - R.10 Steinitz-Hörsaal"
+        },
+        {
+          "weekday": 5,
+          "startTime": "10:15",
+          "endTime": "11:45",
+          "startDate": "2026-10-16",
+          "endDate": "2027-02-05",
+          "repeat": "w1 5",
+          "excludedDates": [],
+          "room": "LMS6 - R.10 Steinitz-Hörsaal"
+        }
+      ]
+    },
+    {
+      "sourceId": "42682725",
+      "sourceKey": "Lecture.zentra_1.servic.studiu.intern.refera_4._anaii",
+      "title": "Übungen zur Analysis III (LAG)",
+      "shortTitle": "Ü:Ana3(LAG)",
+      "number": "",
+      "type": "exercise",
+      "rawType": "UE",
+      "lecturers": [
+        "Dr. rer. nat. Sascha Trostorff"
+      ],
+      "parentKey": "",
+      "organisation": "Referat Studium und Praktikum im Ausland, Koordination ERASMUS",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.zentra_1.servic.studiu.intern.refera_4._anaii",
+      "dates": []
+    },
+    {
+      "sourceId": "42607172",
+      "sourceKey": "Lecture.zentra_1.servic.studiu.intern.refera_4._analy_1",
+      "title": "Analysis III (LAG)",
+      "shortTitle": "V:Ana3(LAG)",
+      "number": "060484",
+      "type": "lecture",
+      "rawType": "V",
+      "lecturers": [
+        "Dr. rer. nat. Sascha Trostorff"
+      ],
+      "parentKey": "",
+      "organisation": "Referat Studium und Praktikum im Ausland, Koordination ERASMUS",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.zentra_1.servic.studiu.intern.refera_4._analy_1",
+      "dates": [
+        {
+          "weekday": 2,
+          "startTime": "12:15",
+          "endTime": "13:45",
+          "startDate": "2026-10-20",
+          "endDate": "2027-02-05",
+          "repeat": "w1 2",
           "excludedDates": [],
           "room": "HHP6 - R.EG.024"
         },
         {
           "weekday": 5,
-          "startTime": "8:15",
-          "endTime": "9:45",
+          "startTime": "10:15",
+          "endTime": "11:45",
           "startDate": "2026-10-23",
           "endDate": "2027-02-05",
           "repeat": "w1 5",
@@ -13004,20 +16506,618 @@
       ]
     },
     {
-      "sourceId": "42693183",
-      "sourceKey": "Lecture.zentra_1.servic.studiu.intern.refera_4._tutor_9",
-      "title": "Übung zu Mathematik für die Informatik C",
-      "shortTitle": "ÜMathInfC",
+      "sourceId": "42633686",
+      "sourceKey": "Lecture.mathe.mathem.arbeit_1._tutor",
+      "title": "Tutorien für Übungsaufgaben (LuL) zur Analysis I",
+      "shortTitle": "TutÜAnaI",
+      "number": "061039",
+      "type": "tutorial",
+      "rawType": "TU",
+      "lecturers": [
+        "Dr. Alexander Ullmann"
+      ],
+      "parentKey": "Lecture.mathe.mathem.arbeit_1._analy",
+      "organisation": "Analysis",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.mathe.mathem.arbeit_1._tutor",
+      "dates": [
+        {
+          "weekday": 2,
+          "startTime": "14:00",
+          "endTime": "18:00",
+          "startDate": "2026-10-20",
+          "endDate": "2027-02-03",
+          "repeat": "w1 2",
+          "excludedDates": [],
+          "room": "HHP6 - R.EG.003"
+        },
+        {
+          "weekday": 3,
+          "startTime": "14:00",
+          "endTime": "18:00",
+          "startDate": "2026-10-21",
+          "endDate": "2027-02-03",
+          "repeat": "w1 3",
+          "excludedDates": [],
+          "room": "LMS4 - R.526"
+        }
+      ]
+    },
+    {
+      "sourceId": "42682280",
+      "sourceKey": "Lecture.zentra_1.servic.studiu.intern.refera_4._perle_4",
+      "title": "Tutorien für Übungsaufgaben (LuL) zur Analysis I",
+      "shortTitle": "TutÜAnaI",
+      "number": "061039",
+      "type": "tutorial",
+      "rawType": "TU",
+      "lecturers": [
+        "Dr. Alexander Ullmann"
+      ],
+      "parentKey": "",
+      "organisation": "Referat Studium und Praktikum im Ausland, Koordination ERASMUS",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.zentra_1.servic.studiu.intern.refera_4._perle_4",
+      "dates": [
+        {
+          "weekday": 2,
+          "startTime": "14:00",
+          "endTime": "18:00",
+          "startDate": "2026-10-20",
+          "endDate": "2027-02-03",
+          "repeat": "w1 2",
+          "excludedDates": [],
+          "room": "HHP6 - R.EG.003"
+        },
+        {
+          "weekday": 3,
+          "startTime": "14:00",
+          "endTime": "18:00",
+          "startDate": "2026-10-21",
+          "endDate": "2027-02-03",
+          "repeat": "w1 3",
+          "excludedDates": [],
+          "room": "LMS4 - R.526"
+        }
+      ]
+    },
+    {
+      "sourceId": "42612740",
+      "sourceKey": "Lecture.zentra_1.servic.studiu.intern.refera_4._vanai",
+      "title": "Analysis III",
+      "shortTitle": "V:Ana3",
+      "number": "060215",
+      "type": "lecture",
+      "rawType": "V",
+      "lecturers": [
+        "Dr. Raffael Hagger"
+      ],
+      "parentKey": "",
+      "organisation": "Referat Studium und Praktikum im Ausland, Koordination ERASMUS",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.zentra_1.servic.studiu.intern.refera_4._vanai",
+      "dates": [
+        {
+          "weekday": 1,
+          "startTime": "10:15",
+          "endTime": "11:45",
+          "startDate": "2026-10-19",
+          "endDate": "2027-02-03",
+          "repeat": "w1 1",
+          "excludedDates": [],
+          "room": "HHP6 - R.EG.004"
+        },
+        {
+          "weekday": 3,
+          "startTime": "10:15",
+          "endTime": "11:45",
+          "startDate": "2026-10-21",
+          "endDate": "2027-02-03",
+          "repeat": "w1 3",
+          "excludedDates": [],
+          "room": "HHP6 - R.EG.004"
+        }
+      ]
+    },
+    {
+      "sourceId": "42691913",
+      "sourceKey": "Lecture.zentra_1.servic.studiu.intern.refera_4._bunge",
+      "title": "mawi1004-01a: Analytics - Exercises",
+      "shortTitle": "Analytics Ex",
+      "number": "",
+      "type": "other",
+      "rawType": "FPUE",
+      "lecturers": [
+        "Dr. rer. nat. Ulrich Schürmann"
+      ],
+      "parentKey": "",
+      "organisation": "Referat Studium und Praktikum im Ausland, Koordination ERASMUS",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.zentra_1.servic.studiu.intern.refera_4._bunge",
+      "dates": []
+    },
+    {
+      "sourceId": "42602304",
+      "sourceKey": "Lecture.zentra_1.servic.studiu.intern.refera_4._mater_6",
+      "title": "mawi1004-01a: Analytics",
+      "shortTitle": "Analytics",
+      "number": "080187",
+      "type": "lecture",
+      "rawType": "V",
+      "lecturers": [
+        "Dr. rer. nat. Ulrich Schürmann",
+        "Dr.-Ing. Niklas Wolff"
+      ],
+      "parentKey": "",
+      "organisation": "Referat Studium und Praktikum im Ausland, Koordination ERASMUS",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.zentra_1.servic.studiu.intern.refera_4._mater_6",
+      "dates": [
+        {
+          "weekday": 2,
+          "startTime": "13:15",
+          "endTime": "14:45",
+          "startDate": "2026-10-20",
+          "endDate": "2027-02-07",
+          "repeat": "w1 2",
+          "excludedDates": [],
+          "room": "KS2/Geb.F - SR-III"
+        }
+      ]
+    },
+    {
+      "sourceId": "42506402",
+      "sourceKey": "Lecture.rechts.instit_4.brgerl_2.privat",
+      "title": "Privatrecht für Wirtschaftswissenschaftler",
+      "shortTitle": "",
+      "number": "020029",
+      "type": "lecture",
+      "rawType": "V",
+      "lecturers": [
+        "Prof. Dr. Caroline S. Rapatz"
+      ],
+      "parentKey": "",
+      "organisation": "Bürgerliches Recht, Europäisches und Internationales Privatrecht und Verfahrensrecht sowie Rechtsvergleichung",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.rechts.instit_4.brgerl_2.privat",
+      "dates": []
+    },
+    {
+      "sourceId": "42626549",
+      "sourceKey": "Lecture.zentra_1.servic.studiu.intern.refera_4._bungz_4",
+      "title": "Übung zur Einführung in die Volkswirtschaftslehre (VWL-EVWL / VWL-EVWL-MIKRO / VWL-EVWL-MAKRO) BA",
+      "shortTitle": "",
       "number": "",
       "type": "exercise",
       "rawType": "UE",
       "lecturers": [
-        "Dr. Lasse Kliemann"
+        "Prof. Dr. Jens Ruhose"
       ],
       "parentKey": "",
       "organisation": "Referat Studium und Praktikum im Ausland, Koordination ERASMUS",
-      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.zentra_1.servic.studiu.intern.refera_4._tutor_9",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.zentra_1.servic.studiu.intern.refera_4._bungz_4",
       "dates": []
+    },
+    {
+      "sourceId": "42624422",
+      "sourceKey": "Lecture.techn.elekt.zentr._bungz_5",
+      "title": "Übung zur Einführung in die Volkswirtschaftslehre (VWL-EVWL / VWL-EVWL-MIKRO / VWL-EVWL-MAKRO) BA",
+      "shortTitle": "",
+      "number": "",
+      "type": "exercise",
+      "rawType": "UE",
+      "lecturers": [
+        "Prof. Dr. Jens Ruhose"
+      ],
+      "parentKey": "",
+      "organisation": "Institut für Elektrotechnik und Informationstechnik",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.techn.elekt.zentr._bungz_5",
+      "dates": []
+    },
+    {
+      "sourceId": "42633894",
+      "sourceKey": "Lecture.agrar.zentr._bungz_2",
+      "title": "Übung zur Einführung in die Volkswirtschaftslehre (VWL-EVWL / VWL-EVWL-MIKRO / VWL-EVWL-MAKRO) BA",
+      "shortTitle": "",
+      "number": "",
+      "type": "exercise",
+      "rawType": "UE",
+      "lecturers": [
+        "Prof. Dr. Jens Ruhose"
+      ],
+      "parentKey": "",
+      "organisation": "Agrar- und Ernährungswissenschaftliche Fakultät",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.agrar.zentr._bungz_2",
+      "dates": []
+    },
+    {
+      "sourceId": "42684330",
+      "sourceKey": "Lecture.techn.mater.zentr._bungz_7",
+      "title": "Übung zur Einführung in die Volkswirtschaftslehre (VWL-EVWL / VWL-EVWL-MIKRO / VWL-EVWL-MAKRO) BA",
+      "shortTitle": "",
+      "number": "",
+      "type": "exercise",
+      "rawType": "UE",
+      "lecturers": [
+        "Prof. Dr. Jens Ruhose"
+      ],
+      "parentKey": "",
+      "organisation": "Institut für Materialwissenschaft",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.techn.mater.zentr._bungz_7",
+      "dates": []
+    },
+    {
+      "sourceId": "42610628",
+      "sourceKey": "Lecture.wirtsc.instit.zentr._bungz_9",
+      "title": "Übung zur Einführung in die Volkswirtschaftslehre (VWL-EVWL / VWL-EVWL-MIKRO / VWL-EVWL-MAKRO) BA",
+      "shortTitle": "",
+      "number": "",
+      "type": "exercise",
+      "rawType": "UE",
+      "lecturers": [
+        "Prof. Dr. Jens Ruhose"
+      ],
+      "parentKey": "",
+      "organisation": "Institut für Volkswirtschaftslehre",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.wirtsc.instit.zentr._bungz_9",
+      "dates": []
+    },
+    {
+      "sourceId": "42650364",
+      "sourceKey": "Lecture.agrar.zentr._bungz",
+      "title": "Übung zur Einführung in die Volkswirtschaftslehre (VWL-EVWL / VWL-EVWL-MIKRO / VWL-EVWL-MAKRO) BA",
+      "shortTitle": "",
+      "number": "",
+      "type": "exercise",
+      "rawType": "UE",
+      "lecturers": [
+        "Prof. Dr. Jens Ruhose"
+      ],
+      "parentKey": "",
+      "organisation": "Agrar- und Ernährungswissenschaftliche Fakultät",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.agrar.zentr._bungz",
+      "dates": []
+    },
+    {
+      "sourceId": "42671093",
+      "sourceKey": "Lecture.techn.elekt.zentr._einfh",
+      "title": "Einführung in die Volkswirtschaftslehre (VWL-EVWL / VWL-EVWL-MIKRO / VWL-EVWL-MAKRO) BA",
+      "shortTitle": "",
+      "number": "",
+      "type": "lecture",
+      "rawType": "V",
+      "lecturers": [
+        "Prof. Dr. Jens Ruhose",
+        "Dr. Sonja Köke"
+      ],
+      "parentKey": "",
+      "organisation": "Institut für Elektrotechnik und Informationstechnik",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.techn.elekt.zentr._einfh",
+      "dates": []
+    },
+    {
+      "sourceId": "42666531",
+      "sourceKey": "Lecture.wirtsc.instit.zentr._einfh_3",
+      "title": "Einführung in die Volkswirtschaftslehre (VWL-EVWL / VWL-EVWL-MIKRO / VWL-EVWL-MAKRO) BA",
+      "shortTitle": "",
+      "number": "",
+      "type": "lecture",
+      "rawType": "V",
+      "lecturers": [
+        "Prof. Dr. Jens Ruhose",
+        "Dr. Sonja Köke"
+      ],
+      "parentKey": "",
+      "organisation": "Institut für Volkswirtschaftslehre",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.wirtsc.instit.zentr._einfh_3",
+      "dates": []
+    },
+    {
+      "sourceId": "42626811",
+      "sourceKey": "Lecture.gemei.zentru_3.zentr._einfh_1",
+      "title": "Einführung in die Volkswirtschaftslehre (VWL-EVWL / VWL-EVWL-MIKRO / VWL-EVWL-MAKRO) BA",
+      "shortTitle": "",
+      "number": "",
+      "type": "lecture",
+      "rawType": "V",
+      "lecturers": [
+        "Prof. Dr. Jens Ruhose",
+        "Dr. Sonja Köke"
+      ],
+      "parentKey": "",
+      "organisation": "Zentrum für Schlüsselqualifikationen (ZfS)",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.gemei.zentru_3.zentr._einfh_1",
+      "dates": []
+    },
+    {
+      "sourceId": "42105010",
+      "sourceKey": "Lecture.techn.mater.zentr._einfh_1",
+      "title": "Einführung in die Volkswirtschaftslehre (VWL-EVWL / VWL-EVWL-MIKRO / VWL-EVWL-MAKRO) BA",
+      "shortTitle": "",
+      "number": "",
+      "type": "lecture",
+      "rawType": "V",
+      "lecturers": [
+        "Prof. Dr. Jens Ruhose",
+        "Dr. Sonja Köke"
+      ],
+      "parentKey": "",
+      "organisation": "Institut für Materialwissenschaft",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.techn.mater.zentr._einfh_1",
+      "dates": []
+    },
+    {
+      "sourceId": "42685195",
+      "sourceKey": "Lecture.zentra_1.servic.studiu.intern.refera_4._einfh_1",
+      "title": "Einführung in die Volkswirtschaftslehre (VWL-EVWL / VWL-EVWL-MIKRO / VWL-EVWL-MAKRO) BA",
+      "shortTitle": "",
+      "number": "",
+      "type": "lecture",
+      "rawType": "V",
+      "lecturers": [
+        "Prof. Dr. Jens Ruhose",
+        "Dr. Sonja Köke"
+      ],
+      "parentKey": "",
+      "organisation": "Referat Studium und Praktikum im Ausland, Koordination ERASMUS",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.zentra_1.servic.studiu.intern.refera_4._einfh_1",
+      "dates": []
+    },
+    {
+      "sourceId": "41884372",
+      "sourceKey": "Lecture.wirtsc.instit.lehrst_3.bungzu",
+      "title": "Übung zu Grundzüge der makroökonomischen Theorie II (VWLvwlMakro2-01a) BA",
+      "shortTitle": "",
+      "number": "",
+      "type": "exercise",
+      "rawType": "UE",
+      "lecturers": [
+        "Johanna Krohn"
+      ],
+      "parentKey": "Lecture.wirtsc.instit.lehrst_3.grundz",
+      "organisation": "Makroökonomik",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.wirtsc.instit.lehrst_3.bungzu",
+      "dates": []
+    },
+    {
+      "sourceId": "42428529",
+      "sourceKey": "Lecture.wirtsc.instit.lehrst_3.bungzu_0",
+      "title": "Übung zu Grundzüge der makroökonomischen Theorie II (VWLvwlMakro2-01a) BA",
+      "shortTitle": "",
+      "number": "030145",
+      "type": "exercise",
+      "rawType": "UE",
+      "lecturers": [
+        "Christian Schröder"
+      ],
+      "parentKey": "",
+      "organisation": "Makroökonomik",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.wirtsc.instit.lehrst_3.bungzu_0",
+      "dates": [
+        {
+          "weekday": 2,
+          "startTime": "8:15",
+          "endTime": "9:45",
+          "startDate": "2026-10-27",
+          "endDate": "2027-02-02",
+          "repeat": "w1 2",
+          "excludedDates": [],
+          "room": "Raum offen"
+        }
+      ]
+    },
+    {
+      "sourceId": "22365227",
+      "sourceKey": "Lecture.wirtsc.instit.lehrst_3.bungzu_3",
+      "title": "Übung zu Grundzüge der makroökonomischen Theorie II (VWLvwlMakro2-01a) BA",
+      "shortTitle": "",
+      "number": "030301",
+      "type": "exercise",
+      "rawType": "UE",
+      "lecturers": [
+        "Sönke Ressel"
+      ],
+      "parentKey": "",
+      "organisation": "Makroökonomik",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.wirtsc.instit.lehrst_3.bungzu_3",
+      "dates": [
+        {
+          "weekday": 3,
+          "startTime": "10:15",
+          "endTime": "11:45",
+          "startDate": "2026-10-28",
+          "endDate": "2027-02-03",
+          "repeat": "w1 3",
+          "excludedDates": [],
+          "room": "Raum offen"
+        }
+      ]
+    },
+    {
+      "sourceId": "42452680",
+      "sourceKey": "Lecture.wirtsc.instit.lehrst_3.bungzu_5",
+      "title": "Übung zu Grundzüge der makroökonomischen Theorie II (VWLvwlMakro2-01a) BA",
+      "shortTitle": "",
+      "number": "030243",
+      "type": "exercise",
+      "rawType": "UE",
+      "lecturers": [],
+      "parentKey": "",
+      "organisation": "Makroökonomik",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.wirtsc.instit.lehrst_3.bungzu_5",
+      "dates": [
+        {
+          "weekday": 4,
+          "startTime": "12:15",
+          "endTime": "13:45",
+          "startDate": "2026-10-29",
+          "endDate": "2027-02-04",
+          "repeat": "w1 4",
+          "excludedDates": [],
+          "room": "Raum offen"
+        }
+      ]
+    },
+    {
+      "sourceId": "42478704",
+      "sourceKey": "Lecture.wirtsc.instit.lehrst_3.bungzu_4",
+      "title": "Übung zu Grundzüge der makroökonomischen Theorie II (VWLvwlMakro2-01a) BA",
+      "shortTitle": "",
+      "number": "030227",
+      "type": "exercise",
+      "rawType": "UE",
+      "lecturers": [
+        "Sönke Ressel"
+      ],
+      "parentKey": "",
+      "organisation": "Makroökonomik",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.wirtsc.instit.lehrst_3.bungzu_4",
+      "dates": [
+        {
+          "weekday": 2,
+          "startTime": "10:15",
+          "endTime": "11:45",
+          "startDate": "2026-10-27",
+          "endDate": "2027-02-02",
+          "repeat": "w1 2",
+          "excludedDates": [],
+          "room": "Raum offen"
+        }
+      ]
+    },
+    {
+      "sourceId": "42425302",
+      "sourceKey": "Lecture.wirtsc.instit.lehrst_3.bungzu_6",
+      "title": "Übung zu Grundzüge der makroökonomischen Theorie II (VWLvwlMakro2-01a) BA",
+      "shortTitle": "",
+      "number": "030226",
+      "type": "exercise",
+      "rawType": "UE",
+      "lecturers": [
+        "Christian Schröder"
+      ],
+      "parentKey": "",
+      "organisation": "Makroökonomik",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.wirtsc.instit.lehrst_3.bungzu_6",
+      "dates": [
+        {
+          "weekday": 1,
+          "startTime": "12:15",
+          "endTime": "13:45",
+          "startDate": "2026-10-26",
+          "endDate": "2027-02-01",
+          "repeat": "w1 1",
+          "excludedDates": [],
+          "room": "Raum offen"
+        }
+      ]
+    },
+    {
+      "sourceId": "22206695",
+      "sourceKey": "Lecture.wirtsc.instit.lehrst_3.grundz",
+      "title": "Grundzüge der makroökonomischen Theorie II (VWLvwlMakro2-01a) BA",
+      "shortTitle": "",
+      "number": "030200",
+      "type": "lecture",
+      "rawType": "V",
+      "lecturers": [
+        "Prof. Dr. Maik Wolters"
+      ],
+      "parentKey": "",
+      "organisation": "Makroökonomik",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.wirtsc.instit.lehrst_3.grundz",
+      "dates": [
+        {
+          "weekday": 4,
+          "startTime": "14:15",
+          "endTime": "15:45",
+          "startDate": "2026-10-22",
+          "endDate": "2027-02-04",
+          "repeat": "w1 4",
+          "excludedDates": [],
+          "room": "Raum offen"
+        }
+      ]
+    },
+    {
+      "sourceId": "42620098",
+      "sourceKey": "Lecture.wirtsc.instit.zentr._bungz_53",
+      "title": "Übung zu Grundzüge der makroökonomischen Theorie II (VWLvwlMakro2-01a) BA",
+      "shortTitle": "",
+      "number": "",
+      "type": "exercise",
+      "rawType": "UE",
+      "lecturers": [
+        "Johanna Krohn"
+      ],
+      "parentKey": "",
+      "organisation": "Institut für Volkswirtschaftslehre",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.wirtsc.instit.zentr._bungz_53",
+      "dates": []
+    },
+    {
+      "sourceId": "42660354",
+      "sourceKey": "Lecture.zentra_1.servic.studiu.intern.refera_4._bungz_55",
+      "title": "Übung zu Grundzüge der makroökonomischen Theorie II (VWLvwlMakro2-01a) BA",
+      "shortTitle": "",
+      "number": "",
+      "type": "exercise",
+      "rawType": "UE",
+      "lecturers": [
+        "Johanna Krohn"
+      ],
+      "parentKey": "",
+      "organisation": "Referat Studium und Praktikum im Ausland, Koordination ERASMUS",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.zentra_1.servic.studiu.intern.refera_4._bungz_55",
+      "dates": []
+    },
+    {
+      "sourceId": "42675881",
+      "sourceKey": "Lecture.wirtsc.instit.zentr._grund_7",
+      "title": "Grundzüge der makroökonomischen Theorie II (VWLvwlMakro2-01a) BA",
+      "shortTitle": "",
+      "number": "030200",
+      "type": "lecture",
+      "rawType": "V",
+      "lecturers": [
+        "Prof. Dr. Maik Wolters"
+      ],
+      "parentKey": "",
+      "organisation": "Institut für Volkswirtschaftslehre",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.wirtsc.instit.zentr._grund_7",
+      "dates": [
+        {
+          "weekday": 4,
+          "startTime": "14:15",
+          "endTime": "15:45",
+          "startDate": "2026-10-22",
+          "endDate": "2027-02-04",
+          "repeat": "w1 4",
+          "excludedDates": [],
+          "room": "Raum offen"
+        }
+      ]
+    },
+    {
+      "sourceId": "42677730",
+      "sourceKey": "Lecture.zentra_1.servic.studiu.intern.refera_4._grund",
+      "title": "Grundzüge der makroökonomischen Theorie II (VWLvwlMakro2-01a) BA",
+      "shortTitle": "",
+      "number": "030200",
+      "type": "lecture",
+      "rawType": "V",
+      "lecturers": [
+        "Prof. Dr. Maik Wolters"
+      ],
+      "parentKey": "",
+      "organisation": "Referat Studium und Praktikum im Ausland, Koordination ERASMUS",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.zentra_1.servic.studiu.intern.refera_4._grund",
+      "dates": [
+        {
+          "weekday": 4,
+          "startTime": "14:15",
+          "endTime": "15:45",
+          "startDate": "2026-10-22",
+          "endDate": "2027-02-04",
+          "repeat": "w1 4",
+          "excludedDates": [],
+          "room": "Raum offen"
+        }
+      ]
     }
   ]
 }
