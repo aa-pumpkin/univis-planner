@@ -101,17 +101,74 @@ const signature = (course: ImportedCourse) =>
 const option = (course: ImportedCourse): ImportedEventOption => ({
   id: course.sourceId,
   title: course.title,
-  type: course.type,
+  type: normalizedEventType(course),
   lecturers: course.lecturers,
   dates: course.dates,
   sourceUrl: course.sourceUrl,
 });
 
-const isFixedCourse = (course: ImportedCourse) =>
-  course.type === "lecture" ||
-  course.type === "seminar" ||
-  course.type === "practical" ||
-  /^v(?:-ue)?$/i.test(course.rawType);
+const textOf = (course: ImportedCourse) =>
+  `${course.title} ${course.shortTitle} ${course.rawType}`;
+
+const looksLikeLecture = (course: ImportedCourse) => {
+  const text = textOf(course);
+  return (
+    /\bVL\b/i.test(text) ||
+    /\bVorlesung\b/i.test(text) ||
+    /\bLecture\b/i.test(text)
+  );
+};
+
+const looksLikeSeminar = (course: ImportedCourse) => {
+  const text = textOf(course);
+  return /\bSE\b/i.test(text) || /\bSeminar\b/i.test(text);
+};
+
+const looksLikePractical = (course: ImportedCourse) => {
+  const text = textOf(course);
+  return (
+    /\bPR\b/i.test(text) ||
+    /\bPraktikum\b/i.test(text) ||
+    /\bPractical\b/i.test(text)
+  );
+};
+
+const looksLikeExercise = (course: ImportedCourse) => {
+  const text = textOf(course);
+  return (
+    /\bUE\b/i.test(text) ||
+    /\bÜbung\b/i.test(text) ||
+    /\bExercise\b/i.test(text) ||
+    /\bTutorium\b/i.test(text) ||
+    /\bTutorien\b/i.test(text)
+  );
+};
+
+const normalizedEventType = (course: ImportedCourse): EventType => {
+  if (looksLikeLecture(course)) return "lecture";
+  if (looksLikeSeminar(course)) return "seminar";
+  if (looksLikePractical(course)) return "practical";
+  if (looksLikeExercise(course)) return "exercise";
+  return course.type as EventType;
+};
+
+const isFixedCourse = (course: ImportedCourse) => {
+  if (looksLikeLecture(course)) return true;
+  if (looksLikeSeminar(course)) return true;
+  if (looksLikePractical(course)) return true;
+
+  return (
+    course.type === "lecture" ||
+    course.type === "seminar" ||
+    course.type === "practical" ||
+    /^v(?:-ue)?$/i.test(course.rawType)
+  );
+};
+
+const isSelectableCourse = (course: ImportedCourse) => {
+  if (isFixedCourse(course)) return false;
+  return course.type === "exercise" || looksLikeExercise(course);
+};
 
 export function normalizeUnivisModules(
   dataset: UnivisDataset,
@@ -136,7 +193,7 @@ export function normalizeUnivisModules(
     .map(([code, courses]) => {
       const mapping = mappings[code];
       const fixed = courses.filter(isFixedCourse);
-      const selectable = courses.filter((course) => course.type === "exercise");
+      const selectable = courses.filter(isSelectableCourse);
 
       const components = new Map<string, ImportedCourse[]>();
       for (const course of selectable) {
@@ -261,8 +318,9 @@ const eventFrom = (
       d.startDate &&
       d.endDate,
   )) {
-    const key = dateGroupKey(date),
-      previous = merged.get(key);
+    const key = dateGroupKey(date);
+    const previous = merged.get(key);
+
     if (!previous)
       merged.set(key, {
         ...date,
