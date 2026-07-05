@@ -10428,14 +10428,14 @@
       "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.wirtsc.instit.mikrok.bungzu_4",
       "dates": [
         {
-          "weekday": 2,
+          "weekday": 4,
           "startTime": "12:15",
           "endTime": "13:45",
-          "startDate": "2026-10-27",
-          "endDate": "2027-02-02",
-          "repeat": "w1 2",
+          "startDate": "2026-10-29",
+          "endDate": "2027-02-04",
+          "repeat": "w1 4",
           "excludedDates": [],
-          "room": "Raum offen"
+          "room": "WSP1 - R.401"
         }
       ]
     },

@@ -14224,6 +14224,169 @@
       "type": "exercise",
       "rawType": "UE",
       "lecturers": [
+        "Dr. Hauke Jelschen",
+        "Anna Veri"
+      ],
+      "parentKey": "",
+      "organisation": "Mikroökonomik",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.wirtsc.instit.lehrst_4.bungzu_8",
+      "dates": [
+        {
+          "weekday": 2,
+          "startTime": "10:15",
+          "endTime": "11:45",
+          "startDate": "2026-04-14",
+          "endDate": "2026-07-12",
+          "repeat": "w1 2",
+          "excludedDates": [],
+          "room": "OS40 - R.201 - Hebbel HS"
+        }
+      ]
+    },
+    {
+      "sourceId": "22261449",
+      "sourceKey": "Lecture.wirtsc.instit.lehrst_4.bungzu_17",
+      "title": "Übung zu Grundzüge der mikroökonomischen Theorie I",
+      "shortTitle": "",
+      "number": "030218",
+      "type": "exercise",
+      "rawType": "UE",
+      "lecturers": [
+        "Dr. rer. pol. Christian Johannes Sander"
+      ],
+      "parentKey": "",
+      "organisation": "Mikroökonomik",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.wirtsc.instit.lehrst_4.bungzu_17",
+      "dates": [
+        {
+          "weekday": 2,
+          "startTime": "12:15",
+          "endTime": "13:45",
+          "startDate": "2026-04-14",
+          "endDate": "2026-07-12",
+          "repeat": "w1 2",
+          "excludedDates": [],
+          "room": "OHP2 - Otto-Hahn-Hörsaal"
+        }
+      ]
+    },
+    {
+      "sourceId": "22295438",
+      "sourceKey": "Lecture.wirtsc.instit.lehrst_4.bungzu_0",
+      "title": "Übung zu Grundzüge der mikroökonomischen Theorie I",
+      "shortTitle": "",
+      "number": "030297",
+      "type": "exercise",
+      "rawType": "UE",
+      "lecturers": [
+        "Dr. rer. pol. Christian Johannes Sander"
+      ],
+      "parentKey": "",
+      "organisation": "Mikroökonomik",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.wirtsc.instit.lehrst_4.bungzu_0",
+      "dates": [
+        {
+          "weekday": 3,
+          "startTime": "10:15",
+          "endTime": "11:45",
+          "startDate": "2026-04-15",
+          "endDate": "2026-07-12",
+          "repeat": "w1 3",
+          "excludedDates": [],
+          "room": "JMS4 - R.28"
+        }
+      ]
+    },
+    {
+      "sourceId": "22268385",
+      "sourceKey": "Lecture.wirtsc.instit.lehrst_4.bungzu_3",
+      "title": "Übung zu Grundzüge der mikroökonomischen Theorie I",
+      "shortTitle": "",
+      "number": "030075",
+      "type": "exercise",
+      "rawType": "UE",
+      "lecturers": [
+        "Dr. Swantje Sundt"
+      ],
+      "parentKey": "",
+      "organisation": "Mikroökonomik",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.wirtsc.instit.lehrst_4.bungzu_3",
+      "dates": [
+        {
+          "weekday": 3,
+          "startTime": "14:15",
+          "endTime": "15:45",
+          "startDate": "2026-04-15",
+          "endDate": "2026-07-12",
+          "repeat": "w1 3",
+          "excludedDates": [],
+          "room": "OHP2 - Otto-Hahn-Hörsaal"
+        }
+      ]
+    },
+    {
+      "sourceId": "22562350",
+      "sourceKey": "Lecture.wirtsc.instit.lehrst_4.bungzu_1",
+      "title": "Übung zu Grundzüge der mikroökonomischen Theorie I",
+      "shortTitle": "",
+      "number": "030239",
+      "type": "exercise",
+      "rawType": "UE",
+      "lecturers": [
+        "Peer Lasse Hinrichsen"
+      ],
+      "parentKey": "",
+      "organisation": "Mikroökonomik",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.wirtsc.instit.lehrst_4.bungzu_1",
+      "dates": [
+        {
+          "weekday": 5,
+          "startTime": "10:15",
+          "endTime": "11:45",
+          "startDate": "2026-04-17",
+          "endDate": "2026-07-12",
+          "repeat": "w1 5",
+          "excludedDates": [],
+          "room": "LMS2 - R.Ü3"
+        }
+      ]
+    },
+    {
+      "sourceId": "22488431",
+      "sourceKey": "Lecture.wirtsc.instit.lehrst_4.bungzu_82",
+      "title": "Übung zu Grundzüge der mikroökonomischen Theorie I",
+      "shortTitle": "",
+      "number": "030282",
+      "type": "exercise",
+      "rawType": "UE",
+      "lecturers": [
+        "Jannis Käsler"
+      ],
+      "parentKey": "",
+      "organisation": "Mikroökonomik",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.wirtsc.instit.lehrst_4.bungzu_82",
+      "dates": [
+        {
+          "weekday": 3,
+          "startTime": "8:30",
+          "endTime": "10:00",
+          "startDate": "2026-04-15",
+          "endDate": "2026-07-12",
+          "repeat": "w1 3",
+          "excludedDates": [],
+          "room": "Online-Veranstaltung"
+        }
+      ]
+    },
+    {
+      "sourceId": "22273699",
+      "sourceKey": "Lecture.wirtsc.instit.lehrst_4.bungzu_8",
+      "title": "Übung zu Grundzüge der mikroökonomischen Theorie I",
+      "shortTitle": "",
+      "number": "030296",
+      "type": "exercise",
+      "rawType": "UE",
+      "lecturers": [
         "Dr. Swantje Sundt"
       ],
       "parentKey": "",
@@ -14266,33 +14429,6 @@
           "repeat": "w1 2",
           "excludedDates": [],
           "room": "OHP2 - Otto-Hahn-Hörsaal"
-        }
-      ]
-    },
-    {
-      "sourceId": "22488431",
-      "sourceKey": "Lecture.wirtsc.instit.lehrst_4.bungzu_82",
-      "title": "Übung zu Grundzüge der mikroökonomischen Theorie I",
-      "shortTitle": "",
-      "number": "030282",
-      "type": "exercise",
-      "rawType": "UE",
-      "lecturers": [
-        "Jannis Käsler"
-      ],
-      "parentKey": "",
-      "organisation": "Mikroökonomik",
-      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.wirtsc.instit.lehrst_4.bungzu_82",
-      "dates": [
-        {
-          "weekday": 3,
-          "startTime": "8:30",
-          "endTime": "10:00",
-          "startDate": "2026-04-15",
-          "endDate": "2026-07-12",
-          "repeat": "w1 3",
-          "excludedDates": [],
-          "room": "Online-Veranstaltung"
         }
       ]
     },
@@ -14348,142 +14484,6 @@
           "repeat": "w1 4",
           "excludedDates": [],
           "room": "JMS2 - Klingelhörsaal"
-        }
-      ]
-    },
-    {
-      "sourceId": "22295438",
-      "sourceKey": "Lecture.wirtsc.instit.lehrst_4.bungzu_0",
-      "title": "Übung zu Grundzüge der mikroökonomischen Theorie I",
-      "shortTitle": "",
-      "number": "030297",
-      "type": "exercise",
-      "rawType": "UE",
-      "lecturers": [
-        "Dr. rer. pol. Christian Johannes Sander"
-      ],
-      "parentKey": "",
-      "organisation": "Mikroökonomik",
-      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.wirtsc.instit.lehrst_4.bungzu_0",
-      "dates": [
-        {
-          "weekday": 3,
-          "startTime": "10:15",
-          "endTime": "11:45",
-          "startDate": "2026-04-15",
-          "endDate": "2026-07-12",
-          "repeat": "w1 3",
-          "excludedDates": [],
-          "room": "JMS4 - R.28"
-        }
-      ]
-    },
-    {
-      "sourceId": "22239594",
-      "sourceKey": "Lecture.wirtsc.instit.lehrst_4.bungzu_9",
-      "title": "Übung zu Grundzüge der mikroökonomischen Theorie I",
-      "shortTitle": "",
-      "number": "030065",
-      "type": "exercise",
-      "rawType": "UE",
-      "lecturers": [
-        "Dr. Hauke Jelschen",
-        "Anna Veri"
-      ],
-      "parentKey": "",
-      "organisation": "Mikroökonomik",
-      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.wirtsc.instit.lehrst_4.bungzu_9",
-      "dates": [
-        {
-          "weekday": 2,
-          "startTime": "12:15",
-          "endTime": "13:45",
-          "startDate": "2026-04-14",
-          "endDate": "2026-07-12",
-          "repeat": "w1 2",
-          "excludedDates": [],
-          "room": "OS40 - R.201 - Hebbel HS"
-        }
-      ]
-    },
-    {
-      "sourceId": "22234988",
-      "sourceKey": "Lecture.wirtsc.instit.lehrst_4.bungzu_7",
-      "title": "Übung zu Grundzüge der mikroökonomischen Theorie I",
-      "shortTitle": "",
-      "number": "030197",
-      "type": "exercise",
-      "rawType": "UE",
-      "lecturers": [
-        "Dr. rer. pol. Christian Johannes Sander"
-      ],
-      "parentKey": "",
-      "organisation": "Mikroökonomik",
-      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.wirtsc.instit.lehrst_4.bungzu_7",
-      "dates": [
-        {
-          "weekday": 1,
-          "startTime": "8:15",
-          "endTime": "9:45",
-          "startDate": "2026-04-13",
-          "endDate": "",
-          "repeat": "w1 1",
-          "excludedDates": [],
-          "room": "Raum offen"
-        }
-      ]
-    },
-    {
-      "sourceId": "22268385",
-      "sourceKey": "Lecture.wirtsc.instit.lehrst_4.bungzu_3",
-      "title": "Übung zu Grundzüge der mikroökonomischen Theorie I",
-      "shortTitle": "",
-      "number": "030075",
-      "type": "exercise",
-      "rawType": "UE",
-      "lecturers": [
-        "Dr. Swantje Sundt"
-      ],
-      "parentKey": "",
-      "organisation": "Mikroökonomik",
-      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.wirtsc.instit.lehrst_4.bungzu_3",
-      "dates": [
-        {
-          "weekday": 3,
-          "startTime": "14:15",
-          "endTime": "15:45",
-          "startDate": "2026-04-15",
-          "endDate": "2026-07-12",
-          "repeat": "w1 3",
-          "excludedDates": [],
-          "room": "OHP2 - Otto-Hahn-Hörsaal"
-        }
-      ]
-    },
-    {
-      "sourceId": "22562350",
-      "sourceKey": "Lecture.wirtsc.instit.lehrst_4.bungzu_1",
-      "title": "Übung zu Grundzüge der mikroökonomischen Theorie I",
-      "shortTitle": "",
-      "number": "030239",
-      "type": "exercise",
-      "rawType": "UE",
-      "lecturers": [
-        "Peer Lasse Hinrichsen"
-      ],
-      "parentKey": "",
-      "organisation": "Mikroökonomik",
-      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.wirtsc.instit.lehrst_4.bungzu_1",
-      "dates": [
-        {
-          "weekday": 5,
-          "startTime": "10:15",
-          "endTime": "11:45",
-          "startDate": "2026-04-17",
-          "endDate": "2026-07-12",
-          "repeat": "w1 5",
-          "excludedDates": [],
-          "room": "LMS2 - R.Ü3"
         }
       ]
     },
@@ -14872,25 +14872,41 @@
       "sourceKey": "Lecture.wirtsc.instit.lehrst_3.bungzu_0",
       "title": "Übung zu Grundzüge der makroökonomischen Theorie I",
       "shortTitle": "",
-      "number": "030194",
+      "number": "030260",
       "type": "exercise",
       "rawType": "UE",
       "lecturers": [
-        "Sönke Ressel"
+        "Johanna Krohn"
       ],
       "parentKey": "",
       "organisation": "Makroökonomik",
-      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.wirtsc.instit.lehrst_3.bungzu_0",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.wirtsc.instit.lehrst_3.bungzu_21",
+      "dates": []
+    },
+    {
+      "sourceId": "22340764",
+      "sourceKey": "Lecture.wirtsc.instit.lehrst_3.bungzu_2",
+      "title": "Übung zu Grundzüge der makroökonomischen Theorie I",
+      "shortTitle": "",
+      "number": "030261",
+      "type": "exercise",
+      "rawType": "UE",
+      "lecturers": [
+        "Lutz Honvehlmann"
+      ],
+      "parentKey": "",
+      "organisation": "Makroökonomik",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.wirtsc.instit.lehrst_3.bungzu_2",
       "dates": [
         {
-          "weekday": 4,
+          "weekday": 2,
           "startTime": "10:15",
           "endTime": "11:45",
-          "startDate": "2026-04-16",
+          "startDate": "2026-04-14",
           "endDate": "2026-07-12",
-          "repeat": "w1 4",
+          "repeat": "w1 2",
           "excludedDates": [],
-          "room": "LMS6 - R.11"
+          "room": "LMS2 - R.Ü2/K"
         }
       ]
     },
@@ -14918,6 +14934,33 @@
           "repeat": "w1 2",
           "excludedDates": [],
           "room": "LMS8 - R.01.019 (40)"
+        }
+      ]
+    },
+    {
+      "sourceId": "22643328",
+      "sourceKey": "Lecture.wirtsc.instit.lehrst_3.bungzu_0",
+      "title": "Übung zu Grundzüge der makroökonomischen Theorie I",
+      "shortTitle": "",
+      "number": "030194",
+      "type": "exercise",
+      "rawType": "UE",
+      "lecturers": [
+        "Sönke Ressel"
+      ],
+      "parentKey": "",
+      "organisation": "Makroökonomik",
+      "sourceUrl": "https://univis.uni-kiel.de/go/lecture/Lecture.wirtsc.instit.lehrst_3.bungzu_0",
+      "dates": [
+        {
+          "weekday": 4,
+          "startTime": "10:15",
+          "endTime": "11:45",
+          "startDate": "2026-04-16",
+          "endDate": "2026-07-12",
+          "repeat": "w1 4",
+          "excludedDates": [],
+          "room": "LMS6 - R.11"
         }
       ]
     },
