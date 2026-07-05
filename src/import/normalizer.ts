@@ -1,12 +1,19 @@
 import type { ImportedCourse, ImportedDate, UnivisDataset } from "./univis";
-import type { CourseEvent, EventType, Module, Weekday } from "../core/models";
+import type {
+  CourseEvent,
+  EventType,
+  Module,
+  ModuleCategory,
+  Weekday,
+} from "../core/models";
 
 export interface ModuleMapping {
   title?: string;
   semester: number;
-  category: "mandatory" | "elective";
+  category: "mandatory" | "elective" | "minor";
   ects: number;
 }
+
 export interface ImportedEventOption {
   id: string;
   title: string;
@@ -15,11 +22,12 @@ export interface ImportedEventOption {
   dates: ImportedDate[];
   sourceUrl: string;
 }
+
 export interface NormalizedModule {
   id: string;
   code: string;
   title: string;
-  category: "mandatory" | "elective" | "unmapped";
+  category: "mandatory" | "elective" | "minor" | "unmapped";
   semester: number | null;
   ects: number | null;
   fixedEvents: ImportedEventOption[];
@@ -35,7 +43,15 @@ const codePatterns = [
   /(inf[A-Za-z]+-\d+[a-z]?)/i,
   /(Inf-Math-[A-Za-z])/i,
   /(Inf-[A-Za-z]+)/,
+  /(BWL-[A-Za-z0-9]+(?:-[A-Za-z0-9]+)?)/,
+  /(bwl[A-Za-z0-9]+-\d+[a-z]?)/,
+  /(etit\d{4}-\d+[a-z]?)/,
+  /(math-[A-Za-z0-9_.]+)/,
+  /(VWL[A-Za-z0-9-]+)/,
+  /(VWL-[A-Za-z0-9-]+)/,
+  /(MNF-[A-Za-z0-9-]+)/,
 ];
+
 export function moduleCode(course: ImportedCourse, parent?: ImportedCourse) {
   const values = [
     course.shortTitle,
@@ -44,6 +60,7 @@ export function moduleCode(course: ImportedCourse, parent?: ImportedCourse) {
     parent?.title,
   ].filter(Boolean) as string[];
   const joined = values.join(" ");
+
   if (/(?:Mathematik für die Informatik B|InfMathB|MathInfB)/i.test(joined))
     return "Inf-Math-B";
   if (/(?:Mathematik für die Informatik C|InfMathC|MathInfC)/i.test(joined))
@@ -59,11 +76,17 @@ export function moduleCode(course: ImportedCourse, parent?: ImportedCourse) {
   if (/Data Science Projekt/i.test(joined)) return "infDSProj-01a";
   if (/Einführung in die Algorithmik|EinfAlgo/i.test(joined))
     return "infEAlg-01a";
-  for (const value of values)
+
+  for (const value of values) {
     for (const pattern of codePatterns) {
       const match = value.match(pattern);
       if (match) return match[1];
     }
+  }
+
+  if (parent?.shortTitle) return parent.shortTitle;
+  if (course.shortTitle) return course.shortTitle;
+
   return (parent?.title || course.title)
     .replace(
       /^(Übung|Exercise|Tutorien?|Practical Exercise)\s+(zu|zur)?:?\s*/i,
@@ -72,6 +95,7 @@ export function moduleCode(course: ImportedCourse, parent?: ImportedCourse) {
     .split(":")[0]
     .trim();
 }
+
 const signature = (course: ImportedCourse) =>
   JSON.stringify([course.type, course.title, course.dates]);
 const option = (course: ImportedCourse): ImportedEventOption => ({
@@ -82,6 +106,7 @@ const option = (course: ImportedCourse): ImportedEventOption => ({
   dates: course.dates,
   sourceUrl: course.sourceUrl,
 });
+
 const isFixedCourse = (course: ImportedCourse) =>
   course.type === "lecture" ||
   course.type === "seminar" ||
@@ -101,18 +126,18 @@ export function normalizeUnivisModules(
     dataset.courses.map((course) => [course.sourceKey, course]),
   );
   const grouped = new Map<string, ImportedCourse[]>();
+
   for (const course of unique) {
     const code = moduleCode(course, byKey.get(course.parentKey));
     grouped.set(code, [...(grouped.get(code) || []), course]);
   }
+
   return [...grouped]
     .map(([code, courses]) => {
       const mapping = mappings[code];
       const fixed = courses.filter(isFixedCourse);
-      // Tutorials are optional in UnivIS and must never be forced as the module's exercise choice.
       const selectable = courses.filter((course) => course.type === "exercise");
-      // Different UnivIS components of one module are cumulative requirements, not alternatives.
-      // Example: EinfIoT-01a (exercise) and PEinfIoT-01a (practical exercise).
+
       const components = new Map<string, ImportedCourse[]>();
       for (const course of selectable) {
         const key = (course.shortTitle || course.title.replace(/:.*/, ""))
@@ -120,6 +145,7 @@ export function normalizeUnivisModules(
           .toLocaleLowerCase("de");
         components.set(key, [...(components.get(key) || []), course]);
       }
+
       const selectableGroups = [...components.entries()]
         .map(([component, courses]) => {
           const options = [
@@ -144,6 +170,7 @@ export function normalizeUnivisModules(
                 .map((value) => [JSON.stringify(value.dates), value]),
             ).values(),
           ];
+
           return {
             id: `${code}-${component}-groups`,
             title: courses[0]?.title || "Übung / Gruppe",
@@ -151,10 +178,12 @@ export function normalizeUnivisModules(
           };
         })
         .filter((group) => group.options.length);
+
       const title =
         mapping?.title ||
         fixed[0]?.title?.replace(/^[^:]+:\s*/, "") ||
         courses[0].title;
+
       return {
         id: `univis-${code.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`,
         code,
@@ -190,6 +219,7 @@ const colorFor = (value: string) =>
   ];
 const normalizeRepeat = (repeat?: string) =>
   (repeat || "").trim().toLowerCase();
+
 const dateGroupKey = (date: ImportedDate) => {
   const repeat = normalizeRepeat(date.repeat);
   if (/^s\d*/.test(repeat))
@@ -198,6 +228,7 @@ const dateGroupKey = (date: ImportedDate) => {
     return `block-${repeat}-${date.startDate}-${date.endDate}-${date.startTime}-${date.endTime}-${date.room}`;
   return `weekly-${repeat || "w1"}-${date.weekday}-${date.startTime}-${date.endTime}-${date.room}`;
 };
+
 const groupedDates = (dates: ImportedDate[]) => [
   ...dates
     .reduce((groups, date) => {
@@ -207,10 +238,12 @@ const groupedDates = (dates: ImportedDate[]) => [
     }, new Map<string, ImportedDate[]>())
     .values(),
 ];
+
 const mergeRooms = (a: string, b: string) =>
   a === b ? a : [...new Set([a, b].filter(Boolean))].join(" / ");
 const mergeExcludedDates = (a: ImportedDate, b: ImportedDate) =>
   [...new Set([...(a.excludedDates || []), ...(b.excludedDates || [])])].sort();
+
 const eventFrom = (
   item: ImportedEventOption,
   moduleId: string,
@@ -218,6 +251,7 @@ const eventFrom = (
   dateIndex = 0,
 ): CourseEvent | null => {
   const merged = new Map<string, ImportedDate>();
+
   for (const date of item.dates.filter(
     (d) =>
       d.weekday >= 1 &&
@@ -247,9 +281,11 @@ const eventFrom = (
         excludedDates: mergeExcludedDates(previous, date),
       });
   }
+
   const dates = [...merged.values()];
   const date = dates[dateIndex];
   if (!date) return null;
+
   return {
     id: `${moduleId}-${item.id}-${index}-${dateIndex}`,
     moduleId,
@@ -267,6 +303,7 @@ const eventFrom = (
     sourceUrl: item.sourceUrl,
   };
 };
+
 export function toPlannerModules(normalized: NormalizedModule[]): Module[] {
   return normalized
     .filter((item) => item.semester !== null && item.category !== "unmapped")
@@ -281,6 +318,7 @@ export function toPlannerModules(normalized: NormalizedModule[]): Module[] {
         )
         .filter((event): event is CourseEvent => Boolean(event))
         .map((event) => ({ ...event, isFixed: true }));
+
       const selectableGroups = item.selectableGroups
         .map((group) => ({
           id: `${item.id}-${group.id}`,
@@ -290,6 +328,7 @@ export function toPlannerModules(normalized: NormalizedModule[]): Module[] {
             .filter((event): event is CourseEvent => Boolean(event)),
         }))
         .filter((group) => group.options.length);
+
       const lecturers = [
         ...new Set(
           [
@@ -300,12 +339,13 @@ export function toPlannerModules(normalized: NormalizedModule[]): Module[] {
             .filter(Boolean),
         ),
       ].join(", ");
+
       return {
         id: item.id,
         title: item.title,
         shortTitle: item.code,
         ects: item.ects,
-        category: item.category as "mandatory" | "elective",
+        category: item.category as ModuleCategory,
         semesterRecommendation: item.semester!,
         lecturer: lecturers,
         color: colorFor(item.code),

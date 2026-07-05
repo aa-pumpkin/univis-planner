@@ -10,6 +10,14 @@ type Entry = {
   category?: "mandatory" | "elective";
   requiresGroup?: boolean;
 };
+
+export interface InformaticsElectiveRequirement {
+  semester: number;
+  ects: number;
+  title: string;
+  description: string;
+}
+
 const entries: Entry[] = [
   {
     id: "intro-cs",
@@ -32,6 +40,7 @@ const entries: Entry[] = [
     ects: 8,
     semester: 1,
   },
+
   {
     id: "algorithms-intro",
     title: "Einführung in die Algorithmik",
@@ -60,6 +69,7 @@ const entries: Entry[] = [
     ects: 8,
     semester: 2,
   },
+
   {
     id: "declarative",
     title: "Deklarative Programmierung",
@@ -88,6 +98,7 @@ const entries: Entry[] = [
     ects: 8,
     semester: 3,
   },
+
   {
     id: "software-engineering",
     title: "Softwaretechnik",
@@ -124,6 +135,7 @@ const entries: Entry[] = [
     ects: 2,
     semester: 4,
   },
+
   {
     id: "software-project",
     title: "Softwareprojekt",
@@ -134,20 +146,21 @@ const entries: Entry[] = [
     requiresGroup: false,
   },
   {
+    id: "data-science-project",
+    title: "Data Science Projekt",
+    shortTitle: "DS-Proj",
+    ects: 6,
+    semester: 4,
+    category: "elective",
+    requiresGroup: false,
+  },
+
+  {
     id: "data-science",
     title: "Data Science",
     shortTitle: "DS",
     ects: 5,
     semester: 5,
-  },
-  {
-    id: "data-science-project",
-    title: "Data Science Projekt",
-    shortTitle: "DS-Proj",
-    ects: 6,
-    semester: 5,
-    category: "elective",
-    requiresGroup: false,
   },
   {
     id: "bachelor-seminar",
@@ -157,24 +170,7 @@ const entries: Entry[] = [
     semester: 5,
     requiresGroup: false,
   },
-  {
-    id: "further-electives-5",
-    title: "Wahlpflichtmodule Informatik",
-    shortTitle: "WP-Inf",
-    ects: 8,
-    semester: 5,
-    category: "elective",
-    requiresGroup: false,
-  },
-  {
-    id: "further-electives-6",
-    title: "Wahlpflichtmodule Informatik",
-    shortTitle: "WP-Inf",
-    ects: 13,
-    semester: 6,
-    category: "elective",
-    requiresGroup: false,
-  },
+
   {
     id: "thesis",
     title: "Bachelorarbeit",
@@ -184,6 +180,7 @@ const entries: Entry[] = [
     requiresGroup: false,
   },
 ];
+
 const colors = [
   "#087f73",
   "#d66b45",
@@ -192,6 +189,7 @@ const colors = [
   "#c1842f",
   "#a65757",
 ];
+
 const baseCurriculumModules: Module[] = entries.map((entry, index) => ({
   id: `curriculum-${entry.id}`,
   title: entry.title,
@@ -211,8 +209,38 @@ export const curriculumModules: Module[] = [
   ...minorModules,
 ];
 
-const key = (title: string) =>
-  title.toLowerCase().replace(/[^a-z0-9äöüß]/g, "");
+export const informaticsElectiveRequirements: InformaticsElectiveRequirement[] =
+  [
+    {
+      semester: 5,
+      ects: 8,
+      title: "Informatik-Wahlpflicht",
+      description: "Informatik-Wahlpflichtmodule",
+    },
+    {
+      semester: 6,
+      ects: 13,
+      title: "Informatik-Wahlpflicht",
+      description: "Informatik-Wahlpflichtmodule",
+    },
+  ];
+
+const key = (value: string) =>
+  value.toLowerCase().replace(/[^a-z0-9äöüß]/g, "");
+
+const matchesOfficialModule = (scheduled: Module, official: Module) => {
+  const scheduledKeys = [scheduled.title, scheduled.shortTitle].map(key);
+  const officialKeys = [official.title, official.shortTitle].map(key);
+  return scheduledKeys.some((value) => officialKeys.includes(value));
+};
+
+export function informaticsElectiveRequirementForSemester(semester: number) {
+  return (
+    informaticsElectiveRequirements.find(
+      (requirement) => requirement.semester === semester,
+    ) || null
+  );
+}
 
 export function isReplacedByMathMinor(module: Module, selectedMinorId: string) {
   return (
@@ -231,16 +259,41 @@ export function modulesForSemester(
   selectedMinorId: MinorId | "",
 ) {
   const selectedMinor = minorPlan(selectedMinorId);
+
   return modules.filter((module) => {
     if (module.semesterRecommendation !== semester) return false;
-    if (module.category === "minor") return module.minorId === selectedMinorId;
+
+    if (module.category === "minor") {
+      return false;
+    }
+
     if (
       selectedMinor?.replacesInformatikMath &&
       isReplacedByMathMinor(module, selectedMinorId)
-    )
+    ) {
       return false;
+    }
+
     return module.category === "mandatory";
   });
+}
+
+export function minorModulesForPlan(
+  modules: Module[],
+  selectedMinorId: MinorId | "",
+) {
+  if (!selectedMinorId) return [];
+
+  return modules
+    .filter(
+      (module) =>
+        module.category === "minor" && module.minorId === selectedMinorId,
+    )
+    .sort(
+      (a, b) =>
+        a.semesterRecommendation - b.semesterRecommendation ||
+        a.title.localeCompare(b.title, "de"),
+    );
 }
 
 export function olderModulesForSemester(
@@ -249,36 +302,37 @@ export function olderModulesForSemester(
   selectedMinorId: MinorId | "",
 ) {
   const selectedMinor = minorPlan(selectedMinorId);
+
   return modules.filter((module) => {
     if (module.semesterRecommendation >= semester) return false;
-    if (module.category === "minor") return module.minorId === selectedMinorId;
+
+    if (module.category === "minor") {
+      return module.minorId === selectedMinorId;
+    }
+
     if (
       selectedMinor?.replacesInformatikMath &&
       isReplacedByMathMinor(module, selectedMinorId)
-    )
+    ) {
       return false;
+    }
+
     return module.category !== "elective";
   });
 }
 
 export function mergeCurriculumWithSchedule(scheduled: Module[]): Module[] {
   const used = new Set<string>();
+
   const curriculum = curriculumModules.map((module) => {
-    if (module.category === "minor") return module;
-    const match = scheduled.find(
-      (real) => key(real.title) === key(module.title),
-    );
+    const match = scheduled.find((real) => matchesOfficialModule(real, module));
     if (!match) return module;
+
     used.add(match.id);
+
     return {
-      ...match,
-      id: module.id,
-      title: module.title,
-      shortTitle: module.shortTitle,
-      ects: module.ects,
-      category: module.category,
-      semesterRecommendation: module.semesterRecommendation,
-      requiresSelectableGroup: module.requiresSelectableGroup,
+      ...module,
+      lecturer: match.lecturer,
       fixedEvents: match.fixedEvents.map((event) => ({
         ...event,
         moduleId: module.id,
@@ -293,10 +347,14 @@ export function mergeCurriculumWithSchedule(scheduled: Module[]): Module[] {
       })),
     };
   });
+
   return [
     ...curriculum,
     ...scheduled.filter(
-      (module) => !used.has(module.id) && module.category === "elective",
+      (module) =>
+        !used.has(module.id) &&
+        module.category === "elective" &&
+        module.title !== "Wahlpflichtmodule Informatik",
     ),
   ];
 }

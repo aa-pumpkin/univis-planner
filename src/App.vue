@@ -18,10 +18,13 @@ import {
 import curriculumMappings from "./data/mappings/cau-informatik.json";
 import officialChoices from "./data/generated/bsc-electives.json";
 import {
+    informaticsElectiveRequirementForSemester,
     mergeCurriculumWithSchedule,
+    minorModulesForPlan,
     modulesForSemester,
     olderModulesForSemester,
 } from "./data/curriculum";
+import { minorModules } from "./data/minors";
 import { minorPlans, minorPlan, type MinorId } from "./data/minors";
 import type { Module } from "./core/models";
 import type { Conflict, CourseEvent } from "./core/models";
@@ -48,7 +51,32 @@ const githubUrl =
 const donateUrl =
     import.meta.env.VITE_DONATE_URL ||
     "https://www.donationalerts.com/r/pumpkin_aa";
+
 store.setModules(mergeCurriculumWithSchedule([]));
+
+const minorMappings = Object.fromEntries(
+    minorModules.flatMap((module) => [
+        [
+            module.shortTitle,
+            {
+                title: module.title,
+                ects: module.ects ?? 0,
+                category: "minor" as const,
+                semester: module.semesterRecommendation,
+            },
+        ],
+        [
+            module.title,
+            {
+                title: module.title,
+                ects: module.ects ?? 0,
+                category: "minor" as const,
+                semester: module.semesterRecommendation,
+            },
+        ],
+    ]),
+);
+
 const modulesFromDataset = (dataset: UnivisDataset, parity: 0 | 1) => {
     const offeredSemester = parity ? 5 : 6;
     const officialMappings = Object.fromEntries(
@@ -66,21 +94,22 @@ const modulesFromDataset = (dataset: UnivisDataset, parity: 0 | 1) => {
         normalizeUnivisModules(dataset, {
             ...(curriculumMappings as Record<string, ModuleMapping>),
             ...officialMappings,
+            ...minorMappings,
         }),
     ).filter(
         (module) =>
             module.category === "elective" ||
+            module.category === "minor" ||
             module.semesterRecommendation % 2 === parity,
     );
 };
+
 onMounted(async () => {
     try {
         let terms = termsForDate();
         try {
             terms = (await loadActiveTerms()).terms;
-        } catch {
-            /* use the same deterministic semester window if the manifest is temporarily unavailable */
-        }
+        } catch {}
         const [winter, summer] = await Promise.allSettled([
             loadUnivisDataset(terms.odd),
             loadUnivisDataset(terms.even),
@@ -120,15 +149,34 @@ const mandatory = computed(() =>
         selectedMinorId.value,
     ),
 );
-const electives = computed(() =>
-    studySemester.value >= 4
-        ? store.modules.filter(
-              (m) =>
-                  m.category === "elective" &&
-                  m.semesterRecommendation % 2 === studySemester.value % 2,
-          )
-        : [],
+const selectedMinorModules = computed(() =>
+    minorModulesForPlan(store.modules, selectedMinorId.value),
 );
+const informaticsElectiveRequirement = computed(() =>
+    informaticsElectiveRequirementForSemester(studySemester.value),
+);
+
+const electives = computed(() => {
+    if (studySemester.value === 4) {
+        return store.modules.filter(
+            (module) =>
+                module.category === "elective" &&
+                ["Softwareprojekt", "Data Science Projekt"].includes(
+                    module.title,
+                ),
+        );
+    }
+
+    if (studySemester.value < 5) return [];
+
+    return store.modules.filter(
+        (module) =>
+            module.category === "elective" &&
+            module.title !== "Wahlpflichtmodule Informatik" &&
+            !["Softwareprojekt", "Data Science Projekt"].includes(module.title),
+    );
+});
+
 const olderModules = computed(() =>
     olderModulesForSemester(
         store.modules,
@@ -150,12 +198,22 @@ const filteredOlderModules = computed(() =>
         matchesModuleSearch(module, retakeSearch.value),
     ),
 );
-const selectedElectives = computed(
-    () =>
-        draftIds.value.filter((id) => electives.value.some((m) => m.id === id))
-            .length,
+
+const selectedElectiveModules = computed(() =>
+    store.modules.filter(
+        (module) =>
+            draftIds.value.includes(module.id) &&
+            module.category === "elective",
+    ),
 );
-const electiveChoiceRequired = computed(() => studySemester.value >= 4);
+const selectedElectives = computed(() => selectedElectiveModules.value.length);
+const selectedElectiveEcts = computed(() =>
+    selectedElectiveModules.value.reduce(
+        (sum, module) => sum + (module.ects ?? 0),
+        0,
+    ),
+);
+
 const noTimetableNeeded = ["Bachelorarbeit", "Bachelorseminar"];
 const missingScheduleModules = computed(() =>
     store.selectedModules.filter(
@@ -207,47 +265,54 @@ function start() {
     retakeSearch.value = "";
     screen.value = "wizard";
 }
+
 function caretToEnd(event: FocusEvent) {
     const input = event.currentTarget as HTMLInputElement;
     requestAnimationFrame(() =>
         input.setSelectionRange(input.value.length, input.value.length),
     );
 }
+
 function chooseSemester(value: number) {
     studySemester.value = value;
     selectedMinorId.value = "";
     draftIds.value = [];
     step.value = 2;
 }
+
 function chooseMinor(value: MinorId) {
     selectedMinorId.value = value;
-    draftIds.value = mandatory.value.map((m) => m.id);
+    draftIds.value = [];
     step.value = 3;
 }
+
 function toggleDraft(id: string) {
     draftIds.value = draftIds.value.includes(id)
         ? draftIds.value.filter((x) => x !== id)
         : [...draftIds.value, id];
 }
+
 function moduleScheduleStatus(module: Module) {
     if (module.category === "minor")
-        return "Nebenfach · Termine nicht importiert";
+        return module.fixedEvents.length || module.selectableGroups.length
+            ? "Termine geladen"
+            : "Nebenfach";
     if (
         module.fixedEvents.length &&
         (!module.requiresSelectableGroup || module.selectableGroups.length)
     )
-        return "Termine vollständig geladen";
-    if (module.fixedEvents.length)
-        return "Vorlesung geladen · Übungsgruppen noch nicht veröffentlicht";
-    if (module.selectableGroups.length)
-        return "Nur Übung geladen · Vorlesung fehlt";
-    return "Termine noch nicht veröffentlicht";
+        return "Termine geladen";
+    if (module.fixedEvents.length) return "Vorlesung geladen";
+    if (module.selectableGroups.length) return "Übung geladen";
+    return "ohne Termine";
 }
+
 function finish() {
     store.selectedIds = [...draftIds.value];
     store.locks = {};
     screen.value = "planner";
 }
+
 function saveIcs() {
     if (store.current) {
         download(
@@ -258,6 +323,7 @@ function saveIcs() {
         dialog.value = "thanks";
     }
 }
+
 function sendFeedback() {
     const body = `${feedbackText.value.trim()}\n\n---\nSemester: ${studySemester.value}\nNebenfach: ${selectedMinor.value?.title || "nicht gewählt"}\nModule: ${store.selectedModules.map((module) => module.shortTitle).join(", ") || "noch keine"}\nKonflikte: ${currentConflicts.value.length}`;
     const separator = feedbackUrl.includes("?") ? "&" : "?";
@@ -267,6 +333,7 @@ function sendFeedback() {
         "noopener,noreferrer",
     );
 }
+
 function reloadPlannerData() {
     localStorage.removeItem(PLANNER_STORAGE_KEY);
     location.reload();
@@ -281,8 +348,9 @@ function reloadPlannerData() {
             </button>
             <div v-if="screen === 'planner'" class="header-actions">
                 <button class="feedback-button" @click="dialog = 'feedback'">
-                    Feedback</button
-                ><button class="quiet-button" @click="start">
+                    Feedback
+                </button>
+                <button class="quiet-button" @click="start">
                     Neuen Plan erstellen
                 </button>
             </div>
@@ -312,7 +380,7 @@ function reloadPlannerData() {
                 </div>
                 <span v-if="importedCourseCount" class="data-status"
                     ><i></i> UnivIS verbunden · {{ importedCourseCount }} Kurse
-                    aus WS und SS importiert</span
+                    importiert</span
                 >
             </div>
             <div class="welcome-preview" aria-hidden="true">
@@ -343,13 +411,9 @@ function reloadPlannerData() {
                 </div>
 
                 <div v-if="step === 1" class="wizard-content">
-                    <span class="eyebrow"
-                        >1-FACH BACHELOR INFORMATIK · FPO 2025</span
-                    >
+                    <span class="eyebrow">1-FACH BACHELOR INFORMATIK</span>
                     <h2>In welchem Semester bist du?</h2>
-                    <p>
-                        Wir laden damit automatisch die passenden Pflichtmodule.
-                    </p>
+                    <p>Wir laden damit die passende Modulauswahl.</p>
                     <div class="semester-grid">
                         <button
                             v-for="n in 6"
@@ -362,13 +426,9 @@ function reloadPlannerData() {
                 </div>
 
                 <div v-else-if="step === 2" class="wizard-content">
-                    <span class="eyebrow">NEBENFACH · FPO 2025</span>
+                    <span class="eyebrow">NEBENFACH</span>
                     <h2>Welches Nebenfach belegst du?</h2>
-                    <p>
-                        Das Nebenfach ist im 1-Fach-Bachelor Informatik
-                        verpflichtend. Wir übernehmen nur offiziell belegte
-                        Anforderungen, aber erfinden keine Termine.
-                    </p>
+                    <p>Wähle dein Nebenfach.</p>
                     <div class="wizard-list">
                         <label v-for="minor in minorPlans" :key="minor.id">
                             <span class="module-mark">{{
@@ -376,10 +436,7 @@ function reloadPlannerData() {
                             }}</span>
                             <span>
                                 <b>{{ minor.title }}</b>
-                                <small
-                                    >{{ minor.ectsRange }} ·
-                                    {{ minor.description }}</small
-                                >
+                                <small>{{ minor.ectsRange }}</small>
                             </span>
                             <input
                                 type="radio"
@@ -393,42 +450,61 @@ function reloadPlannerData() {
                 </div>
 
                 <div v-else-if="step === 3" class="wizard-content">
-                    <span class="eyebrow">PFLICHTMODULE</span>
-                    <h2>
-                        Diese Module gehören zum {{ studySemester }}. Semester
-                    </h2>
-                    <p>
-                        Sie wurden automatisch ausgewählt. Du kannst sie bei
-                        Bedarf abwählen.
-                    </p>
-                    <div v-if="selectedMinor" class="notice">
-                        Nebenfach: <b>{{ selectedMinor.title }}</b
-                        >. Nebenfach-Termine werden nur exportiert, wenn sie
-                        später wirklich aus UnivIS geladen werden.
-                    </div>
+                    <span class="eyebrow">MODULE</span>
+                    <h2>Module für dein {{ studySemester }}. Semester</h2>
+
                     <div v-if="mandatory.length" class="wizard-list">
-                        <label v-for="m in mandatory" :key="m.id"
-                            ><span
+                        <label v-for="m in mandatory" :key="m.id">
+                            <span
                                 class="module-mark"
                                 :style="{ background: m.color }"
                                 >{{ m.shortTitle }}</span
-                            ><span
+                            >
+                            <span
                                 ><b>{{ m.title }}</b
                                 ><small
                                     >{{ ectsLabel(m.ects) }} ·
                                     {{ moduleScheduleStatus(m) }}</small
                                 ></span
-                            ><input
+                            >
+                            <input
                                 type="checkbox"
                                 :checked="draftIds.includes(m.id)"
                                 @change="toggleDraft(m.id)"
-                            /><i>✓</i></label
-                        >
+                            />
+                            <i>✓</i>
+                        </label>
                     </div>
-                    <div v-else class="notice">
-                        Für dieses Semester enthält der Studienverlaufsplan
-                        keine festen Pflichtveranstaltungen.
-                    </div>
+
+                    <template v-if="selectedMinorModules.length">
+                        <span class="eyebrow minor-heading">NEBENFACH</span>
+                        <div class="wizard-list">
+                            <label
+                                v-for="m in selectedMinorModules"
+                                :key="m.id"
+                            >
+                                <span
+                                    class="module-mark"
+                                    :style="{ background: m.color }"
+                                    >{{ m.shortTitle }}</span
+                                >
+                                <span
+                                    ><b>{{ m.title }}</b
+                                    ><small
+                                        >{{ ectsLabel(m.ects) }} ·
+                                        {{ moduleScheduleStatus(m) }}</small
+                                    ></span
+                                >
+                                <input
+                                    type="checkbox"
+                                    :checked="draftIds.includes(m.id)"
+                                    @change="toggleDraft(m.id)"
+                                />
+                                <i>✓</i>
+                            </label>
+                        </div>
+                    </template>
+
                     <button class="primary-action full" @click="step = 4">
                         Weiter
                     </button>
@@ -438,69 +514,60 @@ function reloadPlannerData() {
                     <span class="eyebrow">WAHLBEREICH</span>
                     <h2>
                         {{
-                            electiveChoiceRequired
-                                ? "Welche Wahloption belegst du?"
-                                : "Möchtest du zusätzliche Module?"
+                            studySemester === 4
+                                ? "Projektoptionen"
+                                : informaticsElectiveRequirement
+                                  ? "Informatik-Wahlpflicht"
+                                  : "Zusätzliche Module"
                         }}
                     </h2>
-                    <p>
-                        {{
-                            electiveChoiceRequired
-                                ? "Der Studienverlaufsplan sieht hier eine Projekt- oder Wahlpflichtleistung vor."
-                                : "In diesem Semester ist keine Wahlpflichtleistung vorgesehen."
-                        }}
+
+                    <p v-if="studySemester === 4">Wähle ein Projektmodul.</p>
+                    <p v-else-if="informaticsElectiveRequirement">
+                        {{ informaticsElectiveRequirement.description }}
                     </p>
+
                     <label v-if="electives.length" class="module-search"
                         ><span>⌕</span
                         ><input
                             v-model="electiveSearch"
                             type="search"
-                            placeholder="Wahlpflichtmodul suchen…"
+                            placeholder="Modul suchen…"
                             @focus="caretToEnd"
                     /></label>
+
                     <div
                         v-if="filteredElectives.length"
                         class="wizard-list searchable-list"
                     >
-                        <label v-for="m in filteredElectives" :key="m.id"
-                            ><span
+                        <label v-for="m in filteredElectives" :key="m.id">
+                            <span
                                 class="module-mark"
                                 :style="{ background: m.color }"
                                 >{{ m.shortTitle }}</span
-                            ><span
+                            >
+                            <span
                                 ><b>{{ m.title }}</b
                                 ><small
                                     >{{ ectsLabel(m.ects) }} ·
                                     Wahlpflicht</small
                                 ></span
-                            ><input
+                            >
+                            <input
                                 type="checkbox"
                                 :checked="draftIds.includes(m.id)"
                                 @change="toggleDraft(m.id)"
-                            /><i>✓</i></label
-                        >
+                            />
+                            <i>✓</i>
+                        </label>
                     </div>
-                    <div v-else-if="electives.length" class="search-empty">
-                        Kein passendes Modul gefunden.
-                    </div>
+
                     <div v-else class="notice">
-                        Im {{ studySemester }}. Semester sieht der
-                        Studienverlaufsplan noch keine Wahlpflichtmodule vor.
+                        Keine passenden Module geladen.
                     </div>
-                    <button
-                        class="primary-action full"
-                        :disabled="
-                            electiveChoiceRequired && selectedElectives === 0
-                        "
-                        @click="step = 5"
-                    >
-                        {{
-                            selectedElectives
-                                ? `Mit ${selectedElectives} Modul${selectedElectives > 1 ? "en" : ""} weiter`
-                                : electiveChoiceRequired
-                                  ? "Bitte eine Option wählen"
-                                  : "Weiter"
-                        }}
+
+                    <button class="primary-action full" @click="step = 5">
+                        Weiter
                     </button>
                 </div>
 
@@ -510,10 +577,6 @@ function reloadPlannerData() {
                         Möchtest du etwas aus einem früheren Semester
                         wiederholen?
                     </h2>
-                    <p>
-                        Zum Beispiel eine Vorlesung oder Übung, die du erneut
-                        besuchen möchtest.
-                    </p>
                     <div class="yes-no">
                         <button
                             :class="{ active: wantsRetakes === false }"
@@ -527,38 +590,43 @@ function reloadPlannerData() {
                             Ja
                         </button>
                     </div>
-                    <template v-if="wantsRetakes"
-                        ><label class="module-search retake-search"
+                    <template v-if="wantsRetakes">
+                        <label class="module-search retake-search"
                             ><span>⌕</span
                             ><input
                                 v-model="retakeSearch"
                                 type="search"
-                                placeholder="Modul aus früheren Semestern suchen…"
+                                placeholder="Modul suchen…"
                                 @focus="caretToEnd"
                         /></label>
                         <div
                             v-if="filteredOlderModules.length"
                             class="wizard-list compact"
                         >
-                            <label v-for="m in filteredOlderModules" :key="m.id"
-                                ><span
+                            <label
+                                v-for="m in filteredOlderModules"
+                                :key="m.id"
+                            >
+                                <span
                                     ><b>{{ m.title }}</b
                                     ><small
                                         >{{ m.semesterRecommendation }}.
                                         Semester · {{ ectsLabel(m.ects) }} ·
                                         {{ moduleScheduleStatus(m) }}</small
                                     ></span
-                                ><input
+                                >
+                                <input
                                     type="checkbox"
                                     :checked="draftIds.includes(m.id)"
                                     @change="toggleDraft(m.id)"
-                                /><i>✓</i></label
-                            >
+                                />
+                                <i>✓</i>
+                            </label>
                         </div>
                         <div v-else class="search-empty">
                             Kein passendes Modul gefunden.
-                        </div></template
-                    >
+                        </div>
+                    </template>
                     <button
                         class="primary-action full"
                         :disabled="wantsRetakes === null"
@@ -604,6 +672,7 @@ function reloadPlannerData() {
                     Kalender herunterladen
                 </button>
             </section>
+
             <section
                 v-if="missingScheduleModules.length"
                 class="incomplete-panel"
@@ -621,28 +690,21 @@ function reloadPlannerData() {
                         {{ module.title }} <span>Vorlesung fehlt</span>
                     </li>
                 </ul>
-                <small
-                    >Wir zeigen erst dann keinen Plan, wenn nicht einmal die
-                    feste Vorlesung veröffentlicht ist. Fehlende Übungsgruppen
-                    blockieren die beste verfügbare Variante nicht.
-                    Nebenfach-Module blockieren den Informatik-Stundenplan
-                    nicht, solange dafür keine echten Termine importiert
-                    wurden.</small
-                >
             </section>
+
             <section
                 v-else-if="emptyScheduleSelection"
                 class="incomplete-panel"
             >
                 <b>Noch kein Wochenplan</b>
                 <p>
-                    Abschlussarbeit, Nebenfach-Module ohne importierte Termine
-                    und andere Leistungen ohne feste Wochenzeit erzeugen keinen
+                    Module ohne geladene Termine erzeugen keinen
                     Kalendereintrag.
                 </p>
             </section>
-            <template v-else-if="store.candidates.length"
-                ><div class="plan-workspace">
+
+            <template v-else-if="store.candidates.length">
+                <div class="plan-workspace">
                     <aside class="plan-sidebar">
                         <CandidateCards />
                         <section
@@ -684,10 +746,7 @@ function reloadPlannerData() {
                                     ><span
                                         >{{ m.shortTitle }} ·
                                         {{ ectsLabel(m.ects) }}</span
-                                    ><small v-if="m.category === 'minor'"
-                                        >Nebenfach · Termine nicht
-                                        importiert</small
-                                    ><small v-else-if="m.lecturer">{{
+                                    ><small v-if="m.lecturer">{{
                                         m.lecturer
                                     }}</small
                                     ><small v-if="m.officialNote">{{
@@ -697,8 +756,9 @@ function reloadPlannerData() {
                             </article>
                         </div>
                     </aside>
-                </div></template
-            >
+                </div>
+            </template>
+
             <section v-else class="incomplete-panel diagnostic">
                 <b>Die Berechnung hat keine Variante geliefert</b>
                 <p v-if="fixedConflicts.length">
@@ -729,6 +789,7 @@ function reloadPlannerData() {
                     Daten neu laden
                 </button>
             </section>
+
             <section
                 v-if="
                     missingScheduleModules.length ||
@@ -754,18 +815,11 @@ function reloadPlannerData() {
                             <b>{{ m.title }}</b
                             ><small
                                 >{{ ectsLabel(m.ects) }} ·
-                                <template v-if="m.category === 'minor'"
-                                    >Nebenfach · Termine nicht
-                                    importiert</template
-                                ><template v-else
-                                    >{{ m.fixedEvents.length }} Vorlesung{{
-                                        m.fixedEvents.length === 1 ? "" : "en"
-                                    }}<template
-                                        v-if="m.selectableGroups.length"
-                                    >
-                                        · 1 Übungsgruppe</template
-                                    ></template
-                                ></small
+                                {{
+                                    m.category === "minor"
+                                        ? "Nebenfach"
+                                        : `${m.fixedEvents.length} Vorlesung${m.fixedEvents.length === 1 ? "" : "en"}`
+                                }}</small
                             ><small v-if="m.lecturer" class="module-lecturer">{{
                                 m.lecturer
                             }}</small
@@ -792,12 +846,6 @@ function reloadPlannerData() {
                 <template v-if="dialog === 'feedback'">
                     <span class="eyebrow">FEEDBACK</span>
                     <h2>Was funktioniert noch nicht?</h2>
-                    <p>
-                        Ein kurzer Hinweis reicht. GitHub öffnet danach einen
-                        vorbereiteten Fehlerbericht mit Semester, Modulen und
-                        Konfliktanzahl. Veröffentlicht wird er erst, wenn du ihn
-                        dort bestätigst.
-                    </p>
                     <textarea
                         v-model="feedbackText"
                         placeholder="Zum Beispiel: Eine Übungsgruppe fehlt…"
@@ -815,11 +863,6 @@ function reloadPlannerData() {
                 <template v-else>
                     <span class="eyebrow">FERTIG</span>
                     <h2>Kalender heruntergeladen</h2>
-                    <p>
-                        Ich hoffe, der Import funktioniert und dein Stundenplan
-                        stimmt. Falls etwas fehlt oder falsch ist, schreib bitte
-                        kurz Feedback.
-                    </p>
                     <div class="dialog-actions">
                         <button
                             class="primary-action"
