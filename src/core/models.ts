@@ -9,6 +9,7 @@ export type EventType =
 export type ModuleCategory =
   | "mandatory"
   | "elective"
+  | "minor"
   | "seminar"
   | "practical"
   | "retake";
@@ -50,6 +51,10 @@ export interface Module {
   lecturer: string;
   color: string;
   requiresSelectableGroup?: boolean;
+  minorId?: string;
+  minorChoiceGroup?: string;
+  officialNote?: string;
+  sourceUrl?: string;
   fixedEvents: CourseEvent[];
   selectableGroups: SelectableGroup[];
   optionalEvents?: CourseEvent[];
