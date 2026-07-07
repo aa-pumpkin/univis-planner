@@ -26,7 +26,7 @@ jobs:
       - name: Download current and upcoming CAU semesters
         run: npm run data:update
       - name: Verify imported data and application
-        run: npm test && npm run build
+        run: npm run data:validate && npm test && npm run build
       - name: Commit changed public data
         run: |
           if git diff --quiet -- public/data src/data/generated; then

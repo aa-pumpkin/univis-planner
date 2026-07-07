@@ -258,6 +258,36 @@ const courses = [
   ...new Map(parsedCourses.map((course) => [course.sourceId, course])).values(),
 ];
 
+const MIN_SUCCESSFUL_SOURCES = 10;
+const MIN_IMPORTED_COURSES = 100;
+const MIN_COURSES_WITH_DATES = 25;
+
+const assertCompleteEnoughImport = () => {
+  const coursesWithDates = courses.filter(
+    (course) => course.dates.length > 0,
+  ).length;
+
+  if (successfulSources.length < MIN_SUCCESSFUL_SOURCES) {
+    throw new Error(
+      `Refusing incomplete UnivIS import for ${semester}: only ${successfulSources.length} successful searches`,
+    );
+  }
+
+  if (courses.length < MIN_IMPORTED_COURSES) {
+    throw new Error(
+      `Refusing incomplete UnivIS import for ${semester}: only ${courses.length} courses parsed`,
+    );
+  }
+
+  if (coursesWithDates < MIN_COURSES_WITH_DATES) {
+    throw new Error(
+      `Refusing incomplete UnivIS import for ${semester}: only ${coursesWithDates} courses have usable dates`,
+    );
+  }
+};
+
+assertCompleteEnoughImport();
+
 const output = {
   schemaVersion: 1,
   semester,
